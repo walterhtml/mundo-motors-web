@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Repuestos automotor multimarca en Rosario | Mundo Motors, ex Mundo Renault</title>
+<meta name="description" content="Mundo Motors, ex Mundo Renault: más de 20 años en repuestos automotor en Rosario. Originales y primeras marcas para Renault, Chevrolet y las principales marcas. Consultá por WhatsApp.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AutoPartsStore","name":"Mundo Motors","alternateName":"Mundo Renault","slogan":"Tu aliado en repuestos automotor","telephone":"+54 9 341 702-8284","address":{"@type":"PostalAddress","streetAddress":"Av. Pellegrini 3971","addressLocality":"Rosario","addressRegion":"Santa Fe","addressCountry":"AR"},"openingHours":["Mo-Fr 09:00-18:00","Sa 09:00-12:30"],"foundingDate":"2006"}
+</script>
+<style>
+/* =================== OPCIÓN B · BUSCADOR PRIMERO =================== */
+:root { --linea: #DCE3EA; }
+.sec { padding-block: var(--sec); border-top: 1px solid var(--linea); }
+.sec--gris { background: var(--gris-claro); border-top-color: transparent; }
+
+/* Encabezado de sección: rótulo numerado a la izquierda, contenido a la derecha */
+.bloque { display: grid; grid-template-columns: 15rem 1fr; gap: 2rem clamp(2rem, 5vw, 4rem); }
+.rotulo { display: flex; flex-direction: column; gap: .6rem; }
+.rotulo__num { font: 800 .8rem/1 var(--f-titular); color: var(--naranja-titular); letter-spacing: .1em; }
+.rotulo__txt { font: 700 .78rem/1.4 var(--f-titular); color: var(--acero); letter-spacing: .2em; text-transform: uppercase; padding-top: .6rem; border-top: 2px solid var(--azul); max-width: 12rem; }
+.h-sec { font-size: clamp(1.6rem, 1.15rem + 1.8vw, 2.4rem); font-weight: 800; text-transform: uppercase; letter-spacing: -.005em; }
+.h-sec span { color: var(--naranja-titular); }
+.bajada { color: var(--acero); margin-top: .9rem; max-width: 40rem; }
+@media (max-width: 900px) { .bloque { grid-template-columns: 1fr; gap: 1.5rem; } .rotulo { flex-direction: row; align-items: baseline; gap: .9rem; } .rotulo__txt { border-top: 0; padding-top: 0; } }
+
+/* ---------- Barra de datos ---------- */
+.datos-bar { background: var(--azul); color: #DCE6F3; font-size: .8rem; }
+.datos-bar__in { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .4rem 1.5rem; padding-block: .55rem; }
+.datos-bar span { display: inline-flex; align-items: center; gap: .4rem; }
+.datos-bar .icono { width: 1rem; height: 1rem; color: var(--naranja); }
+@media (max-width: 700px) { .datos-bar__in span:nth-child(n+2) { display: none; } .datos-bar__in { justify-content: center; } }
+
+/* ---------- Encabezado ---------- */
+.cab { position: sticky; top: 0; z-index: 40; background: #fff; border-bottom: 1px solid var(--linea); }
+.cab__in { display: flex; align-items: center; gap: 2rem; min-height: 4.5rem; }
+.cab__logo img { height: 40px; width: auto; }
+.cab__nav { display: flex; gap: 1.75rem; }
+.cab__nav a { font: 600 .92rem/1 var(--f-cuerpo); color: var(--texto); text-decoration: none; padding-block: .6rem; border-bottom: 2px solid transparent; }
+.cab__nav a[aria-current="page"] { color: var(--azul); border-bottom-color: var(--naranja); font-weight: 600; }
+.cab__nav a:hover { color: var(--azul); }
+.cab__cta { margin-left: auto; min-height: 2.75rem; font-size: .8rem; padding-inline: 1.1rem; }
+@media (max-width: 900px) {
+  .cab__in { gap: .5rem; }
+  .cab__cta span { display: none; }
+  .cab__nav { position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; gap: 0; background: #fff; padding: .5rem var(--gutter) 1rem; border-bottom: 1px solid var(--linea); box-shadow: var(--sombra-sm); }
+  .cab__nav a { padding: 1rem 0; border-bottom: 1px solid var(--gris-claro); }
+  .cab__logo img { height: 34px; }
+}
+
+/* ---------- Portada con buscador ---------- */
+.hero { position: relative; padding: clamp(2.5rem, 6vw, 5rem) 0 clamp(2rem, 4vw, 3rem); background:
+  linear-gradient(var(--blanco), rgba(255,255,255,.6) 60%, var(--blanco)),
+  repeating-linear-gradient(0deg, transparent 0 47px, var(--gris-claro) 47px 48px),
+  repeating-linear-gradient(90deg, transparent 0 47px, var(--gris-claro) 47px 48px); }
+.hero__cab { max-width: 52rem; }
+.hero__ante { display: inline-flex; align-items: center; gap: .6rem; font: 700 .78rem/1 var(--f-titular); color: var(--azul); letter-spacing: .16em; text-transform: uppercase; background: #fff; border: 1px solid var(--linea); padding: .5rem .8rem; border-radius: 99px; }
+.hero__ante i { width: .55rem; height: .55rem; border-radius: 50%; background: var(--naranja); }
+.h1 { font-size: clamp(2.1rem, 1.3rem + 3.6vw, 3.9rem); font-weight: 800; text-transform: uppercase; letter-spacing: -.015em; line-height: 1.02; margin-top: 1.25rem; }
+.h1 span { color: var(--naranja-titular); }
+.hero__txt { font-size: var(--t-lg); color: var(--acero); margin-top: 1.1rem; max-width: 42rem; }
+
+.buscador { margin-top: 2.25rem; background: #fff; border: 2px solid var(--azul); border-radius: var(--radio-lg); box-shadow: 0 24px 50px -28px rgba(11, 55, 111, .45); padding: .6rem; }
+.buscador__titulo { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .65rem .9rem .9rem; }
+.buscador__titulo h2 { font-size: 1.05rem; font-weight: 800; text-transform: uppercase; letter-spacing: .02em; }
+.buscador__titulo p { font-size: var(--t-xs); color: var(--acero); }
+.buscador__form { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)) minmax(0, 1.6fr) auto; align-items: stretch; background: var(--gris-claro); border-radius: 12px; }
+.buscador .campo { padding: .75rem 1rem .6rem; border-right: 1px solid var(--linea); gap: .1rem; }
+.buscador .campo:focus-within { background: #fff; border-radius: 10px; box-shadow: inset 0 0 0 2px var(--azul-500); }
+.buscador .campo label { font-size: .7rem; text-transform: uppercase; letter-spacing: .1em; color: var(--acero); }
+.buscador .campo input { border: 0; background: transparent; padding: .2rem 0; min-height: 2.2rem; font-weight: 500; color: var(--azul); box-shadow: none; }
+.buscador .campo input:focus { box-shadow: none; }
+.buscador .campo--repuesto { border-right: 0; }
+.buscador__btn { margin: .45rem; min-height: auto; padding-inline: 1.5rem; }
+.buscador__pie { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; padding: .9rem .9rem .5rem; }
+.buscador__pie > span { font-size: var(--t-xs); color: var(--acero); }
+.atajos { display: flex; flex-wrap: wrap; gap: .4rem; }
+.atajos button { border: 1px solid var(--linea); background: #fff; color: var(--azul); font-size: .8rem; font-weight: 500; padding: .35rem .75rem; border-radius: 99px; cursor: pointer; }
+.atajos button:hover { border-color: var(--azul); }
+.buscador .form-error { padding: 0 .9rem; }
+@media (max-width: 1080px) {
+  .buscador__form { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .buscador .campo { border-bottom: 1px solid var(--linea); }
+  .buscador .campo:nth-child(2n) { border-right: 0; }
+  .buscador .campo--repuesto { grid-column: 1 / -1; }
+  .buscador__btn { grid-column: 1 / -1; min-height: 3.25rem; }
+}
+
+.pasos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.5rem; }
+.paso { display: flex; gap: .75rem; align-items: flex-start; font-size: var(--t-sm); color: var(--acero); }
+.paso b { flex: none; width: 1.9rem; height: 1.9rem; display: grid; place-items: center; border-radius: 50%; background: var(--azul); color: #fff; font: 800 .8rem/1 var(--f-titular); }
+.paso strong { display: block; color: var(--azul); font-weight: 600; }
+@media (max-width: 760px) { .pasos { grid-template-columns: 1fr; gap: .75rem; } }
+
+/* Tira de fotos reales */
+.tira { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 1rem; margin-top: clamp(2.5rem, 5vw, 3.5rem); }
+.tira figure { position: relative; border-radius: var(--radio-lg); overflow: hidden; }
+.tira img { width: 100%; height: clamp(14rem, 22vw, 20rem); object-fit: cover; }
+.tira figcaption { position: absolute; left: .75rem; bottom: .75rem; display: flex; flex-direction: column; background: #fff; padding: .55rem .8rem; border-radius: 10px; box-shadow: var(--sombra-sm); }
+.tira figcaption b { font: 800 1.2rem/1 var(--f-titular); color: var(--azul); }
+.tira figcaption span { font-size: .75rem; color: var(--acero); }
+@media (max-width: 760px) { .tira figcaption { right: .5rem; left: .5rem; bottom: .5rem; padding: .45rem .6rem; } .tira figcaption b { font-size: 1rem; } .tira { grid-template-columns: 1fr 1fr; } .tira figure:first-child { grid-column: 1 / -1; } .tira img { height: 11rem; } .tira figure:first-child img { height: 14rem; } }
+
+/* ---------- Oferta ---------- */
+.oferta { display: grid; grid-template-columns: 17rem 1fr; gap: 0; align-items: stretch; border: 1px solid var(--linea); border-radius: var(--radio-lg); overflow: hidden; background: #fff; }
+.oferta__foto img { width: 100%; height: 100%; min-height: 15rem; object-fit: cover; object-position: center 35%; }
+.oferta__txt { padding: 1.75rem 2rem; border-left: 5px solid var(--naranja); }
+.oferta__meta { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; font-size: var(--t-xs); color: var(--acero); }
+.chip { display: inline-flex; align-items: center; gap: .35rem; font: 800 .7rem/1 var(--f-titular); letter-spacing: .12em; text-transform: uppercase; padding: .45rem .7rem; border-radius: 99px; }
+.chip--naranja { background: var(--naranja); color: var(--azul-tinta); }
+.chip--linea { border: 1px solid var(--linea); color: var(--azul); }
+.oferta h3 { font-size: clamp(1.4rem, 1.1rem + 1.2vw, 2rem); font-weight: 800; text-transform: uppercase; margin-top: .9rem; }
+.oferta p { color: var(--acero); margin-top: .6rem; max-width: 36rem; }
+.oferta__txt .btn { margin-top: 1.4rem; }
+@media (max-width: 640px) { .oferta { grid-template-columns: 1fr; } .oferta__foto img { min-height: 0; height: 12rem; } .oferta__txt { border-left: 0; border-top: 5px solid var(--naranja); padding: 1.4rem; } }
+
+/* ---------- Marcas: grilla con líneas ---------- */
+.grilla-marcas { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--linea); border-left: 1px solid var(--linea); margin-top: 2rem; }
+.grilla-marcas li { border-right: 1px solid var(--linea); border-bottom: 1px solid var(--linea); padding: 1.4rem 1.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 5.5rem; }
+.grilla-marcas b { font: 800 1.15rem/1 var(--f-titular); color: var(--azul); letter-spacing: .06em; text-transform: uppercase; }
+.grilla-marcas small { font-size: .75rem; color: var(--acero); }
+.grilla-marcas .completa { background: var(--azul); }
+.grilla-marcas .completa b { color: #fff; font-size: 1.35rem; }
+.marcas__pie { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; margin-top: 1.25rem; }
+.marcas__pie p { font-size: var(--t-xs); color: var(--acero); }
+@media (max-width: 640px) { .grilla-marcas { grid-template-columns: 1fr 1fr; } .grilla-marcas li { padding: 1rem; min-height: 4.5rem; flex-direction: column; align-items: flex-start; justify-content: center; gap: .4rem; } .grilla-marcas b { font-size: .95rem; } .grilla-marcas .completa b { font-size: 1.05rem; } }
+
+/* ---------- Especialistas: índice ---------- */
+.indice { margin-top: 1.5rem; border-top: 2px solid var(--azul); }
+.indice li { border-bottom: 1px solid var(--linea); }
+.indice a { display: grid; grid-template-columns: 3rem 16rem 1fr auto; align-items: center; gap: 1rem; padding: 1.25rem .5rem; text-decoration: none; color: inherit; transition: background-color .15s, padding .15s; }
+.indice a:hover { background: var(--gris-claro); padding-inline: 1rem; }
+.indice__n { font: 800 .85rem/1 var(--f-titular); color: var(--naranja-titular); }
+.indice h3 { font-size: clamp(1.05rem, .95rem + .5vw, 1.3rem); font-weight: 800; text-transform: uppercase; }
+.indice p { color: var(--acero); font-size: var(--t-sm); }
+.indice__ir { display: inline-flex; align-items: center; gap: .4rem; font-weight: 600; font-size: var(--t-sm); color: var(--azul); }
+.indice__ir .icono { width: 2.2rem; height: 2.2rem; padding: .45rem; border-radius: 50%; background: var(--naranja); color: var(--azul-tinta); }
+@media (max-width: 860px) { .indice a { grid-template-columns: 2.25rem 1fr auto; } .indice p { grid-column: 2; grid-row: 2; margin-top: -.5rem; } .indice__ir span { display: none; } .indice__ir { grid-row: 1 / span 2; grid-column: 3; } }
+
+/* ---------- Por qué elegirnos ---------- */
+.porque { display: grid; grid-template-columns: repeat(3, 1fr); background: #fff; border: 1px solid var(--linea); border-radius: var(--radio-lg); overflow: hidden; margin-top: 2rem; }
+.porque li { padding: 1.75rem; border-right: 1px solid var(--linea); border-bottom: 1px solid var(--linea); }
+.porque li:nth-child(3n) { border-right: 0; }
+.porque li:nth-last-child(-n+3) { border-bottom: 0; }
+.porque .icono { width: 2rem; height: 2rem; color: var(--azul); }
+.porque h3 { font-size: 1rem; font-weight: 800; text-transform: uppercase; margin-top: 1rem; }
+.porque p { font-size: var(--t-sm); color: var(--acero); margin-top: .35rem; }
+@media (max-width: 860px) { .porque { grid-template-columns: 1fr 1fr; } .porque li:nth-child(3n) { border-right: 1px solid var(--linea); } .porque li:nth-child(2n) { border-right: 0; } .porque li:nth-last-child(-n+3) { border-bottom: 1px solid var(--linea); } .porque li:nth-last-child(-n+2) { border-bottom: 0; } }
+@media (max-width: 520px) { .porque { grid-template-columns: 1fr; } .porque li { border-right: 0 !important; border-bottom: 1px solid var(--linea) !important; padding: 1.25rem; } .porque li:last-child { border-bottom: 0 !important; } }
+
+/* ---------- Historia ---------- */
+.historia { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: start; margin-top: 2rem; }
+.historia__foto img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center 0; border-radius: var(--radio-lg); }
+.historia__foto figcaption { font-size: var(--t-xs); color: var(--acero); margin-top: .6rem; }
+.historia__bajada { font: 800 clamp(1.3rem, 1.1rem + .8vw, 1.7rem)/1.2 var(--f-titular); color: var(--azul); text-transform: uppercase; }
+.anios { margin: 1.75rem 0 2rem; border-left: 2px solid var(--linea); }
+.anios li { position: relative; padding: 0 0 1.4rem 1.5rem; }
+.anios li::before { content: ""; position: absolute; left: -7px; top: .35rem; width: 12px; height: 12px; border-radius: 50%; background: var(--azul); }
+.anios li:last-child { padding-bottom: 0; }
+.anios li:last-child::before { background: var(--naranja); }
+.anios b { font: 800 1.5rem/1 var(--f-titular); color: var(--azul); }
+.anios span { display: block; color: var(--acero); font-size: var(--t-sm); margin-top: .3rem; }
+@media (max-width: 860px) { .historia { grid-template-columns: 1fr; } }
+
+/* ---------- Talleres ---------- */
+.talleres { display: grid; grid-template-columns: auto 1fr auto; gap: 1.5rem 2.5rem; align-items: center; background: var(--azul); color: #fff; border-radius: var(--radio-lg); padding: clamp(1.75rem, 4vw, 2.75rem); margin-top: 2rem; }
+.talleres__ico { width: 4.5rem; height: 4.5rem; padding: 1rem; border-radius: 16px; background: var(--naranja); color: var(--azul-tinta); stroke-width: 2; }
+.talleres h3 { color: #fff; font-size: clamp(1.3rem, 1.1rem + .8vw, 1.7rem); font-weight: 800; text-transform: uppercase; }
+.talleres ul { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
+.talleres li { display: inline-flex; align-items: center; gap: .4rem; font-size: var(--t-sm); padding: .4rem .8rem; border: 1px solid rgba(255,255,255,.3); border-radius: 99px; }
+.talleres li .icono { width: 1rem; height: 1rem; color: var(--naranja); stroke-width: 2.6; }
+.talleres__acciones { display: flex; flex-direction: column; gap: .6rem; }
+@media (max-width: 900px) { .talleres { grid-template-columns: 1fr; } .talleres__acciones { flex-direction: row; flex-wrap: wrap; } }
+
+/* ---------- Testimonios ---------- */
+.testimonio { height: 100%; background: #fff; border-radius: var(--radio-lg); padding: 1.75rem; border-top: 4px solid var(--naranja); display: flex; flex-direction: column; gap: 1rem; box-shadow: var(--sombra-sm); }
+.testimonio blockquote { margin: 0; flex: 1; font-size: 1rem; }
+.testimonio blockquote::before { content: "“"; display: block; font: 800 3rem/0.6 var(--f-titular); color: var(--naranja); margin-bottom: .5rem; }
+.persona b { display: block; font-family: var(--f-titular); color: var(--azul); font-size: .95rem; }
+.persona small { color: var(--acero); font-size: .8rem; }
+.carrusel__controles { color: var(--azul); margin-top: .5rem; }
+
+/* ---------- Reseñas ---------- */
+.resenas { display: grid; grid-template-columns: 14rem repeat(3, 1fr); margin-top: 2rem; border-top: 2px solid var(--azul); }
+.resenas > * { padding: 1.5rem 1.5rem 1.5rem 0; }
+.resenas > * + * { padding-left: 1.5rem; border-left: 1px solid var(--linea); }
+.resumen__nota { font: 800 3.25rem/1 var(--f-titular); color: var(--azul); }
+.resumen small { display: block; color: var(--acero); margin: .35rem 0 1rem; font-size: var(--t-xs); }
+.resena b { color: var(--azul); font-size: .95rem; }
+.resena small { display: block; color: var(--acero); font-size: .75rem; margin-bottom: .4rem; }
+.resena p { font-size: var(--t-sm); margin-top: .6rem; }
+.google { font: 600 1rem/1 var(--f-cuerpo); display: block; margin-bottom: .6rem; }
+.google i { font-style: normal; } .g1 { color: #4285F4; } .g2 { color: #DB4437; } .g3 { color: #C99700; } .g4 { color: #0F9D58; }
+@media (max-width: 960px) { .resenas { grid-template-columns: 1fr 1fr; } .resenas > * { border-left: 0 !important; padding: 1.25rem 0 !important; border-bottom: 1px solid var(--linea); } .resenas > *:nth-child(2n) { padding-left: 1.5rem !important; border-left: 1px solid var(--linea) !important; } }
+@media (max-width: 560px) { .resenas { grid-template-columns: 1fr; } .resenas > *:nth-child(2n) { padding-left: 0 !important; border-left: 0 !important; } }
+
+/* ---------- Dónde estamos ---------- */
+.donde { display: grid; grid-template-columns: 1.1fr 1fr; gap: 2rem; margin-top: 2rem; align-items: start; }
+.mapa { position: relative; display: block; border-radius: var(--radio-lg); overflow: hidden; border: 1px solid var(--linea); }
+.mapa img { width: 100%; aspect-ratio: 800 / 520; object-fit: cover; }
+.mapa__chip { position: absolute; left: 1rem; top: 1rem; display: inline-flex; align-items: center; gap: .4rem; background: var(--azul); color: #fff; font: 700 .8rem/1 var(--f-titular); padding: .65rem .9rem; border-radius: 8px; }
+.ficha { border-top: 2px solid var(--azul); }
+.ficha div { display: grid; grid-template-columns: 7.5rem 1fr; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--linea); }
+.ficha dt { font: 700 .72rem/1.6 var(--f-titular); letter-spacing: .14em; text-transform: uppercase; color: var(--acero); }
+.ficha dd { margin: 0; color: var(--azul); font-weight: 500; }
+.ficha + .acciones { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.5rem; }
+.ficha + .acciones p { width: 100%; color: var(--acero); }
+@media (max-width: 860px) { .donde { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .ficha div { grid-template-columns: 5.75rem 1fr; } .buscador__titulo { flex-direction: column; align-items: flex-start; gap: .3rem; } }
+
+/* ---------- Pie claro ---------- */
+.pie { background: var(--gris-claro); padding: 4rem 0 6.5rem; font-size: var(--t-sm); border-top: 4px solid var(--azul); }
+.pie__grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr .8fr; gap: 2.5rem; }
+.pie__marca img { height: 46px; width: auto; }
+.pie__antes { display: inline-block; margin-top: 1rem; font: 700 .9rem/1 var(--f-titular); color: var(--azul); background: #fff; border: 1px solid var(--linea); border-left: 4px solid var(--naranja); padding: .65rem .9rem; border-radius: 6px; }
+.pie__lema { color: var(--acero); margin-top: .9rem; }
+.pie h2 { font-size: .75rem; letter-spacing: .18em; text-transform: uppercase; color: var(--acero); margin-bottom: 1rem; }
+.pie li { margin-bottom: .55rem; color: var(--texto); }
+.pie a { color: var(--azul); text-decoration: none; }
+.pie a:hover { text-decoration: underline; }
+.pagos { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: .9rem; }
+.pagos span { background: #fff; border: 1px solid var(--linea); padding: .25rem .55rem; border-radius: 6px; font-size: .78rem; color: var(--azul); }
+.pie__legal { margin-top: 2.75rem; padding-top: 1.25rem; border-top: 1px solid var(--linea); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; font-size: .78rem; color: var(--acero); }
+.pie__legal p { max-width: 46rem; }
+@media (max-width: 960px) { .pie__grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .pie__grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 1.8a8.2 8.2 0 1 1-4.2 15.3l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 0 1 12 3.8zM8.6 7.2c-.2 0-.5 0-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3l-2-.9c-.3-.1-.5-.2-.7.1l-.9 1.1c-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.5-.4-.5-.6-.5h-.5z" stroke="none"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4V5z"/><path d="M8 10h8M8 13h5"/></symbol>
+  <symbol id="i-stock" viewBox="0 0 24 24"><path d="M3 13h8v8H3zM13 13h8v8h-8zM8 3h8v8H8z"/></symbol>
+  <symbol id="i-original" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.5 13.8L7 22l5-3 5 3-1.5-8.2"/><path d="M9.5 9l1.7 1.7L14.5 7.5"/></symbol>
+  <symbol id="i-cuotas" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M7 15h4"/></symbol>
+  <symbol id="i-envio" viewBox="0 0 24 24"><path d="M3 6h11v10H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></symbol>
+  <symbol id="i-reloj" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-flecha" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-izq" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></symbol>
+  <symbol id="i-der" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-llave" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></symbol>
+  <symbol id="i-estrella" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></symbol>
+</svg>
+
+<nav class="maqueta-barra" aria-label="Opciones de diseño">
+  <span>Maqueta · Inicio</span>
+  <a href="../index.html">Índice</a>
+  <a href="opcion-a.html">A · Fiel a Instagram</a>
+  <a href="opcion-b.html" aria-current="page">B · Buscador primero</a>
+  <a href="opcion-c.html">C · Bloques de color</a>
+</nav>
+
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<div class="datos-bar">
+  <div class="contenedor datos-bar__in">
+    <span><svg class="icono"><use href="#i-reloj"/></svg>Lun a vie 9 a 18 h · Sáb 9 a 12:30 h</span>
+    <span><svg class="icono"><use href="#i-pin"/></svg>Av. Pellegrini 3971, Rosario</span>
+    <span><svg class="icono icono--relleno"><use href="#i-wa"/></svg>341 702 8284</span>
+  </div>
+</div>
+
+<header class="cab">
+  <div class="contenedor cab__in">
+    <a class="cab__logo" href="#" aria-label="Mundo Motors, inicio"><img src="../img/logo-mundo-motors.png" width="600" height="140" alt="Mundo Motors"></a>
+    <nav class="cab__nav" id="nav-principal" data-nav aria-label="Principal">
+      <a href="#" aria-current="page">Inicio</a>
+      <a href="#">Quiénes somos</a>
+      <a href="#">Marcas</a>
+      <a href="#">Servicios</a>
+    </nav>
+    <a class="btn btn--primario cab__cta" data-wa="Hola Mundo Motors, quiero hacer una consulta."><svg class="icono icono--relleno"><use href="#i-wa"/></svg><span>Consultar por WhatsApp</span></a>
+    <button class="menu-toggle" data-menu-toggle aria-controls="nav-principal" aria-expanded="false"><svg class="icono"><use href="#i-menu"/></svg><span class="sr-only">Menú</span></button>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <!-- 1 + 2 · Portada con la consulta rápida como protagonista -->
+  <section class="hero" aria-labelledby="h-portada">
+    <div class="contenedor">
+      <div class="hero__cab">
+        <span class="hero__ante"><i></i>Tu aliado en repuestos automotor</span>
+        <h1 class="h1" id="h-portada">Repuestos automotor multimarca <span>en Rosario</span></h1>
+        <p class="hero__txt">Más de 20 años ayudándote a encontrar el repuesto correcto. Originales y primeras marcas para Renault, Chevrolet y las principales marcas.</p>
+      </div>
+
+      <div class="buscador">
+        <div class="buscador__titulo">
+          <h2 id="h-consulta">¿Qué repuesto buscás?</h2>
+          <p>Decinos qué auto tenés y qué buscás; te ayudamos a encontrarlo.</p>
+        </div>
+        <form class="buscador__form" data-consulta novalidate aria-labelledby="h-consulta">
+          <div class="campo"><label for="b-marca">Marca</label><input id="b-marca" name="marca" placeholder="Renault" autocomplete="off"></div>
+          <div class="campo"><label for="b-modelo">Modelo</label><input id="b-modelo" name="modelo" placeholder="Kangoo" autocomplete="off"></div>
+          <div class="campo"><label for="b-anio">Año</label><input id="b-anio" name="anio" inputmode="numeric" placeholder="2014" autocomplete="off"></div>
+          <div class="campo"><label for="b-motor">Motor</label><input id="b-motor" name="motor" placeholder="1.6 K4M" autocomplete="off"></div>
+          <div class="campo campo--repuesto"><label for="b-repuesto">Repuesto</label><input id="b-repuesto" name="repuesto" placeholder="Kit de distribución" autocomplete="off"></div>
+          <button class="btn btn--primario btn--grande buscador__btn" type="submit"><svg class="icono icono--relleno"><use href="#i-wa"/></svg>Consultar</button>
+        </form>
+        <p class="form-error" role="alert"></p>
+        <div class="buscador__pie">
+          <span>Lo más consultado:</span>
+          <div class="atajos" data-atajos>
+            <button type="button">Kit de distribución</button>
+            <button type="button">Kit de embrague</button>
+            <button type="button">Amortiguadores</button>
+            <button type="button">Pastillas de freno</button>
+            <button type="button">Tapa de cilindro</button>
+          </div>
+        </div>
+      </div>
+
+      <ol class="pasos" aria-label="Cómo funciona">
+        <li class="paso"><b>1</b><span><strong>Contanos tu auto</strong>Marca, modelo, año y motor.</span></li>
+        <li class="paso"><b>2</b><span><strong>Decinos qué buscás</strong>El repuesto o el problema que tenés.</span></li>
+        <li class="paso"><b>3</b><span><strong>Te respondemos por WhatsApp</strong>Con disponibilidad y opciones.</span></li>
+      </ol>
+
+      <div class="tira">
+        <figure><img src="../img/mostrador-clientes.webp" width="960" height="1280" alt="Clientes en el mostrador de Mundo Motors" fetchpriority="high"><figcaption><b>+20 años</b><span>atendiendo en Rosario</span></figcaption></figure>
+        <figure><img src="../img/deposito-equipo.webp" width="960" height="1280" alt="Equipo preparando un pedido en el depósito" loading="lazy"><figcaption><b>Stock</b><span>en nuestro depósito</span></figcaption></figure>
+        <figure><img src="../img/atencion-ventanilla.webp" width="960" height="1280" alt="Vendedor atendiendo una consulta en el mostrador" loading="lazy"><figcaption><b>Asesoramiento</b><span>pieza por pieza</span></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · Oferta -->
+  <section class="sec sec--gris" aria-labelledby="h-oferta" data-oferta data-vence="2026-11-30">
+    <div class="contenedor bloque">
+      <div class="rotulo"><span class="rotulo__num">01</span><span class="rotulo__txt">Oferta del mes</span></div>
+      <article class="oferta">
+        <div class="oferta__foto"><img src="../img/asesoramiento-amortiguador.webp" width="960" height="1280" alt="" loading="lazy"></div>
+        <div class="oferta__txt">
+          <div class="oferta__meta"><span class="chip chip--naranja">Oferta</span><span>Vigente hasta el 30 de noviembre</span></div>
+          <h3 id="h-oferta">Amortiguadores en 3 cuotas sin interés</h3>
+          <p>Delanteros y traseros para las principales marcas. Llevando el juego completo, te regalamos el kit de fuelles y topes.</p>
+          <a class="btn btn--primario" data-wa="Hola Mundo Motors, quiero consultar por la oferta: Amortiguadores en 3 cuotas sin interés."><svg class="icono icono--relleno"><use href="#i-wa"/></svg>Consultar esta oferta</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 4 · Marcas -->
+  <section class="sec" aria-labelledby="h-marcas">
+    <div class="contenedor bloque">
+      <div class="rotulo"><span class="rotulo__num">02</span><span class="rotulo__txt">Marcas que trabajamos</span></div>
+      <div>
+        <h2 class="h-sec" id="h-marcas">Más marcas. Más opciones. <span>La misma confianza.</span></h2>
+        <p class="bajada">Línea completa en Renault y Chevrolet. Repuestos de mecánica para todas las demás.</p>
+        <ul class="grilla-marcas">
+          <li class="completa"><b>Renault</b><span class="chip chip--naranja">Línea completa</span></li>
+          <li class="completa"><b>Chevrolet</b><span class="chip chip--naranja">Línea completa</span></li>
+          <li><b>Volkswagen</b><small>Mecánica</small></li>
+          <li><b>Peugeot</b><small>Mecánica</small></li>
+          <li><b>Fiat</b><small>Mecánica</small></li>
+          <li><b>Citroën</b><small>Mecánica</small></li>
+          <li><b>Ford</b><small>Mecánica</small></li>
+          <li><b>Toyota</b><small>Mecánica</small></li>
+          <li><b>Nissan</b><small>Mecánica</small></li>
+        </ul>
+        <div class="marcas__pie">
+          <p>Comercializamos repuestos de estas marcas. No somos concesionarios ni distribuidores oficiales.</p>
+          <a class="enlace" href="#">Ver marcas <svg class="icono"><use href="#i-flecha"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · Especialistas en -->
+  <section class="sec" aria-labelledby="h-rubros">
+    <div class="contenedor bloque">
+      <div class="rotulo"><span class="rotulo__num">03</span><span class="rotulo__txt">Especialistas en</span></div>
+      <div>
+        <h2 class="h-sec" id="h-rubros">Lo que mejor <span>conocemos</span></h2>
+        <ul class="indice">
+          <li><a data-wa="Hola Mundo Motors, quiero consultar por distribución."><span class="indice__n">01</span><h3>Distribución</h3><p>Kits completos con correa, tensor y bomba de agua.</p><span class="indice__ir"><span>Consultar</span><svg class="icono"><use href="#i-flecha"/></svg></span></a></li>
+          <li><a data-wa="Hola Mundo Motors, quiero consultar por embragues."><span class="indice__n">02</span><h3>Embragues</h3><p>Kits de embrague, crapodinas y volantes.</p><span class="indice__ir"><span>Consultar</span><svg class="icono"><use href="#i-flecha"/></svg></span></a></li>
+          <li><a data-wa="Hola Mundo Motors, quiero consultar por tapas de cilindro."><span class="indice__n">03</span><h3>Tapas de cilindro</h3><p>Tapas con válvulas, juntas y árboles de levas.</p><span class="indice__ir"><span>Consultar</span><svg class="icono"><use href="#i-flecha"/></svg></span></a></li>
+          <li><a data-wa="Hola Mundo Motors, quiero consultar por amortiguadores."><span class="indice__n">04</span><h3>Amortiguadores</h3><p>Delanteros y traseros, con cazoletas, fuelles y topes.</p><span class="indice__ir"><span>Consultar</span><svg class="icono"><use href="#i-flecha"/></svg></span></a></li>
+          <li><a data-wa="Hola Mundo Motors, quiero consultar por pastillas y discos de freno."><span class="indice__n">05</span><h3>Pastillas y discos</h3><p>Frenos de primeras marcas para todas las marcas.</p><span class="indice__ir"><span>Consultar</span><svg class="icono"><use href="#i-flecha"/></svg></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · Por qué elegirnos -->
+  <section class="sec sec--gris" aria-labelledby="h-porque">
+    <div class="contenedor bloque">
+      <div class="rotulo"><span class="rotulo__num">04</span><span class="rotulo__txt">Por qué elegirnos</span></div>
+      <div>
+        <h2 class="h-sec" id="h-porque">Sabemos de repuestos. <span>Hablamos claro.</span></h2>
+        <ul class="porque">
+          <li><svg class="icono"><use href="#i-stock"/></svg><h3>Stock completo</h3><p>Un depósito pensado para resolver en el día.</p></li>
+          <li><svg class="icono"><use href="#i-chat"/></svg><h3>Asesoramiento</h3><p>Te ayudamos a dar con la pieza correcta, sin vueltas.</p></li>
+          <li><svg class="icono"><use href="#i-original"/></svg><h3>Originales y primeras marcas</h3><p>Priorizamos lo original para respetar la calidad de fábrica.</p></li>
+          <li><svg class="icono"><use href="#i-cuotas"/></svg><h3>3 cuotas sin interés</h3><p>Con tarjetas bancarizadas. Se actualiza mes a mes.</p></li>
+          <li><svg class="icono"><use href="#i-envio"/></svg><h3>Envíos</h3><p>Cadetería en Rosario y alrededores. Encomienda al resto del país.</p></li>
+          <li><svg class="icono"><use href="#i-reloj"/></svg><h3>Más de 20 años</h3><p>Experiencia real en repuestos, desde 2006.</p></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · De Mundo Renault a Mundo Motors -->
+  <section class="sec" aria-labelledby="h-historia">
+    <div class="contenedor bloque">
+      <div class="rotulo"><span class="rotulo__num">05</span><span class="rotulo__txt">Nuestra historia</span></div>
+      <div>
+        <h2 class="h-sec" id="h-historia">De Mundo Renault <span>a Mundo Motors</span></h2>
+        <div class="historia">
+          <figure class="historia__foto"><img src="../img/fachada-cartel.webp" width="960" height="1280" alt="Fachada de Av. Pellegrini 3971 con el cartel de Mundo Renault" loading="lazy"><figcaption>El mismo local de Av. Pellegrini 3971, todavía con el cartel de Mundo Renault.</figcaption></figure>
+          <div>
+            <p class="historia__bajada">Mismo equipo, mismo local, más marcas.</p>
+            <ol class="anios">
+              <li><b>2006</b><span>Abrimos como Mundo Renault en San Nicolás 1268, como proyecto familiar.</span></li>
+              <li><b>2015</b><span>Nos mudamos a Av. Pellegrini 3971 y sumamos la línea completa de Chevrolet.</span></li>
+              <li><b>Hoy</b><span>Somos Mundo Motors: especialistas en Renault y Chevrolet, y en mecánica para todas las marcas.</span></li>
+            </ol>
+            <a class="enlace" href="#">Conocé nuestra historia <svg class="icono"><use href="#i-flecha"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 · Para talleres y mecánicos -->
+  <section class="sec" aria-labelledby="h-talleres" style="border-top:0;padding-top:0">
+    <div class="contenedor bloque">
+      <div class="rotulo"><span class="rotulo__num">06</span><span class="rotulo__txt">Talleres y mecánicos</span></div>
+      <div class="talleres fondo-oscuro">
+        <svg class="icono talleres__ico"><use href="#i-llave"/></svg>
+        <div>
+          <h3 id="h-talleres">¿Tenés un taller? Trabajemos juntos</h3>
+          <ul>
+            <li><svg class="icono"><use href="#i-check"/></svg>Cuenta corriente</li>
+            <li><svg class="icono"><use href="#i-check"/></svg>Precios por volumen</li>
+            <li><svg class="icono"><use href="#i-check"/></svg>Atención prioritaria</li>
+            <li><svg class="icono"><use href="#i-check"/></svg>Envíos al taller</li>
+          </ul>
+        </div>
+        <div class="talleres__acciones">
+          <a class="btn btn--primario" data-wa="Hola Mundo Motors, soy taller/mecánico y quiero consultar por las condiciones."><svg class="icono icono--relleno"><use href="#i-wa"/></svg>Soy taller</a>
+          <a class="btn btn--borde-claro" href="#">Ver condiciones</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 · Testimonios -->
+  <section class="sec sec--gris" aria-labelledby="h-testimonios">
+    <div class="contenedor bloque">
+      <div class="rotulo"><span class="rotulo__num">07</span><span class="rotulo__txt">Testimonios</span></div>
+      <div style="min-width:0">
+        <h2 class="h-sec" id="h-testimonios">Lo que dicen <span>nuestros clientes</span></h2>
+        <div class="carrusel" data-carrusel style="margin-top:2rem">
+          <ul class="carrusel__pista" aria-label="Testimonios de clientes">
+            <li><article class="testimonio"><blockquote>Les compro desde que eran Mundo Renault. Les paso el motor y el año, y en un rato tengo la pieza correcta. Para el taller eso vale oro.</blockquote><div class="persona"><b>Marcelo G.</b><small>Mecánico, taller en zona oeste</small></div></article></li>
+            <li><article class="testimonio"><blockquote>No tenía idea de qué kit de distribución llevaba mi Clio. Me explicaron todo por WhatsApp y lo retiré esa misma tarde.</blockquote><div class="persona"><b>Carolina R.</b><small>Clienta particular</small></div></article></li>
+            <li><article class="testimonio"><blockquote>La cuenta corriente y que me manden los repuestos al taller me ordenan la semana. Atienden rápido y no le erran.</blockquote><div class="persona"><b>Diego F.</b><small>Mecánico, Granadero Baigorria</small></div></article></li>
+            <li><article class="testimonio"><blockquote>Vengo desde la época de Mundo Renault por la Kangoo. Ahora también le consigo los repuestos a la Ranger de mi hijo. El trato es el de siempre.</blockquote><div class="persona"><b>Hugo M.</b><small>Cliente desde 2009</small></div></article></li>
+            <li><article class="testimonio"><blockquote>Trabajamos con ellos hace años. Son ordenados, cumplen con los pagos y tienen un equipo que conoce cada producto que vende.</blockquote><div class="persona"><b>Laura P.</b><small>Proveedora, distribuidora de lubricantes</small></div></article></li>
+          </ul>
+          <div class="carrusel__controles">
+            <button class="carrusel__btn" data-prev aria-label="Testimonio anterior"><svg class="icono"><use href="#i-izq"/></svg></button>
+            <button class="carrusel__btn" data-next aria-label="Testimonio siguiente"><svg class="icono"><use href="#i-der"/></svg></button>
+            <div class="carrusel__puntos" aria-hidden="true" style="margin-left:.5rem"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 · Reseñas de Google -->
+  <section class="sec" aria-labelledby="h-resenas">
+    <div class="contenedor bloque">
+      <div class="rotulo"><span class="rotulo__num">08</span><span class="rotulo__txt">Reseñas de Google</span></div>
+      <div>
+        <h2 class="h-sec" id="h-resenas">Nos califican <span>en Google</span></h2>
+        <div class="resenas">
+          <div class="resumen">
+            <span class="google" aria-label="Google"><i class="g1">G</i><i class="g2">o</i><i class="g3">o</i><i class="g1">g</i><i class="g4">l</i><i class="g2">e</i></span>
+            <span class="resumen__nota">4,8</span>
+            <span class="estrellas" aria-label="4,8 de 5 estrellas"><svg><use href="#i-estrella"/></svg><svg><use href="#i-estrella"/></svg><svg><use href="#i-estrella"/></svg><svg><use href="#i-estrella"/></svg><svg><use href="#i-estrella"/></svg></span>
+            <small>136 reseñas</small>
+            <a class="enlace" href="https://www.google.com/maps/search/?api=1&amp;query=Mundo+Motors+Av.+Pellegrini+3971+Rosario" target="_blank" rel="noopener">Ver todas en Google</a>
+          </div>
+          <div class="resena"><b>Martín S.</b><small>Hace 2 semanas</small><span class="estrellas" aria-label="5 de 5"><svg><use href="#i-estrella"/></svg><svg><use href="#i-estrella"/></svg><svg><use href="#i-estrella"/></svg><svg><use href="#i-estrella"/></svg><svg><use href="#i-estrella"/></svg></span><p>Excelente atención. Tenían el kit de embrague para el Corsa y me explicaron las diferencias entre las marcas.</p></div>
+          <div class="resena"><b>Valeria A.</b><small>Hace 1 mes</small><span class="estrellas" aria-label="5 de 5"><svg><use href="#i-estrella"/></svg><svg><use href="#i-estrella"/></svg><svg><use href="#i-estrella"/></svg><svg><use href="#i-estrella"/></svg><svg><use href="#i-estrella"/></svg></span><p>Consulté por WhatsApp con marca, modelo y año, y en minutos tenía la respuesta. Muy recomendables.</p></div>
+          <div class="resena"><b>Jorge C.</b><small>Hace 2 meses</small><span class="estrellas" aria-label="4 de 5"><svg><use href="#i-estrella"/></svg><svg><use href="#i-estrella"/></svg><svg><use href="#i-estrella"/></svg><svg><use href="#i-estrella"/></svg><svg style="opacity:.3"><use href="#i-estrella"/></svg></span><p>Mucha gente un sábado, pero valió la pena esperar: salí con el repuesto que necesitaba y bien asesorado.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 · Dónde estamos -->
+  <section class="sec sec--gris" id="donde" aria-labelledby="h-donde">
+    <div class="contenedor bloque">
+      <div class="rotulo"><span class="rotulo__num">09</span><span class="rotulo__txt">Dónde estamos</span></div>
+      <div>
+        <h2 class="h-sec" id="h-donde">Vení al local <span>o escribinos</span></h2>
+        <div class="donde">
+          <a class="mapa" href="https://www.google.com/maps/search/?api=1&amp;query=Mundo+Motors+Av.+Pellegrini+3971+Rosario" target="_blank" rel="noopener" aria-label="Abrir la ubicación de Mundo Motors en Google Maps">
+            <img src="../img/mapa.svg" width="800" height="520" alt="" loading="lazy">
+            <span class="mapa__chip"><svg class="icono"><use href="#i-pin"/></svg>Abrir en Google Maps</span>
+          </a>
+          <div>
+            <dl class="ficha">
+              <div><dt>Dirección</dt><dd>Av. Pellegrini 3971, Rosario</dd></div>
+              <div><dt>Horarios</dt><dd>Lunes a viernes de 9 a 18 h<br>Sábados de 9 a 12:30 h</dd></div>
+              <div><dt>WhatsApp</dt><dd>341 702 8284</dd></div>
+              <div><dt>Teléfono</dt><dd>(0341) 432-8098</dd></div>
+            </dl>
+            <div class="acciones">
+              <a class="btn btn--azul" href="https://www.google.com/maps/dir/?api=1&amp;destination=Av.+Pellegrini+3971+Rosario" target="_blank" rel="noopener"><svg class="icono"><use href="#i-pin"/></svg>Cómo llegar</a>
+              <a class="btn btn--primario" data-wa="Hola Mundo Motors, quiero hacer una consulta."><svg class="icono icono--relleno"><use href="#i-wa"/></svg>WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie__grid">
+      <div class="pie__marca">
+        <img src="../img/logo-mundo-motors.png" width="600" height="140" alt="Mundo Motors" loading="lazy">
+        <p class="pie__antes">Antes Mundo Renault</p>
+        <p class="pie__lema">Tu aliado en repuestos automotor.</p>
+      </div>
+      <div>
+        <h2>Contacto</h2>
+        <ul>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Mundo+Motors+Av.+Pellegrini+3971+Rosario" target="_blank" rel="noopener">Av. Pellegrini 3971, Rosario</a></li>
+          <li><a data-wa="Hola Mundo Motors, quiero hacer una consulta.">WhatsApp 341 702 8284</a></li>
+          <li><a href="tel:+543414328098">Teléfono (0341) 432-8098</a></li>
+          <li><a href="#">Instagram · Mundo Motors Arg</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Horarios y pagos</h2>
+        <ul><li>Lunes a viernes de 9 a 18 h</li><li>Sábados de 9 a 12:30 h</li></ul>
+        <div class="pagos"><span>Efectivo</span><span>Transferencia</span><span>Tarjetas de crédito</span><span>QR</span><span>Factura A</span></div>
+      </div>
+      <div>
+        <h2>Navegación</h2>
+        <ul><li><a href="#">Inicio</a></li><li><a href="#">Quiénes somos</a></li><li><a href="#">Marcas</a></li><li><a href="#">Servicios</a></li></ul>
+      </div>
+    </div>
+    <div class="pie__legal">
+      <p>Mundo Renault fue nuestro nombre comercial anterior. No somos concesionario ni distribuidor oficial de Renault. Las marcas mencionadas pertenecen a sus respectivos dueños.</p>
+      <p>© 2026 Mundo Motors</p>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-flotante" data-wa="Hola Mundo Motors, quiero hacer una consulta." aria-label="Consultar por WhatsApp"><svg class="icono icono--relleno"><use href="#i-wa"/></svg><span>WhatsApp</span></a>
+
+<script src="../js/inicio.js" defer></script>
+<script>
+  /* Atajos del buscador: completan el campo Repuesto */
+  document.querySelectorAll("[data-atajos] button").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var campo = document.getElementById("b-repuesto");
+      campo.value = b.textContent;
+      campo.focus();
+    });
+  });
+</script>
+</body>
+</html>

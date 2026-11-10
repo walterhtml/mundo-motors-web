@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inicio · versiones premium · Mundo Motors</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<style>
+body { background: var(--gris-claro); }
+.cab { background: #fff; border-bottom: 1px solid var(--borde); padding: 2.5rem 0 3.5rem; }
+.cab img { height: 42px; width: auto; }
+.cab h1 { font-size: clamp(1.8rem, 1.3rem + 2vw, 2.8rem); font-weight: 800; text-transform: uppercase; margin-top: 1.75rem; }
+.cab h1 span { color: var(--naranja-titular); }
+.cab p { color: var(--acero); max-width: 50rem; margin-top: .75rem; }
+.versiones { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: -1.75rem; }
+.ver { background: #fff; border-radius: var(--radio-lg); overflow: hidden; box-shadow: var(--sombra-sm); display: flex; flex-direction: column; }
+.ver > a img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; border-bottom: 1px solid var(--borde); }
+.ver__txt { padding: 1.5rem; display: flex; flex-direction: column; gap: .75rem; flex: 1; }
+.ver__tag { font: 800 .72rem/1 var(--f-titular); letter-spacing: .18em; color: var(--naranja-titular); text-transform: uppercase; }
+.ver h2 { font-size: 1.3rem; font-weight: 800; text-transform: uppercase; }
+.ver p { color: var(--acero); font-size: var(--t-sm); }
+.ver ul { font-size: var(--t-sm); display: grid; gap: .35rem; }
+.ver li { padding-left: 1.1rem; position: relative; }
+.ver li::before { content: ""; position: absolute; left: 0; top: .65em; width: .45rem; height: .45rem; border-radius: 50%; background: var(--azul-400); }
+.ver .btn { margin-top: auto; align-self: flex-start; }
+.sec { padding: 3.5rem 0 0; }
+.sec h2 { font-size: 1.35rem; font-weight: 800; text-transform: uppercase; }
+.sec > p { color: var(--acero); margin-top: .5rem; max-width: 50rem; }
+.celus { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem; }
+.celu { display: flex; flex-direction: column; align-items: center; gap: .75rem; }
+.celu b { font: 800 .8rem/1 var(--f-titular); letter-spacing: .14em; text-transform: uppercase; color: var(--azul); }
+.celu__marco { width: 406px; max-width: 100%; padding: 8px; background: #111; border-radius: 34px; box-shadow: var(--sombra); }
+.celu iframe { display: block; width: 390px; max-width: 100%; height: 760px; border: 0; border-radius: 26px; background: #fff; }
+.pies { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.5rem; }
+.pie-op { background: #fff; border-radius: var(--radio-lg); padding: 1.25rem 1.4rem; font-size: var(--t-sm); }
+.pie-op b { display: block; font: 800 .95rem/1.2 var(--f-titular); color: var(--azul); text-transform: uppercase; margin-bottom: .4rem; }
+.pie-op p { color: var(--acero); }
+.pie-op a { display: inline-block; margin-top: .75rem; }
+.notas { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 1.5rem; padding-bottom: 4rem; }
+.nota { background: #fff; border-radius: var(--radio-lg); padding: 1.5rem; font-size: var(--t-sm); }
+.nota h3 { font-size: 1rem; font-weight: 800; text-transform: uppercase; margin-bottom: .75rem; }
+.nota ul { display: grid; gap: .5rem; }
+.nota li { padding-left: 1.1rem; position: relative; }
+.nota li::before { content: "–"; position: absolute; left: 0; color: var(--naranja-titular); font-weight: 700; }
+@media (max-width: 1000px) { .versiones { grid-template-columns: 1fr; max-width: 34rem; margin-inline: auto; } .pies, .notas { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header class="cab">
+  <div class="contenedor">
+    <img src="img/logo-mundo-motors.png" width="600" height="140" alt="Mundo Motors">
+    <h1>Inicio · <span>elegida: Premium 2 con pie claro</span></h1>
+    <p>Walter eligió el 09/11 la Premium 2 · Automotriz con el pie 1 · Claro, y los ajustes se hacen sobre esa versión. La A base y la Premium 1 quedan como referencia. En la barra negra de arriba de cada página se puede cambiar el pie.</p>
+  </div>
+</header>
+
+<main class="contenedor">
+  <div class="versiones">
+    <article class="ver">
+      <a href="a-base.html"><img src="img/indice-a-base.webp" width="960" height="600" alt="Portada de la opción A base"></a>
+      <div class="ver__txt">
+        <span class="ver__tag">Respaldo</span>
+        <h2>A · Base</h2>
+        <p>La opción A elegida, con las correcciones aplicadas. Queda como respaldo y no se modifica más.</p>
+        <a class="btn btn--azul" href="a-base.html">Ver base</a>
+      </div>
+    </article>
+    <article class="ver">
+      <a href="a-premium-1.html"><img src="img/indice-a-premium-1.webp" width="960" height="600" alt="Portada de la Premium 1"></a>
+      <div class="ver__txt">
+        <span class="ver__tag">Premium 1</span>
+        <h2>Editorial</h2>
+        <p>Misma línea, con más aire, tipografía más grande y líneas finas en lugar de bloques.</p>
+        <ul>
+          <li>La diagonal pasa a ser un corte limpio en la foto con un trazo naranja fino.</li>
+          <li>Formulario con campos subrayados y cifras grandes con separadores.</li>
+          <li>Marcas como lista tipográfica, especialidades y reseñas sin tarjetas.</li>
+          <li>El naranja queda casi solo para los botones.</li>
+        </ul>
+        <a class="btn btn--azul" href="a-premium-1.html">Ver Premium 1</a>
+      </div>
+    </article>
+    <article class="ver">
+      <a href="a-premium-2.html"><img src="img/indice-a-premium-2.webp" width="960" height="600" alt="Portada de la Premium 2"></a>
+      <div class="ver__txt">
+        <span class="ver__tag">Elegida · con ajustes del 09/11</span>
+        <h2>Premium 2 · Automotriz</h2>
+        <p>Encabezado flotante, consulta rápida sobre la portada y líneas tipo «velocidad». Ajustes pedidos por Walter:</p>
+        <ul>
+          <li>Fotos nuevas en la portada, Por qué elegirnos, Nuestra historia y Talleres.</li>
+          <li>Botones de WhatsApp del encabezado y el flotante en verde, con texto blanco.</li>
+          <li>Talleres: «Soy mecánico» y sin el botón «Ver condiciones».</li>
+          <li>Mapa rehecho: sin plaza, el local a mitad de cuadra y Bv. Avellaneda a la vista.</li>
+        </ul>
+        <a class="btn btn--azul" href="a-premium-2.html">Ver Premium 2</a>
+      </div>
+    </article>
+  </div>
+
+  <section class="sec" aria-labelledby="h-pies">
+    <h2 id="h-pies">Las 3 versiones del pie</h2>
+    <p>Las tres usan el logo del encabezado. Walter eligió la 1 · Claro, que es la que se ve por defecto.</p>
+    <div class="pies">
+      <div class="pie-op"><b>1 · Claro · elegido</b><p>Fondo gris claro y textos en azul. Es la de máximo contraste para el logo.</p><a class="enlace" href="a-premium-2.html?pie=1#contenido">Ver en Premium 2</a></div>
+      <div class="pie-op"><b>2 · Dos niveles</b><p>Franja blanca con logo y contacto. Debajo, franja azul con pagos, menú y aclaración legal.</p><a class="enlace" href="a-premium-2.html?pie=2#contenido">Ver en Premium 2</a></div>
+      <div class="pie-op"><b>3 · Azul con placa</b><p>Todo azul, con el logo sobre una placa blanca con margen de respeto.</p><a class="enlace" href="a-premium-2.html?pie=3#contenido">Ver en Premium 2</a></div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-celu">
+    <h2 id="h-celu">En el celular</h2>
+    <p>Cada pantalla es la página real a 390 px de ancho. Se puede deslizar adentro.</p>
+    <div class="celus">
+      <div class="celu"><b>A · Base</b><div class="celu__marco"><iframe src="a-base.html" title="A base en celular" loading="lazy"></iframe></div></div>
+      <div class="celu"><b>Premium 1</b><div class="celu__marco"><iframe src="a-premium-1.html" title="Premium 1 en celular" loading="lazy"></iframe></div></div>
+      <div class="celu"><b>Premium 2</b><div class="celu__marco"><iframe src="a-premium-2.html" title="Premium 2 en celular" loading="lazy"></iframe></div></div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-notas">
+    <h2 id="h-notas">Para tener en cuenta</h2>
+    <div class="notas">
+      <div class="nota">
+        <h3>Contenido inventado</h3>
+        <ul>
+          <li>La oferta y las reseñas de Google son inventadas para la maqueta. Las reseñas tienen que ser las reales antes de publicar.</li>
+          <li>Detalle completo en <code>contenido-inventado.md</code>.</li>
+        </ul>
+      </div>
+      <div class="nota">
+        <h3>Otras opciones</h3>
+        <ul>
+          <li>La A original (con testimonios), las opciones B y C y la Premium 2 antes de los ajustes (<a class="enlace" href="descartadas/a-premium-2-v1.html">a-premium-2-v1</a>) quedaron en descartadas/, sin borrar.</li>
+          <li>Las fotos son de celular (960 a 1200 px de ancho). Para la versión final conviene la portada en mayor resolución.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

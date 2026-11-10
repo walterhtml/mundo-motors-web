@@ -1,0 +1,13 @@
+# Información del cliente y notas internas
+contexto/
+horas.md
+
+fotos reales/
+
+# Configuración de sesión
+.claude/
+
+# Imágenes sueltas de la raíz (sin revisar / sin optimizar)
+/Captura de pantalla*.png
+/Entrega de repuesto en el taller.png
+/logotipo.png
