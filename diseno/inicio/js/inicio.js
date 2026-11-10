@@ -81,15 +81,17 @@
     actualizar();
   });
 
-  /* Selector de versión del pie (solo maqueta) */
-  var pieGuardado = new URLSearchParams(location.search).get("pie");
+  /* Selector de versión del pie (solo maqueta).
+     Las páginas con <html data-pie-fijo="1"> usan siempre ese pie (el elegido) y no guardan nada. */
+  var pieFijo = document.documentElement.getAttribute("data-pie-fijo");
+  var pieGuardado = pieFijo || new URLSearchParams(location.search).get("pie");
   if (!pieGuardado) { try { pieGuardado = localStorage.getItem("mm-pie"); } catch (e) {} }
   function ponerPie(n) {
     document.documentElement.setAttribute("data-pie", n);
     document.querySelectorAll("[data-pie-set]").forEach(function (b) {
       b.setAttribute("aria-pressed", String(b.getAttribute("data-pie-set") === n));
     });
-    try { localStorage.setItem("mm-pie", n); } catch (e) {}
+    if (!pieFijo) { try { localStorage.setItem("mm-pie", n); } catch (e) {} }
   }
   ponerPie(/^[123]$/.test(pieGuardado || "") ? pieGuardado : "1");
   document.querySelectorAll("[data-pie-set]").forEach(function (b) {

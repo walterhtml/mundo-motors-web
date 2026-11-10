@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="es-AR" data-pie-fijo="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Servicios | Envíos, talleres y medios de pago · Mundo Motors, ex Mundo Renault</title>
+<meta name="description" content="Asesoramiento, presupuestos sin cargo y búsqueda de repuestos a pedido. Envíos en Rosario y a todo el país, condiciones para talleres y 3 cuotas sin interés.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/pie.css">
+<link rel="stylesheet" href="css/sitio.css">
+<link rel="preload" as="image" href="img/mostrador-boxes.webp">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"¿Mundo Motors es el mismo Mundo Renault?","acceptedAnswer":{"@type":"Answer","text":"Sí. Somos el mismo equipo, en el mismo local de Av. Pellegrini 3971, Rosario. Cambiamos el nombre porque sumamos más marcas."}},
+{"@type":"Question","name":"¿Son concesionario oficial de Renault?","acceptedAnswer":{"@type":"Answer","text":"No. Comercializamos repuestos originales y de primeras marcas, pero no somos concesionario ni distribuidor oficial de Renault ni de otra marca."}},
+{"@type":"Question","name":"¿Hacen colocación o reparaciones?","acceptedAnswer":{"@type":"Answer","text":"No. Vendemos repuestos; no hacemos colocación ni reparaciones."}},
+{"@type":"Question","name":"¿Cómo sé qué repuesto lleva mi auto?","acceptedAnswer":{"@type":"Answer","text":"Pasanos marca, modelo, año y motor. Si podés, sumá una foto de la pieza o el número que tiene grabado, y te decimos cuál corresponde."}},
+{"@type":"Question","name":"¿Tienen el repuesto que busco?","acceptedAnswer":{"@type":"Answer","text":"Consultanos por WhatsApp y te confirmamos la disponibilidad. Si no lo tenemos, lo buscamos a pedido."}},
+{"@type":"Question","name":"¿Hacen envíos?","acceptedAnswer":{"@type":"Answer","text":"Sí. En Rosario y alrededores con cadetería, y al resto del país por encomienda."}},
+{"@type":"Question","name":"¿Puedo pagar en cuotas?","acceptedAnswer":{"@type":"Answer","text":"Sí, en 3 cuotas sin interés con tarjetas bancarizadas. La promoción es mensual."}},
+{"@type":"Question","name":"¿Hacen Factura A?","acceptedAnswer":{"@type":"Answer","text":"Sí, hacemos Factura A."}},
+{"@type":"Question","name":"¿Cuál es el horario de atención?","acceptedAnswer":{"@type":"Answer","text":"De lunes a viernes de 9 a 18 h y los sábados de 9 a 12:30 h, en Av. Pellegrini 3971, Rosario."}}
+]}
+</script>
+<style>
+/* =================== SERVICIOS · estilos propios =================== */
+.portada__foto img { object-position: 40% center; }
+
+/* ---------- Qué hacemos ---------- */
+.servicios { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.servicio { display: flex; gap: 1.1rem; padding: 1.6rem; border-radius: 18px; background: #fff; border: 1px solid var(--linea); transition: transform .2s, box-shadow .2s, border-color .2s; }
+.servicio:hover { transform: translateY(-3px); box-shadow: var(--sombra-sm); border-color: var(--azul-200); }
+.servicio > .icono { width: 3rem; height: 3rem; padding: .7rem; border-radius: 14px; background: var(--naranja); color: var(--azul-tinta); stroke-width: 1.8; }
+.servicio h3 { font-size: 1rem; font-weight: 800; text-transform: uppercase; }
+.servicio p { font-size: .88rem; color: var(--acero); margin-top: .35rem; line-height: 1.55; }
+@media (max-width: 960px) { .servicios { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .servicios { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- Cómo consultar ---------- */
+.pasos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-bottom: 1.75rem; counter-reset: paso; }
+.paso { position: relative; padding: 1.75rem 1.6rem 1.6rem; border-radius: 18px; background: var(--azul) var(--lineas-vel); color: #fff; overflow: hidden; }
+.paso__n { font: 800 3rem/1 var(--f-titular); color: var(--naranja); letter-spacing: -.03em; }
+.paso h3 { color: #fff; font-size: 1.05rem; font-weight: 800; text-transform: uppercase; margin-top: .9rem; }
+.paso p { color: #C9D6E8; font-size: .9rem; margin-top: .4rem; }
+.paso:not(:last-child)::after { content: ""; position: absolute; right: -14px; top: 0; width: 44px; height: 100%; background: var(--naranja); clip-path: polygon(62% 0, 100% 0, 38% 100%, 0 100%); opacity: .9; }
+@media (max-width: 900px) { .pasos { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- Envíos ---------- */
+.envios { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(2rem, 5vw, 4.5rem); align-items: center; }
+.envios__foto { margin: 0; }
+.envios__foto img { width: 100%; aspect-ratio: 5 / 4; object-fit: cover; border-radius: var(--radio-lg); }
+.envios__op { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem; }
+.envio { padding: 1.5rem; border-radius: 18px; background: var(--gris-claro); }
+.envio .icono { width: 2.8rem; height: 2.8rem; padding: .65rem; border-radius: 50%; background: #fff; color: var(--naranja-titular); box-shadow: 0 0 0 1px var(--linea); }
+.envio h3 { margin-top: 1rem; font-size: 1rem; font-weight: 800; text-transform: uppercase; }
+.envio b { display: block; margin-top: .3rem; font: 700 .9rem/1.3 var(--f-titular); color: var(--naranja-titular); }
+.envio p { margin-top: .4rem; font-size: .88rem; color: var(--acero); }
+.envios__nota { margin-top: 1rem; font-size: .85rem; color: var(--acero); }
+@media (max-width: 900px) { .envios { grid-template-columns: minmax(0, 1fr); } .envios__foto img { aspect-ratio: 16 / 10; } }
+@media (max-width: 520px) { .envios__op { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- Medios de pago ---------- */
+.pagos-sec { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(2rem, 5vw, 4.5rem); align-items: start; }
+.medios { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .75rem; }
+.medio { display: flex; flex-direction: column; align-items: center; gap: .7rem; padding: 1.3rem .6rem; border-radius: 16px; background: #fff; border: 1px solid var(--linea); text-align: center; font: 700 .82rem/1.2 var(--f-titular); color: var(--azul); }
+.medio .icono { width: 2rem; height: 2rem; color: var(--naranja-titular); }
+.pagos-dest { display: grid; grid-template-columns: 1.3fr 1fr; gap: .75rem; margin-top: .75rem; }
+.pago-dest { border-radius: 18px; padding: 1.5rem; background: #fff; border: 1px solid var(--linea); }
+.pago-dest--cuotas { background: var(--azul) var(--lineas-vel); border-color: transparent; color: #fff; position: relative; overflow: hidden; }
+.pago-dest--cuotas::after { content: ""; position: absolute; right: 1rem; top: 0; width: 40px; height: 100%; background: var(--naranja); clip-path: polygon(62% 0, 100% 0, 38% 100%, 0 100%); opacity: .9; }
+.pago-dest b { display: block; font: 800 1.6rem/1 var(--f-titular); color: var(--azul); letter-spacing: -.02em; }
+.pago-dest--cuotas b { color: #fff; font-size: 2rem; }
+.pago-dest--cuotas b em { font-style: normal; color: var(--naranja); }
+.pago-dest p { margin-top: .5rem; font-size: .86rem; color: var(--acero); max-width: 85%; }
+.pago-dest--cuotas p { color: #C9D6E8; }
+@media (max-width: 900px) { .pagos-sec { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 600px) { .medios { grid-template-columns: repeat(2, minmax(0, 1fr)); } .pagos-dest { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- Preguntas frecuentes ---------- */
+.faq-sec { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(2rem, 5vw, 4.5rem); align-items: start; }
+.faq-sec__cab { position: sticky; top: 7rem; }
+.faq-sec__cab .btn { margin-top: 1.75rem; }
+.faq { display: grid; gap: .6rem; }
+.faq details { border-radius: 16px; background: #fff; border: 1px solid var(--linea); transition: border-color .2s, box-shadow .2s; }
+.faq details[open] { border-color: var(--azul-200); box-shadow: var(--sombra-sm); }
+.faq summary { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.15rem 1.25rem; cursor: pointer; list-style: none; font: 700 .98rem/1.35 var(--f-titular); color: var(--azul); }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary .icono { width: 1.9rem; height: 1.9rem; padding: .4rem; border-radius: 50%; background: var(--gris-claro); color: var(--azul); flex: none; transition: transform .2s, background-color .2s; }
+.faq details[open] summary .icono { transform: rotate(45deg); background: var(--naranja); color: var(--azul-tinta); }
+.faq details p { padding: 0 1.25rem 1.25rem; color: var(--acero); font-size: .93rem; }
+.faq details p a { color: var(--azul); font-weight: 600; }
+@media (max-width: 900px) { .faq-sec { grid-template-columns: minmax(0, 1fr); } .faq-sec__cab { position: static; } }
+</style>
+</head>
+<body>
+{{SPRITE}}
+
+{{BARRA}}
+
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+{{CABECERA}}
+
+<main id="contenido">
+
+  <!-- 1 · Portada -->
+  <section class="portada" aria-labelledby="h-portada">
+    <div class="contenedor">
+      <div class="portada__card fondo-oscuro">
+        <div class="portada__txt">
+          <span class="chip-vidrio"><i></i>Servicios</span>
+          <h1 class="h1" id="h-portada">Te ayudamos a encontrar <em>el repuesto correcto</em></h1>
+          <p class="lead">Vos decinos qué auto tenés; nosotros te decimos qué pieza lleva. Asesoramiento, búsqueda a pedido y envíos.</p>
+          <div class="portada__acciones">
+            <a class="btn btn--primario btn--grande" data-wa="Hola Mundo Motors, quiero consultar por un repuesto."><svg class="icono icono--relleno"><use href="#i-wa"/></svg>Consultar por WhatsApp</a>
+            <a class="btn btn--vidrio btn--grande" href="#como-consultar">Cómo consultar</a>
+          </div>
+        </div>
+        <figure class="portada__foto"><img src="img/mostrador-boxes.webp" width="1600" height="1200" alt="Clientes atendidos en el mostrador de Mundo Motors" fetchpriority="high"></figure>
+      </div>
+      <nav class="atajos" aria-label="Secciones de Servicios">
+        <a href="#envios"><svg class="icono"><use href="#i-envio"/></svg>Envíos</a>
+        <a href="#talleres"><svg class="icono"><use href="#i-llave"/></svg>Talleres</a>
+        <a href="#pagos"><svg class="icono"><use href="#i-cuotas"/></svg>Medios de pago</a>
+        <a href="#preguntas-frecuentes"><svg class="icono"><use href="#i-chat"/></svg>Preguntas frecuentes</a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- 2 · Qué hacemos -->
+  <section class="sec" aria-labelledby="h-servicios">
+    <div class="contenedor" data-revelar>
+      <div class="cabecera">
+        <div><span class="ante">Qué hacemos</span><h2 class="titulo" id="h-servicios">Todo para resolver <em>tu repuesto</em></h2></div>
+        <p class="lead">En el mostrador o a distancia, te acompañamos desde la consulta hasta que tenés la pieza.</p>
+      </div>
+      <ul class="servicios">
+        <li class="servicio"><svg class="icono"><use href="#i-chat"/></svg><div><h3>Asesoramiento</h3><p>Te ayudamos a identificar la pieza correcta para tu auto.</p></div></li>
+        <li class="servicio"><svg class="icono"><use href="#i-doc"/></svg><div><h3>Presupuestos sin cargo</h3><p>Pedinos un presupuesto por WhatsApp o en el mostrador, sin costo.</p></div></li>
+        <li class="servicio"><svg class="icono"><use href="#i-lupa"/></svg><div><h3>Búsqueda a pedido</h3><p>Si no lo tenemos, lo buscamos con nuestros proveedores.</p></div></li>
+        <li class="servicio"><svg class="icono"><use href="#i-tienda"/></svg><div><h3>Venta en el local y online</h3><p>Comprá en el mostrador o hacé tu pedido sin moverte de tu casa o del taller.</p></div></li>
+        <li class="servicio"><svg class="icono"><use href="#i-pin"/></svg><div><h3>Retiro en el local</h3><p>Hacé tu consulta y tu compra por WhatsApp, y vení solo a retirar.</p></div></li>
+        <li class="servicio"><svg class="icono"><use href="#i-envio"/></svg><div><h3>Envíos</h3><p>Cadetería en Rosario y alrededores, y encomienda al resto del país.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 3 · Cómo consultar -->
+  <section class="sec sec--gris" id="como-consultar" aria-labelledby="h-pasos">
+    <div class="contenedor" data-revelar>
+      <div class="cabecera">
+        <div><span class="ante">Cómo consultar</span><h2 class="titulo" id="h-pasos">Tres pasos <em>y listo</em></h2></div>
+        <p class="lead">Cuantos más datos nos pases, más rápido te respondemos.</p>
+      </div>
+      <ol class="pasos">
+        <li class="paso fondo-oscuro"><span class="paso__n">01</span><h3>Tu auto</h3><p>Marca, modelo, año y motor.</p></li>
+        <li class="paso fondo-oscuro"><span class="paso__n">02</span><h3>Qué necesitás</h3><p>El repuesto que buscás. Si tenés una foto de la pieza, mejor.</p></li>
+        <li class="paso fondo-oscuro"><span class="paso__n">03</span><h3>Te respondemos</h3><p>Con la disponibilidad y las opciones que hay para tu auto.</p></li>
+      </ol>
+      <div class="consulta consulta--cierre">
+        <div class="consulta__panel">
+          <div class="consulta__cab">
+            <svg class="icono icono--relleno"><use href="#i-wa"/></svg>
+            <div><h3 class="consulta__titulo">Consulta rápida</h3><p>Decinos qué auto tenés y qué buscás; te ayudamos a encontrarlo.</p></div>
+          </div>
+          <form class="form" data-consulta novalidate>
+            <div class="campo"><label for="se-marca">Marca</label><input id="se-marca" name="marca" placeholder="Renault" autocomplete="off"></div>
+            <div class="campo"><label for="se-modelo">Modelo</label><input id="se-modelo" name="modelo" placeholder="Kangoo" autocomplete="off"></div>
+            <div class="campo"><label for="se-anio">Año</label><input id="se-anio" name="anio" inputmode="numeric" placeholder="2014" autocomplete="off"></div>
+            <div class="campo"><label for="se-motor">Motor</label><input id="se-motor" name="motor" placeholder="1.6 K4M" autocomplete="off"></div>
+            <div class="campo campo--repuesto"><label for="se-repuesto">¿Qué repuesto buscás?</label><input id="se-repuesto" name="repuesto" placeholder="Kit de distribución" autocomplete="off"></div>
+            <button class="btn btn--primario" type="submit"><svg class="icono icono--relleno"><use href="#i-wa"/></svg>Enviar</button>
+          </form>
+          <div class="form-pie"><p class="form-error" role="alert"></p><p class="form-nota">Se abre WhatsApp con tu consulta armada. No guardamos tus datos.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · Envíos -->
+  <section class="sec" id="envios" aria-labelledby="h-envios">
+    <div class="contenedor envios" data-revelar>
+      <figure class="envios__foto"><img src="img/deposito-cajas.webp" width="960" height="1280" alt="Cajas de repuestos preparadas en el depósito" loading="lazy"></figure>
+      <div>
+        <span class="ante">Envíos</span>
+        <h2 class="titulo" id="h-envios">Te lo llevamos <em>a donde estés</em></h2>
+        <p class="lead">Preparamos y controlamos cada pedido antes de despacharlo.</p>
+        <div class="envios__op">
+          <div class="envio"><svg class="icono"><use href="#i-envio"/></svg><h3>Rosario y alrededores</h3><b>Con cadetería</b><p>Al domicilio o al taller.</p></div>
+          <div class="envio"><svg class="icono"><use href="#i-caja"/></svg><h3>Resto del país</h3><b>Por encomienda</b><p>Despachamos a todo el país.</p></div>
+        </div>
+        <p class="envios__nota">Consultá el costo y el plazo de entrega por WhatsApp.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · Talleres y mecánicos -->
+  <section class="sec" id="talleres" style="padding-top:0" aria-labelledby="h-talleres">
+    <div class="contenedor" data-revelar>
+      <div class="talleres fondo-oscuro">
+        <img src="img/entrega-taller.webp" width="1672" height="941" alt="" loading="lazy">
+        <div class="talleres__txt">
+          <span class="ante">Para talleres y mecánicos</span>
+          <h2 class="titulo" id="h-talleres">Tu taller no puede <em>esperar</em></h2>
+          <p class="lead">Sabemos que un auto parado es plata. Por eso tenemos condiciones pensadas para el profesional.</p>
+          <ul class="condiciones">
+            <li><svg class="icono"><use href="#i-check"/></svg>Cuenta corriente</li>
+            <li><svg class="icono"><use href="#i-check"/></svg>Precios por volumen</li>
+            <li><svg class="icono"><use href="#i-check"/></svg>Atención prioritaria</li>
+            <li><svg class="icono"><use href="#i-check"/></svg>Envíos al taller</li>
+          </ul>
+          <div class="talleres__acciones">
+            <a class="btn btn--primario" data-wa="Hola Mundo Motors, soy mecánico y quiero consultar por las condiciones para talleres."><svg class="icono icono--relleno"><use href="#i-wa"/></svg>Soy mecánico</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · Medios de pago -->
+  <section class="sec sec--gris" id="pagos" aria-labelledby="h-pagos">
+    <div class="contenedor pagos-sec" data-revelar>
+      <div>
+        <span class="ante">Medios de pago</span>
+        <h2 class="titulo" id="h-pagos">Pagá como <em>te quede cómodo</em></h2>
+        <p class="lead">En el local o a distancia, con el medio que prefieras.</p>
+      </div>
+      <div>
+        <ul class="medios">
+          <li class="medio"><svg class="icono"><use href="#i-efectivo"/></svg>Efectivo</li>
+          <li class="medio"><svg class="icono"><use href="#i-transfer"/></svg>Transferencia</li>
+          <li class="medio"><svg class="icono"><use href="#i-cuotas"/></svg>Tarjetas de crédito</li>
+          <li class="medio"><svg class="icono"><use href="#i-qr"/></svg>QR</li>
+        </ul>
+        <div class="pagos-dest">
+          <div class="pago-dest pago-dest--cuotas fondo-oscuro"><b>3 cuotas <em>sin interés</em></b><p>Con tarjetas bancarizadas. La promoción es mensual: consultá la vigencia.</p></div>
+          <div class="pago-dest"><b>Factura A</b><p>Para talleres, empresas y profesionales.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 · Preguntas frecuentes -->
+  <section class="sec" id="preguntas-frecuentes" aria-labelledby="h-faq">
+    <div class="contenedor faq-sec" data-revelar>
+      <div class="faq-sec__cab">
+        <span class="ante">Preguntas frecuentes</span>
+        <h2 class="titulo" id="h-faq">Lo que más <em>nos consultan</em></h2>
+        <p class="lead">¿No encontrás tu respuesta? Escribinos y te contestamos.</p>
+        <a class="btn btn--primario" data-wa="Hola Mundo Motors, tengo una consulta."><svg class="icono icono--relleno"><use href="#i-wa"/></svg>Hacer una pregunta</a>
+      </div>
+      <div class="faq">
+        <details><summary>¿Mundo Motors es el mismo Mundo Renault?<svg class="icono" aria-hidden="true"><use href="#i-mas"/></svg></summary><p>Sí. Somos el mismo equipo, en el mismo local de Av. Pellegrini 3971, Rosario. Cambiamos el nombre porque sumamos más marcas. <a href="quienes-somos.html">Conocé nuestra historia</a>.</p></details>
+        <details><summary>¿Son concesionario oficial de Renault?<svg class="icono" aria-hidden="true"><use href="#i-mas"/></svg></summary><p>No. Comercializamos repuestos originales y de primeras marcas, pero no somos concesionario ni distribuidor oficial de Renault ni de otra marca.</p></details>
+        <details><summary>¿Hacen colocación o reparaciones?<svg class="icono" aria-hidden="true"><use href="#i-mas"/></svg></summary><p>No. Vendemos repuestos; no hacemos colocación ni reparaciones.</p></details>
+        <details><summary>¿Cómo sé qué repuesto lleva mi auto?<svg class="icono" aria-hidden="true"><use href="#i-mas"/></svg></summary><p>Pasanos marca, modelo, año y motor. Si podés, sumá una foto de la pieza o el número que tiene grabado, y te decimos cuál corresponde.</p></details>
+        <details><summary>¿Tienen el repuesto que busco?<svg class="icono" aria-hidden="true"><use href="#i-mas"/></svg></summary><p>Consultanos por WhatsApp y te confirmamos la disponibilidad. Si no lo tenemos, lo buscamos a pedido.</p></details>
+        <details><summary>¿Hacen envíos?<svg class="icono" aria-hidden="true"><use href="#i-mas"/></svg></summary><p>Sí. En Rosario y alrededores con cadetería, y al resto del país por encomienda. <a href="#envios">Ver envíos</a>.</p></details>
+        <details><summary>¿Puedo pagar en cuotas?<svg class="icono" aria-hidden="true"><use href="#i-mas"/></svg></summary><p>Sí, en 3 cuotas sin interés con tarjetas bancarizadas. La promoción es mensual, así que consultá la vigencia.</p></details>
+        <details><summary>¿Hacen Factura A?<svg class="icono" aria-hidden="true"><use href="#i-mas"/></svg></summary><p>Sí, hacemos Factura A.</p></details>
+        <details><summary>¿Cuál es el horario de atención?<svg class="icono" aria-hidden="true"><use href="#i-mas"/></svg></summary><p>De lunes a viernes de 9 a 18 h y los sábados de 9 a 12:30 h, en Av. Pellegrini 3971, Rosario.</p></details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{{PIE}}
+
+{{WA}}
+
+<script src="js/inicio.js" defer></script>
+</body>
+</html>

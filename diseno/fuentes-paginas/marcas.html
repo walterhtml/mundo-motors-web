@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="es-AR" data-pie-fijo="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marcas | Repuestos Renault, Chevrolet y multimarca en Rosario · Mundo Motors</title>
+<meta name="description" content="Repuestos para Renault y Chevrolet (línea completa) y mecánica para Volkswagen, Peugeot, Fiat, Citroën, Ford, Toyota y Nissan. Originales y primeras marcas en Rosario.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/pie.css">
+<link rel="stylesheet" href="css/sitio.css">
+<link rel="preload" as="image" href="img/mostrador-gm.webp">
+<style>
+/* =================== MARCAS · estilos propios =================== */
+.portada__foto img { object-position: 45% 60%; }
+/* El título de esta portada es más largo: un poco más chico para que no ocupe seis renglones */
+.portada .h1 { font-size: clamp(2rem, 1.15rem + 2.6vw, 3.25rem); }
+
+/* ---------- Renault y Chevrolet: bloques grandes ---------- */
+.especialistas { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1rem; }
+.especialista { position: relative; isolation: isolate; overflow: hidden; border-radius: var(--radio-lg); padding: clamp(1.75rem, 3.5vw, 2.75rem); background: var(--azul) var(--lineas-vel); color: #fff; display: flex; flex-direction: column; gap: 1rem; }
+.especialista::after { content: ""; position: absolute; z-index: -1; right: 1.5rem; top: 0; width: 56px; height: 100%; background: var(--naranja); clip-path: polygon(62% 0, 100% 0, 38% 100%, 0 100%); opacity: .9; }
+.especialista__cab { display: flex; align-items: center; gap: 1.25rem; }
+.especialista__cab b { font: 800 clamp(2rem, 1.3rem + 2.6vw, 3.2rem)/1 var(--f-titular); letter-spacing: -.02em; }
+.especialista__tag { align-self: flex-start; background: rgba(255, 255, 255, .12); border: 1px solid rgba(255, 255, 255, .2); font: 800 .68rem/1 var(--f-titular); letter-spacing: .16em; text-transform: uppercase; padding: .5rem .75rem; border-radius: 99px; }
+.especialista p { color: #C9D6E8; max-width: 30rem; }
+.especialista ul { display: grid; grid-template-columns: 1fr 1fr; gap: .45rem 1rem; max-width: 30rem; margin: .25rem 0 .75rem; }
+.especialista li { display: flex; align-items: center; gap: .5rem; font-size: .9rem; }
+.especialista li .icono { width: 1.15rem; height: 1.15rem; padding: .2rem; border-radius: 50%; background: var(--naranja); color: var(--azul-tinta); stroke-width: 2.6; }
+.especialista .btn { align-self: flex-start; margin-top: auto; }
+@media (max-width: 900px) { .especialistas { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 600px) { .especialista::after { right: -20px; width: 44px; } }
+@media (max-width: 420px) { .especialista ul { grid-template-columns: 1fr; } }
+
+/* ---------- Mecánica multimarca: cada tarjeta consulta por WhatsApp ---------- */
+.marcas__resto a { display: block; color: inherit; text-decoration: none; border-radius: inherit; }
+.marcas__resto small b { display: inline; font: inherit; color: var(--naranja-titular); letter-spacing: 0; text-transform: none; }
+
+/* ---------- Marcas de repuestos ---------- */
+.fabricantes { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: .75rem; }
+.fabricante { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .55rem; min-height: 8.5rem; padding: 1.25rem .75rem; border-radius: 16px; background: #fff; border: 1px solid var(--linea); text-align: center; }
+.fabricante b { font: 800 1.15rem/1.1 var(--f-titular); color: var(--azul); letter-spacing: -.01em; }
+.fabricante span { font: 700 .64rem/1 var(--f-titular); letter-spacing: .14em; text-transform: uppercase; padding: .45rem .6rem; border-radius: 99px; background: var(--gris-claro); color: var(--acero); }
+.fabricante--original span { background: var(--azul); color: #fff; }
+@media (max-width: 1000px) { .fabricantes { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .fabricantes { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* ---------- Productos más vendidos ---------- */
+.productos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.producto { display: flex; flex-direction: column; background: #fff; border-radius: 20px; overflow: hidden; border: 1px solid var(--linea); transition: transform .2s, box-shadow .2s; }
+.producto:hover { transform: translateY(-4px); box-shadow: var(--sombra); }
+/* Imagen de producto: ilustración del rubro hasta tener la foto real */
+.producto__img { position: relative; display: grid; place-items: center; aspect-ratio: 4 / 3; background: radial-gradient(circle at 50% 45%, #fff 0 28%, transparent 29%), linear-gradient(135deg, #E7EDF3, #D6E0EA); overflow: hidden; }
+.producto__img::after { content: ""; position: absolute; right: 12%; top: 0; width: 40px; height: 100%; background: var(--naranja); clip-path: polygon(62% 0, 100% 0, 38% 100%, 0 100%); opacity: .85; }
+.producto__img .icono { width: 5rem; height: 5rem; color: var(--azul); stroke-width: 1.2; position: relative; z-index: 1; }
+.producto__promo { position: absolute; left: 1rem; top: 1rem; z-index: 2; background: var(--naranja); color: var(--azul-tinta); font: 800 .68rem/1 var(--f-titular); letter-spacing: .12em; text-transform: uppercase; padding: .55rem .8rem; border-radius: 99px; }
+.producto__txt { display: flex; flex-direction: column; gap: .5rem; padding: 1.4rem 1.4rem 1.5rem; flex: 1; }
+.producto__marca { font: 700 .7rem/1 var(--f-titular); letter-spacing: .16em; text-transform: uppercase; color: var(--naranja-titular); }
+.producto h3 { font-size: 1.1rem; font-weight: 800; text-transform: uppercase; line-height: 1.15; }
+.producto__uso { font-size: .88rem; color: var(--acero); flex: 1; }
+.producto__uso b { color: var(--texto); font-weight: 600; }
+.producto .btn { margin-top: .75rem; }
+.productos__nota { margin-top: 1.25rem; font-size: .8rem; color: var(--acero); }
+@media (max-width: 960px) { .productos { grid-template-columns: minmax(0, 1fr); max-width: 30rem; margin-inline: auto; } }
+
+/* ---------- Originales y alternativos ---------- */
+.calidad { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(2rem, 5vw, 4.5rem); align-items: center; }
+.calidad__op { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.opcion { border-radius: var(--radio-lg); padding: 1.75rem; border: 1px solid var(--linea); background: #fff; }
+.opcion--original { background: var(--azul) var(--lineas-vel); border-color: transparent; color: #fff; }
+.opcion .icono { width: 3rem; height: 3rem; padding: .7rem; border-radius: 14px; background: var(--gris-claro); color: var(--azul); }
+.opcion--original .icono { background: var(--naranja); color: var(--azul-tinta); }
+.opcion h3 { margin-top: 1.1rem; font-size: 1.05rem; font-weight: 800; text-transform: uppercase; }
+.opcion--original h3 { color: #fff; }
+.opcion p { margin-top: .5rem; font-size: .9rem; color: var(--acero); }
+.opcion--original p { color: #C9D6E8; }
+@media (max-width: 900px) { .calidad { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 520px) { .calidad__op { grid-template-columns: minmax(0, 1fr); } }
+</style>
+</head>
+<body>
+{{SPRITE}}
+
+{{BARRA}}
+
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+{{CABECERA}}
+
+<main id="contenido">
+
+  <!-- 1 · Portada -->
+  <section class="portada" aria-labelledby="h-portada">
+    <div class="contenedor">
+      <div class="portada__card fondo-oscuro">
+        <div class="portada__txt">
+          <span class="chip-vidrio"><i></i>Marcas · Multimarca</span>
+          <h1 class="h1" id="h-portada">Repuestos para Renault, Chevrolet <em>y las principales marcas</em></h1>
+          <p class="lead">Más marcas. Más opciones. La misma confianza. Originales y primeras marcas para tu auto.</p>
+          <div class="portada__acciones">
+            <a class="btn btn--primario btn--grande" data-wa="Hola Mundo Motors, quiero consultar por un repuesto."><svg class="icono icono--relleno"><use href="#i-wa"/></svg>Consultar por WhatsApp</a>
+            <a class="btn btn--vidrio btn--grande" href="#mas-vendidos">Más vendidos</a>
+          </div>
+        </div>
+        <figure class="portada__foto"><img src="img/mostrador-gm.webp" width="1200" height="1600" alt="Clientes en el mostrador de Mundo Motors" fetchpriority="high"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 · Especialistas en Renault y Chevrolet -->
+  <section class="sec" aria-labelledby="h-especialistas">
+    <div class="contenedor" data-revelar>
+      <div class="cabecera">
+        <div><span class="ante">Línea completa</span><h2 class="titulo" id="h-especialistas">Especialistas en <em>Renault y Chevrolet</em></h2></div>
+        <p class="lead">Las dos marcas que mejor conocemos: tenemos la línea completa y el asesoramiento de siempre.</p>
+      </div>
+      <div class="especialistas">
+        <article class="especialista" id="renault">
+          <div class="especialista__cab"><svg class="logo-marca" style="--w:2.6rem;--h:3.4rem" aria-hidden="true"><use href="#m-renault"/></svg><b>RENAULT</b></div>
+          <span class="especialista__tag">Línea completa · Desde 2006</span>
+          <p>Desde 2006, cuando abrimos como Mundo Renault. Repuestos originales y de primeras marcas para toda la línea.</p>
+          <ul>
+            <li><svg class="icono"><use href="#i-check"/></svg>Motor y distribución</li>
+            <li><svg class="icono"><use href="#i-check"/></svg>Embragues</li>
+            <li><svg class="icono"><use href="#i-check"/></svg>Suspensión</li>
+            <li><svg class="icono"><use href="#i-check"/></svg>Frenos</li>
+            <li><svg class="icono"><use href="#i-check"/></svg>Encendido y filtros</li>
+            <li><svg class="icono"><use href="#i-check"/></svg>Accesorios</li>
+          </ul>
+          <a class="btn btn--primario" data-wa="Hola Mundo Motors, quiero consultar por repuestos Renault."><svg class="icono icono--relleno"><use href="#i-wa"/></svg>Consultar por Renault</a>
+        </article>
+        <article class="especialista" id="chevrolet">
+          <div class="especialista__cab"><svg class="logo-marca" style="--w:5.6rem;--h:1.83rem" aria-hidden="true"><use href="#m-chevrolet"/></svg><b>CHEVROLET</b></div>
+          <span class="especialista__tag">Línea completa · Desde 2015</span>
+          <p>Toda la línea desde 2015, cuando nos mudamos a Av. Pellegrini. Originales y alternativas de primera marca.</p>
+          <ul>
+            <li><svg class="icono"><use href="#i-check"/></svg>Motor y distribución</li>
+            <li><svg class="icono"><use href="#i-check"/></svg>Embragues</li>
+            <li><svg class="icono"><use href="#i-check"/></svg>Suspensión</li>
+            <li><svg class="icono"><use href="#i-check"/></svg>Frenos</li>
+            <li><svg class="icono"><use href="#i-check"/></svg>Encendido y filtros</li>
+            <li><svg class="icono"><use href="#i-check"/></svg>Accesorios</li>
+          </ul>
+          <a class="btn btn--primario" data-wa="Hola Mundo Motors, quiero consultar por repuestos Chevrolet."><svg class="icono icono--relleno"><use href="#i-wa"/></svg>Consultar por Chevrolet</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · Mecánica multimarca -->
+  <section class="sec sec--gris" id="multimarca" aria-labelledby="h-multimarca">
+    <div class="contenedor" data-revelar>
+      <div class="cabecera">
+        <div><span class="ante">Mecánica multimarca</span><h2 class="titulo" id="h-multimarca">Repuestos de mecánica <em>para todas</em></h2></div>
+        <p class="lead">Elegí la marca de tu auto y consultanos por WhatsApp. Si no la ves, escribinos igual.</p>
+      </div>
+      <ul class="marcas__resto" style="margin-top:0">
+        <li><a data-wa="Hola Mundo Motors, quiero consultar por repuestos Volkswagen."><svg class="logo-marca" style="--w:2.6rem;--h:2.6rem" aria-hidden="true"><use href="#m-volkswagen"/></svg><b>Volkswagen</b><small>Mecánica · <b>Consultar</b></small></a></li>
+        <li><a data-wa="Hola Mundo Motors, quiero consultar por repuestos Peugeot."><svg class="logo-marca" style="--w:2.48rem;--h:2.73rem" aria-hidden="true"><use href="#m-peugeot"/></svg><b>Peugeot</b><small>Mecánica · <b>Consultar</b></small></a></li>
+        <li><a data-wa="Hola Mundo Motors, quiero consultar por repuestos Fiat."><svg class="logo-marca" style="--w:2.6rem;--h:2.6rem" aria-hidden="true"><use href="#m-fiat"/></svg><b>Fiat</b><small>Mecánica · <b>Consultar</b></small></a></li>
+        <li><a data-wa="Hola Mundo Motors, quiero consultar por repuestos Citroën."><svg class="logo-marca" style="--w:2.27rem;--h:2.8rem" aria-hidden="true"><use href="#m-citroen"/></svg><b>Citroën</b><small>Mecánica · <b>Consultar</b></small></a></li>
+        <li><a data-wa="Hola Mundo Motors, quiero consultar por repuestos Ford."><svg class="logo-marca" style="--w:4.25rem;--h:1.59rem" aria-hidden="true"><use href="#m-ford"/></svg><b>Ford</b><small>Mecánica · <b>Consultar</b></small></a></li>
+        <li><a data-wa="Hola Mundo Motors, quiero consultar por repuestos Toyota."><svg class="logo-marca" style="--w:3.15rem;--h:2.14rem" aria-hidden="true"><use href="#m-toyota"/></svg><b>Toyota</b><small>Mecánica · <b>Consultar</b></small></a></li>
+        <li><a data-wa="Hola Mundo Motors, quiero consultar por repuestos Nissan."><svg class="logo-marca" style="--w:2.85rem;--h:2.37rem" aria-hidden="true"><use href="#m-nissan"/></svg><b>Nissan</b><small>Mecánica · <b>Consultar</b></small></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 4 · Marcas de repuestos -->
+  <section class="sec" aria-labelledby="h-fabricantes">
+    <div class="contenedor" data-revelar>
+      <div class="cabecera">
+        <div><span class="ante">Trabajamos con</span><h2 class="titulo" id="h-fabricantes">Marcas <em>de repuestos</em></h2></div>
+        <p class="lead">Originales de fábrica y primeras marcas del mercado.</p>
+      </div>
+      <ul class="fabricantes">
+        <li class="fabricante fabricante--original"><b>Renault Original</b><span>Original</span></li>
+        <li class="fabricante fabricante--original"><b>Chevrolet Original</b><span>Original</span></li>
+        <li class="fabricante"><b>Motrio</b><span>Primera marca</span></li>
+        <li class="fabricante"><b>NGK</b><span>Primera marca</span></li>
+        <li class="fabricante"><b>Hutchinson</b><span>Primera marca</span></li>
+        <li class="fabricante"><b>Dexco</b><span>Primera marca</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 5 · Productos más vendidos -->
+  <section class="sec sec--gris" id="mas-vendidos" aria-labelledby="h-productos">
+    <div class="contenedor" data-revelar>
+      <div class="cabecera">
+        <div><span class="ante">Más vendidos</span><h2 class="titulo" id="h-productos">Los más pedidos <em>del mes</em></h2></div>
+        <p class="lead">Una selección que actualizamos todos los meses. Consultá disponibilidad por WhatsApp.</p>
+      </div>
+      <ul class="productos">
+        <li class="producto">
+          <div class="producto__img"><span class="producto__promo">3 cuotas sin interés</span><svg class="icono" aria-hidden="true"><use href="#i-dist"/></svg></div>
+          <div class="producto__txt">
+            <span class="producto__marca">Dexco</span>
+            <h3>Kit de distribución con bomba de agua</h3>
+            <p class="producto__uso"><b>Para:</b> Renault Kangoo, Clio y Logan 1.6 8v.</p>
+            <a class="btn btn--primario" data-wa="Hola Mundo Motors, quiero consultar por este producto: Kit de distribución con bomba de agua (Dexco) para Renault 1.6 8v."><svg class="icono icono--relleno"><use href="#i-wa"/></svg>Consultar este producto</a>
+          </div>
+        </li>
+        <li class="producto">
+          <div class="producto__img"><svg class="icono" aria-hidden="true"><use href="#i-amort"/></svg></div>
+          <div class="producto__txt">
+            <span class="producto__marca">Original Chevrolet</span>
+            <h3>Amortiguadores delanteros</h3>
+            <p class="producto__uso"><b>Para:</b> Chevrolet Onix y Prisma, 2013 en adelante.</p>
+            <a class="btn btn--primario" data-wa="Hola Mundo Motors, quiero consultar por este producto: Amortiguadores delanteros (Original Chevrolet) para Onix y Prisma."><svg class="icono icono--relleno"><use href="#i-wa"/></svg>Consultar este producto</a>
+          </div>
+        </li>
+        <li class="producto">
+          <div class="producto__img"><svg class="icono" aria-hidden="true"><use href="#i-bujia"/></svg></div>
+          <div class="producto__txt">
+            <span class="producto__marca">NGK</span>
+            <h3>Juego de bujías</h3>
+            <p class="producto__uso"><b>Para:</b> Renault y Chevrolet con motores nafteros 1.4 y 1.6.</p>
+            <a class="btn btn--primario" data-wa="Hola Mundo Motors, quiero consultar por este producto: Juego de bujías NGK para motor naftero."><svg class="icono icono--relleno"><use href="#i-wa"/></svg>Consultar este producto</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 6 · Originales y alternativos -->
+  <section class="sec" aria-labelledby="h-calidad">
+    <div class="contenedor calidad" data-revelar>
+      <div>
+        <span class="ante">Originales y alternativos</span>
+        <h2 class="titulo" id="h-calidad">Siempre con <em>calidad de fábrica</em></h2>
+        <p class="lead">Trabajamos los dos, según el repuesto. Priorizamos lo original y, cuando conviene una alternativa, es de primera línea.</p>
+      </div>
+      <div class="calidad__op">
+        <div class="opcion opcion--original"><svg class="icono"><use href="#i-original"/></svg><h3>Originales</h3><p>El repuesto de fábrica, sobre todo para Renault y Chevrolet.</p></div>
+        <div class="opcion"><svg class="icono"><use href="#i-escudo"/></svg><h3>Alternativos de primera línea</h3><p>Marcas reconocidas, con la calidad que pide tu auto.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 y 8 · Aclaración y cierre -->
+  <section class="sec sec--gris cierre" aria-labelledby="h-cierre">
+    <div class="contenedor" data-revelar>
+      <div class="cabecera">
+        <div><span class="ante">Consultanos</span><h2 class="titulo" id="h-cierre">¿No ves tu marca <em>o tu modelo?</em></h2></div>
+        <p class="lead">Escribinos igual: decinos qué auto tenés y qué buscás, y te respondemos por WhatsApp.</p>
+      </div>
+      <div class="consulta consulta--cierre">
+        <div class="consulta__panel">
+          <div class="consulta__cab">
+            <svg class="icono icono--relleno"><use href="#i-wa"/></svg>
+            <div><h3 class="consulta__titulo">Consulta rápida</h3><p>Decinos qué auto tenés y qué buscás; te ayudamos a encontrarlo.</p></div>
+          </div>
+          <form class="form" data-consulta novalidate>
+            <div class="campo"><label for="ma-marca">Marca</label><input id="ma-marca" name="marca" placeholder="Renault" autocomplete="off"></div>
+            <div class="campo"><label for="ma-modelo">Modelo</label><input id="ma-modelo" name="modelo" placeholder="Kangoo" autocomplete="off"></div>
+            <div class="campo"><label for="ma-anio">Año</label><input id="ma-anio" name="anio" inputmode="numeric" placeholder="2014" autocomplete="off"></div>
+            <div class="campo"><label for="ma-motor">Motor</label><input id="ma-motor" name="motor" placeholder="1.6 K4M" autocomplete="off"></div>
+            <div class="campo campo--repuesto"><label for="ma-repuesto">¿Qué repuesto buscás?</label><input id="ma-repuesto" name="repuesto" placeholder="Kit de distribución" autocomplete="off"></div>
+            <button class="btn btn--primario" type="submit"><svg class="icono icono--relleno"><use href="#i-wa"/></svg>Enviar</button>
+          </form>
+          <div class="form-pie"><p class="form-error" role="alert"></p><p class="form-nota">Se abre WhatsApp con tu consulta armada. No guardamos tus datos.</p></div>
+        </div>
+      </div>
+      <p class="aclaracion" style="margin-top:2rem"><svg class="icono" aria-hidden="true"><use href="#i-info"/></svg><span>Comercializamos repuestos de estas marcas. No somos concesionarios ni distribuidores oficiales. Mundo Renault fue nuestro nombre comercial anterior. Las marcas pertenecen a sus respectivos dueños.</span></p>
+    </div>
+  </section>
+
+</main>
+
+{{PIE}}
+
+{{WA}}
+
+<script src="js/inicio.js" defer></script>
+</body>
+</html>

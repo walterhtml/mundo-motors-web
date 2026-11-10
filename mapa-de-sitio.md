@@ -39,7 +39,6 @@ No va en el encabezado ni en la portada de Inicio (decisión de Walter, 09/11).
 | Quiénes Somos | Historia completa del cambio de nombre (ver página 2). |
 | Marcas, bloque Renault | *Desde 2006, cuando abrimos como Mundo Renault.* |
 | Servicios, preguntas frecuentes | *¿Mundo Motors es el mismo Mundo Renault?* y *¿Son concesionario oficial de Renault?* |
-| Testimonios | Al menos dos mencionan que compran desde que era Mundo Renault. |
 | Pie (todas las páginas) | *Antes Mundo Renault*, bien visible junto al logo y no como línea escondida. |
 | SEO | Título y descripción de Inicio y Quiénes Somos con *ex Mundo Renault*. Datos estructurados con `alternateName: "Mundo Renault"`. Redirección 301 de `mundorenault.com.ar`. |
 | Aclaración legal | *Mundo Renault fue nuestro nombre comercial anterior. No somos concesionario ni distribuidor oficial de Renault.* |
@@ -79,10 +78,9 @@ No va en el encabezado ni en la portada de Inicio (decisión de Walter, 09/11).
 | 5 | **Especialistas en** | Los rubros con los que quieren que los identifiquen: distribución, embragues, tapas de cilindro, amortiguadores, pastillas y discos de freno. | Consultar |
 | 6 | **Por qué elegirnos** | Stock completo · asesoramiento · originales y primeras marcas · financiación en 3 cuotas · envíos · más de 20 años. | — |
 | 7 | **De Mundo Renault a Mundo Motors** | Franja corta: *Mismo equipo, mismo local, más marcas.* Años 2006 → hoy. Foto real del local. | Conocé nuestra historia (→ Quiénes Somos) |
-| 8 | **Para talleres y mecánicos** | Franja corta: cuenta corriente, precios por volumen, atención prioritaria. | Ver condiciones (→ Servicios#talleres) |
-| 9 | **Testimonios** | **Carrusel de 5 testimonios**: clientes particulares, mecánicos y proveedores. Nombre, rol (por ejemplo *Mecánico, taller en zona oeste*) y texto corto. Por ahora son inventados (pedido del cliente, minuta 06/11) y se reemplazan por reales cuando los haya. | — |
-| 10 | **Reseñas de Google** | Se **muestran en la web**: nota promedio, cantidad de reseñas y varias reseñas con nombre, estrellas y texto. Abajo, enlace secundario *Ver todas en Google*. | Ver todas en Google |
-| 11 | **Dónde estamos** | **Imagen del mapa clickeable** que abre la ficha del local en Google Maps. Al lado: dirección, horarios y *Vení al local o escribinos.* | Cómo llegar (Google Maps) · WhatsApp |
+| 8 | **Para talleres y mecánicos** | Franja corta: cuenta corriente, precios por volumen, atención prioritaria. | Soy mecánico (WhatsApp) |
+| 9 | **Reseñas de Google** | Se **muestran en la web**: nota promedio, cantidad de reseñas y varias reseñas con nombre, estrellas y texto. Abajo, enlace secundario *Ver todas en Google*. | Ver todas en Google |
+| 10 | **Dónde estamos** | **Imagen del mapa clickeable** que abre la ficha del local en Google Maps. Al lado: dirección, horarios y *Vení al local o escribinos.* | Cómo llegar (Google Maps) · WhatsApp |
 
 ## 2. Quiénes Somos — `/quienes-somos/`
 
@@ -134,7 +132,6 @@ No va en el encabezado ni en la portada de Inicio (decisión de Walter, 09/11).
 - **Contenido editable por el cliente**, sin tocar código:
   - **Productos más vendidos** (página Marcas): 3 tarjetas, una vez por mes. Foto, nombre, marca, aplicación, promoción, visible/oculto.
   - **Banner de oferta:** imagen, título, texto, fecha de fin de vigencia (se oculta solo al vencer) y visible/oculto.
-  - **Testimonios:** 5, para reemplazar los inventados por reales sin depender de Onlines.
 - **Consulta rápida a WhatsApp** reutilizable, con mensaje armado según el origen (general, oferta, producto, taller).
 - **Reseñas de Google en la web.** Dos caminos, a definir en desarrollo:
   - *Recomendado:* API de Google Places desde el servidor, con caché diaria. Se actualiza solo y muestra la nota real. Requiere la ficha de Google del local, su Place ID y una clave de API. Google entrega como máximo 5 reseñas y elige cuáles. Con la caché, el uso queda muy por debajo del cupo gratuito (a verificar al configurarlo).
@@ -154,9 +151,12 @@ No va en el encabezado ni en la portada de Inicio (decisión de Walter, 09/11).
 - [ ] Dominio: en la minuta del 06/11 aparece que el dominio *"era de Sansar"* y que hay que arreglarlo ahora. Falta aclarar cuál dominio es y a nombre de quién está (es una transcripción automática y puede estar mal).
 - [ ] Acceso a NIC.ar y estado de `mundorenault.com.ar` (si tiene web o mails activos).
 - [ ] Fotos originales sin texto: las de `contexto/IMAGENES IG/` tienen diseño de Instagram encima.
-- [ ] Testimonios reales para reemplazar los provisorios (sin apuro).
 
-**Resueltos en la minuta del 06/11:** garantía por falla (no se muestra) · testimonios (inventados por ahora, más las reseñas de Google).
+**Resueltos en la minuta del 06/11:** garantía por falla (no se muestra).
+
+**Cambios en la etapa de Diseño:**
+- **Testimonios:** Walter los sacó de todo el sitio el 09/11/2026. La prueba social queda a cargo de las reseñas de Google.
+- **Para talleres (Inicio #8):** el botón es *Soy mecánico* y va a WhatsApp. *Ver condiciones* se sacó (decisión de Walter, 09/11).
 
 ## Decisiones cerradas (09/11)
 

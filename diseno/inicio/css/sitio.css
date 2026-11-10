@@ -1,0 +1,193 @@
+/* ==========================================================
+   Mundo Motors · estilos comunes a todas las páginas
+   (línea Premium 2 · Automotriz, elegida el 09/11/2026)
+   Se carga después de base.css y pie.css. Cada página suma los suyos.
+   ========================================================== */
+
+:root {
+  --sec: clamp(4rem, 3rem + 5vw, 7.5rem);
+  --radio: 12px;
+  --radio-lg: 22px;
+  --linea: #DCE3EA;
+  --noche: #082A57;
+  --lineas-vel: repeating-linear-gradient(115deg, transparent 0 28px, rgba(255, 255, 255, .05) 28px 29px);
+  /* Verde WhatsApp oscurecido: con texto blanco da 4,8:1 (el #25D366 clásico da 2:1) */
+  --wa: #0F8443;
+  --wa-oscuro: #0B6E37;
+}
+body { background: #fff; }
+.icono { stroke-width: 1.6; }
+
+.ante { display: inline-flex; align-items: center; gap: .6rem; font: 700 .72rem/1 var(--f-titular); letter-spacing: .2em; text-transform: uppercase; color: var(--naranja-titular); }
+.ante::before { content: ""; width: .5rem; height: .5rem; background: var(--naranja); transform: skewX(-20deg); }
+.fondo-oscuro .ante { color: var(--naranja); }
+.titulo { font-size: clamp(2rem, 1.2rem + 2.8vw, 3.3rem); font-weight: 800; text-transform: uppercase; letter-spacing: -.025em; line-height: 1; margin-top: 1rem; }
+.titulo em { font-style: normal; color: var(--naranja-titular); }
+.fondo-oscuro .titulo { color: #fff; }
+.fondo-oscuro .titulo em { color: var(--naranja); }
+.lead { font-weight: 300; font-size: clamp(1.02rem, .98rem + .3vw, 1.15rem); line-height: 1.7; color: #4B5768; margin-top: 1rem; max-width: 36rem; }
+.fondo-oscuro .lead { color: #C9D6E8; }
+.sec { padding-block: var(--sec); }
+.sec--gris { background: var(--gris-claro); }
+.cabecera { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 1.25rem 3rem; margin-bottom: clamp(2rem, 4vw, 3rem); }
+.cabecera .lead { margin-top: 0; }
+
+.btn { border-radius: 12px; letter-spacing: .06em; font-size: .82rem; min-height: 3.25rem; }
+.btn--vidrio { background: rgba(255, 255, 255, .12); color: #fff; border-color: rgba(255, 255, 255, .3); backdrop-filter: blur(6px); }
+.btn--vidrio:hover { background: rgba(255, 255, 255, .2); }
+.btn--wa { background: var(--wa); color: #fff; box-shadow: 0 6px 18px -8px rgba(15, 132, 67, .75); }
+.btn--wa:hover { background: var(--wa-oscuro); }
+.enlace { border-bottom-width: 2px; }
+.fondo-oscuro .enlace { color: #fff; }
+
+/* ---------- Encabezado flotante ---------- */
+.cab { position: sticky; top: .75rem; z-index: 40; margin-top: .75rem; }
+.cab__in { position: relative; display: flex; align-items: center; gap: 2rem; min-height: 4.5rem; padding: 0 .65rem 0 1.4rem; background: rgba(255, 255, 255, .92); backdrop-filter: blur(14px); border: 1px solid rgba(11, 55, 111, .08); border-radius: 16px; box-shadow: 0 10px 30px -20px rgba(11, 55, 111, .45); transition: box-shadow .3s; }
+.cab.bajo .cab__in { box-shadow: 0 18px 40px -18px rgba(11, 55, 111, .55); }
+.cab__logo img { height: 40px; width: auto; }
+.cab__nav { margin-left: auto; display: flex; gap: .25rem; }
+.cab__nav a { font: 700 .76rem/1 var(--f-titular); letter-spacing: .1em; text-transform: uppercase; color: var(--azul); text-decoration: none; padding: .8rem 1rem; border-radius: 10px; }
+.cab__nav a:hover { background: var(--gris-claro); }
+.cab__nav a[aria-current="page"] { background: var(--gris-claro); box-shadow: inset 0 -2px 0 var(--naranja); }
+.cab__cta { min-height: 3rem; font-size: .74rem; padding-inline: 1.1rem; white-space: nowrap; }
+.cab__nav a { white-space: nowrap; }
+@media (max-width: 1180px) { .cab__cta-largo { display: none; } }
+/* WhatsApp dentro del menú: solo existe en el menú del celular */
+.cab__nav-wa { display: none; }
+/* Ícono del botón de menú: hamburguesa cerrado, cruz abierto (el estado lo marca aria-expanded) */
+.menu-toggle .icono-cerrar,
+.menu-toggle[aria-expanded="true"] .icono-abrir { display: none; }
+.menu-toggle[aria-expanded="true"] .icono-cerrar { display: block; }
+@media (max-width: 960px) {
+  .cab__in { gap: .4rem; min-height: 4rem; padding-left: 1rem; }
+  /* En la barra quedan logo y menú; WhatsApp pasa adentro del menú */
+  .cab__cta { display: none; }
+  .menu-toggle { display: inline-grid; place-items: center; width: 2.9rem; height: 2.9rem; margin-left: auto; border: 0; border-radius: 8px; background: transparent; color: var(--azul); cursor: pointer; }
+  .menu-toggle .icono { width: 1.8rem; height: 1.8rem; }
+  nav[data-nav] { display: none; }
+  nav[data-nav].abierto { display: flex; }
+  .cab__nav .cab__nav-wa { display: flex; width: 100%; margin-top: .5rem; padding: .9rem 1rem; color: #fff; background: var(--wa); letter-spacing: .04em; font-size: .78rem; }
+  .cab__nav .cab__nav-wa:hover { background: var(--wa-oscuro); }
+  .cab__nav { position: absolute; top: calc(100% + .5rem); left: 0; right: 0; flex-direction: column; gap: 0; background: #fff; padding: .5rem; border-radius: 16px; box-shadow: var(--sombra); }
+  .cab__nav a { padding: 1rem; }
+  .cab__logo img { height: 34px; }
+}
+
+/* ---------- Título de portada ---------- */
+.chip-vidrio { display: inline-flex; align-items: center; gap: .5rem; padding: .55rem .95rem; border-radius: 99px; background: rgba(255, 255, 255, .1); border: 1px solid rgba(255, 255, 255, .22); font: 700 .7rem/1 var(--f-titular); letter-spacing: .16em; text-transform: uppercase; }
+.chip-vidrio i { width: .45rem; height: .45rem; border-radius: 50%; background: var(--naranja); }
+.h1 { color: #fff; font-size: clamp(2.4rem, 1.3rem + 4.2vw, 4.9rem); font-weight: 800; text-transform: uppercase; letter-spacing: -.035em; line-height: .96; margin-top: 1.4rem; }
+.h1 em { font-style: normal; color: var(--naranja); }
+
+/* ---------- Celular (hasta 600 px) ---------- */
+@media (max-width: 600px) {
+  /* Botones de contenido: ancho completo y texto en un renglón */
+  main .btn { width: 100%; white-space: nowrap; padding-inline: 1rem; font-size: .76rem; letter-spacing: .03em; }
+  /* La parte destacada de cada título arranca en otra línea */
+  .h1 em, .titulo em { display: block; }
+}
+
+/* ---------- Consulta rápida ---------- */
+.consulta { position: relative; z-index: 3; }
+.consulta__panel { margin-inline: clamp(0rem, 3vw, 2.5rem); background: #fff; border-radius: 20px; box-shadow: 0 34px 60px -30px rgba(11, 55, 111, .5); padding: 1.6rem 1.75rem; display: grid; grid-template-columns: 15rem 1fr; gap: 1.25rem 2rem; align-items: center; border: 1px solid rgba(11, 55, 111, .06); }
+.consulta__cab { display: flex; gap: .9rem; align-items: center; }
+.consulta__cab .icono { width: 3rem; height: 3rem; padding: .7rem; border-radius: 14px; background: var(--naranja); color: var(--azul-tinta); }
+.consulta__cab h2, .consulta__cab .consulta__titulo { font-size: 1.1rem; font-weight: 800; text-transform: uppercase; line-height: 1.1; }
+.consulta__cab p { font-size: .8rem; color: var(--acero); margin-top: .3rem; line-height: 1.4; }
+.form { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)) minmax(0, 1.5fr) auto; gap: .75rem; align-items: end; }
+.form .campo label { font-size: .7rem; font-weight: 600; color: var(--acero); letter-spacing: .06em; text-transform: uppercase; }
+.form .campo input { background: #F3F6F9; border-color: transparent; border-radius: 10px; }
+.form .campo input:focus { background: #fff; }
+.form-pie { grid-column: 2; display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem; margin-top: -.5rem; }
+@media (max-width: 1180px) { .consulta__panel { grid-template-columns: 1fr; } .form-pie { grid-column: 1; } .form { grid-template-columns: repeat(4, minmax(0, 1fr)); } .form .campo--repuesto { grid-column: span 3; } }
+@media (max-width: 600px) { .form { grid-template-columns: 1fr 1fr; } .form .campo--repuesto, .form .btn { grid-column: 1 / -1; } .consulta__panel { padding: 1.25rem; } }
+
+/* ---------- Marcas ---------- */
+.marcas__dest { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.marca-dest { position: relative; overflow: hidden; border-radius: var(--radio-lg); padding: 2rem; background: var(--azul) var(--lineas-vel); color: #fff; min-height: 14rem; display: flex; flex-direction: column; justify-content: flex-end; }
+/* Logos de marcas: un solo color, toman el color del texto */
+/* Cada logo trae su ancho y alto (--w, --h) calculados para que todos ocupen una superficie parecida */
+.logo-marca { display: block; fill: currentColor; flex: none; width: var(--w, 2.6rem); height: var(--h, 2.6rem); }
+.marca-dest .logo-marca { margin-bottom: auto; padding-bottom: 1.25rem; box-sizing: content-box; }
+.marca-dest::after { content: ""; position: absolute; right: 1.5rem; top: 0; width: 56px; height: 100%; background: var(--naranja); clip-path: polygon(62% 0, 100% 0, 38% 100%, 0 100%); opacity: .9; }
+.marca-dest b { font: 800 clamp(2rem, 1.3rem + 2.6vw, 3.4rem)/1 var(--f-titular); letter-spacing: -.02em; }
+.marca-dest span { margin-top: .75rem; align-self: flex-start; background: rgba(255, 255, 255, .12); border: 1px solid rgba(255, 255, 255, .2); font: 800 .68rem/1 var(--f-titular); letter-spacing: .16em; text-transform: uppercase; padding: .5rem .75rem; border-radius: 99px; }
+.marca-dest small { margin-top: .6rem; color: #C9D6E8; font-size: .85rem; position: relative; z-index: 1; max-width: 75%; }
+.marcas__resto { display: grid; grid-template-columns: repeat(7, 1fr); gap: .75rem; margin-top: .75rem; }
+.marcas__resto li { background: #fff; border: 1px solid var(--linea); border-radius: 16px; padding: 1.5rem .5rem 1.3rem; text-align: center; transition: transform .2s, border-color .2s, box-shadow .2s; }
+.marcas__resto li:hover { transform: translateY(-3px); border-color: var(--azul-200); box-shadow: var(--sombra-sm); }
+/* Todos los logos se centran en una franja de 2,9rem para que los nombres queden alineados */
+.marcas__resto .logo-marca { --franja: 2.9rem; margin: calc((var(--franja) - var(--h, 2.6rem)) / 2) auto calc((var(--franja) - var(--h, 2.6rem)) / 2 + .9rem); color: var(--azul); }
+.marcas__resto b { display: block; font: 800 .88rem/1.1 var(--f-titular); color: var(--azul); letter-spacing: .06em; text-transform: uppercase; }
+.marcas__resto small { display: block; margin-top: .35rem; font-size: .72rem; color: var(--acero); }
+.marcas__pie { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 1.5rem; }
+.marcas__pie p { font-size: .78rem; color: var(--acero); }
+@media (max-width: 960px) { .marcas__resto { grid-template-columns: repeat(4, 1fr); } }
+@media (max-width: 600px) { .marcas__dest { grid-template-columns: 1fr; } .marcas__resto { grid-template-columns: 1fr 1fr; } .marcas__resto li:last-child:nth-child(odd) { grid-column: 1 / -1; } .marca-dest { min-height: 9rem; padding: 1.5rem; } }
+
+/* ---------- Atributos (tarjetas con ícono) ---------- */
+.atributos { display: grid; grid-template-columns: 1fr 1fr; gap: .9rem; margin-top: 2rem; }
+.atributo { display: flex; gap: .9rem; padding: 1.2rem; border-radius: 16px; background: var(--gris-claro); }
+.atributo .icono { width: 2.6rem; height: 2.6rem; padding: .6rem; border-radius: 50%; background: #fff; color: var(--naranja-titular); box-shadow: 0 0 0 1px var(--linea); }
+.atributo h3 { font-size: .9rem; font-weight: 800; text-transform: uppercase; }
+.atributo p { font-size: .84rem; color: var(--acero); margin-top: .25rem; line-height: 1.5; }
+@media (max-width: 560px) { .atributos { grid-template-columns: 1fr; } }
+
+/* ---------- Talleres ---------- */
+.talleres { position: relative; isolation: isolate; overflow: hidden; border-radius: 26px; color: #fff; padding: clamp(2.25rem, 5vw, 4.5rem); background: var(--azul); }
+/* La foto ocupa la parte derecha para que la persona no quede detrás del texto */
+.talleres > img { position: absolute; top: 0; right: 0; bottom: 0; z-index: -2; width: 62%; height: 100%; object-fit: cover; object-position: 78% center; }
+.talleres::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(95deg, rgba(8, 42, 87, .97) 0%, rgba(11, 55, 111, .95) 40%, rgba(11, 55, 111, .45) 56%, rgba(11, 55, 111, .08) 78%); }
+.talleres__txt { max-width: 36rem; }
+.condiciones { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; margin: 2rem 0 2.25rem; }
+.condiciones li { display: flex; align-items: center; gap: .6rem; padding: .85rem 1rem; border-radius: 14px; background: rgba(255, 255, 255, .08); border: 1px solid rgba(255, 255, 255, .14); font-weight: 500; font-size: .92rem; }
+.condiciones .icono { width: 1.4rem; height: 1.4rem; padding: .25rem; border-radius: 50%; background: var(--naranja); color: var(--azul-tinta); stroke-width: 2.6; }
+.talleres__acciones { display: flex; flex-wrap: wrap; gap: .75rem; }
+@media (max-width: 900px) { .talleres > img { width: 100%; } .talleres::before { background: linear-gradient(180deg, rgba(8, 42, 87, .96), rgba(11, 55, 111, .88)); } }
+@media (max-width: 520px) { .condiciones { grid-template-columns: 1fr; } }
+
+/* ---------- Botón flotante de WhatsApp ---------- */
+.wa-flotante { border-radius: 16px; background: var(--wa); color: #fff; box-shadow: 0 10px 24px -8px rgba(8, 70, 36, .6); }
+.wa-flotante:hover { background: var(--wa-oscuro); }
+@media (max-width: 640px) { .wa-flotante { border-radius: 16px; } }
+
+/* ==========================================================
+   Páginas internas (Quiénes somos, Marcas, Servicios)
+   ========================================================== */
+
+/* ---------- Portada interna: más baja que la del Inicio, texto + foto con corte diagonal ---------- */
+.portada { padding-top: 1rem; }
+.portada__card { position: relative; isolation: isolate; display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr); min-height: clamp(400px, 58vh, 520px); border-radius: 28px; overflow: hidden; color: #fff; background: var(--azul) var(--lineas-vel); }
+.portada__txt { align-self: center; padding: clamp(2.25rem, 5vw, 4rem); }
+.portada .h1 { font-size: clamp(2.2rem, 1.25rem + 3.1vw, 3.9rem); margin-top: 1.25rem; }
+.portada .lead { color: #DCE6F3; max-width: 34rem; }
+.portada__lema { margin-top: 1rem; font: 600 .95rem/1.3 var(--f-titular); color: #fff; }
+.portada__acciones { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2rem; }
+.portada__foto { position: relative; margin: 0; }
+.portada__foto img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; clip-path: polygon(18% 0, 100% 0, 100% 100%, 0 100%); }
+.portada__foto::before { content: ""; position: absolute; z-index: 1; top: 0; bottom: 0; left: 1%; width: 14%; background: var(--naranja); clip-path: polygon(80% 0, 100% 0, 20% 100%, 0 100%); }
+@media (max-width: 900px) {
+  .portada__card { grid-template-columns: minmax(0, 1fr); min-height: 0; border-radius: 22px; }
+  .portada__foto { height: 15rem; order: 2; }
+  .portada__foto img { clip-path: none; }
+  .portada__foto::before { display: none; }
+}
+@media (max-width: 600px) { .portada__txt { padding-inline: 1.75rem; } }
+
+/* ---------- Accesos a las secciones de la página ---------- */
+.atajos { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
+.atajos a { display: inline-flex; align-items: center; gap: .45rem; padding: .7rem 1rem; border-radius: 99px; background: #fff; border: 1px solid var(--linea); color: var(--azul); font: 700 .74rem/1 var(--f-titular); letter-spacing: .08em; text-transform: uppercase; text-decoration: none; transition: border-color .2s, background-color .2s; }
+.atajos a:hover { border-color: var(--naranja); background: #FFF7F1; }
+.atajos .icono { width: 1.1rem; height: 1.1rem; color: var(--naranja-titular); }
+@media (max-width: 600px) { .atajos { flex-wrap: nowrap; overflow-x: auto; padding-bottom: .4rem; scrollbar-width: none; } .atajos::-webkit-scrollbar { display: none; } .atajos a { flex: none; } }
+
+/* ---------- Consulta rápida como cierre de página (no flota sobre la portada) ---------- */
+.consulta--cierre .consulta__panel { margin-inline: 0; }
+.cierre .cabecera { margin-bottom: 1.75rem; }
+
+/* ---------- Aclaración legal ---------- */
+.aclaracion { display: flex; gap: .8rem; align-items: flex-start; padding: 1.1rem 1.25rem; border-radius: 14px; border: 1px dashed var(--azul-200); background: #F7F9FB; font-size: .82rem; color: var(--acero); }
+.aclaracion .icono { width: 1.25rem; height: 1.25rem; color: var(--azul-500); margin-top: .1rem; }
+
+/* ---------- Ancla con el encabezado fijo ---------- */
+[id] { scroll-margin-top: 7rem; }

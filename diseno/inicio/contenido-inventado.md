@@ -17,9 +17,7 @@ Por pedido de Walter, el contenido que faltaba se inventó en lugar de dejar mar
 | **Oferta del banner** | Bloque 3 | *Amortiguadores en 3 cuotas sin interés.* Llevando el juego completo, el kit de fuelles y topes va de regalo. Vigente hasta el 30/11/2026. | La primera oferta real del cliente. Si no hay, el banner arranca oculto. |
 | **Reseñas de Google** | Bloque 9 | Nota 4,8, 136 reseñas y tres reseñas: Martín S., Valeria A. y Jorge C. | Las reales de la ficha de Google del local. **No se publican inventadas.** |
 
-**Testimonios:** Walter los sacó de Inicio el 09/11. Los 5 testimonios inventados quedan solo en las versiones de `descartadas/`.
-
-**Pendiente:** definir si los testimonios salen solo de Inicio o de todo el sitio, y si se actualiza `mapa-de-sitio.md`. El mapa todavía los incluye, con el requisito de que el cliente los pueda editar.
+**Testimonios:** Walter los sacó de todo el sitio el 09/11 y se quitaron de `mapa-de-sitio.md`. Los 5 testimonios inventados quedan solo en las versiones de `descartadas/`.
 
 ## Hay que verificarlo
 
@@ -30,7 +28,7 @@ Por pedido de Walter, el contenido que faltaba se inventó en lugar de dejar mar
 | **Mapa** | Bloque 10 | En la Premium 2 es `img/mapa-local.svg`, una ilustración propia con el norte arriba. Las calles salen de la captura de Google Maps que pasó Walter, que estaba girada 180°: Montevideo, Av. Pellegrini, Lavalle y Bv. Avellaneda. Las manzanas y los lotes son esquemáticos y la calle al este de Lavalle va sin nombre. El local está del lado sur de Pellegrini, pasando Lavalle, a un tercio de la cuadra. El enlace abre la búsqueda en Google Maps: para publicar, usar el enlace de la ficha del local. `a-base` y la Premium 1 siguen con el mapa anterior (`img/mapa.svg`). |
 | **Foto de Nuestra historia** | Bloque 7 | Es una captura de Google Street View. Supuse que es el primer local, en San Nicolás 1268, y así lo dice el epígrafe: confirmarlo. Para publicarla hay que revisar las condiciones de uso de Google o reemplazarla por una foto propia del archivo del cliente. |
 | **Foto de Talleres** | Bloque 8 | Walter pidió cambiarla sin decir por cuál. Elegí la del pasillo del depósito (`20.32.10`), con un vendedor buscando una pieza. |
-| **Logos de marcas de autos** | Bloque 4 | Van como texto. Hacen falta los archivos oficiales (SVG) de las 9 marcas. |
+| **Logos de marcas de autos** | Bloque 4 | En la Premium 2 van los 9 logos vectoriales, en un solo color (blanco en Renault y Chevrolet, azul en el resto), con el nombre en texto. Salen de Simple Icons 16.37.0 (dibujo CC0; las marcas son de sus fabricantes). Validar con el cliente, o cambiarlos por los archivos oficiales si los consigue. La aclaración «No somos concesionarios ni distribuidores oficiales» tiene que seguir junto a los logos. |
 | **Fotos** | Todo el sitio | Son de celular, de 960 a 1200 px de ancho. La de la portada (961 px) se estira un poco en pantallas grandes. Conviene conseguir originales en mayor resolución. |
 
 ## Textos redactados (no son datos, pero el cliente debería leerlos)
@@ -44,6 +42,29 @@ Por pedido de Walter, el contenido que faltaba se inventó en lugar de dejar mar
 - **Talleres:** *Sabemos que un auto parado es plata.*
 - **Rubros:** bajadas de cada especialidad, por ejemplo *Kits completos con correa, tensor y bomba de agua*.
 - **Chevrolet:** *Toda la línea desde 2015* (sale de la historia que contó el cliente).
+
+## Páginas internas (09/11/2026)
+
+`quienes-somos.html`, `marcas.html` y `servicios.html` siguen la línea de la Premium 2. Comparten con el Inicio `css/sitio.css`. Se arman desde sus plantillas en `diseno/fuentes-paginas/`: el encabezado, el pie, los íconos y el botón flotante salen del Inicio. Si esas partes cambian en el Inicio, o si se edita una plantilla, se vuelven a armar con:
+
+```
+node diseno/fuentes-paginas/armar-paginas.js diseno/inicio quienes-somos.html marcas.html servicios.html
+```
+
+Los cambios de contenido de una página interna van en su plantilla, no en el HTML armado.
+
+| Página | Qué | Situación |
+|---|---|---|
+| Quiénes somos | **Foto del equipo** | La foto grupal está pendiente. Va una real del equipo en el mostrador (`20.31.05`). |
+| Quiénes somos | **Textos de la línea de tiempo y del cambio de nombre** | Redactados a partir del mapa de sitio: *proyecto familiar*, *sumamos personas y capacitación*, *el cambio lo pidieron nuestros clientes*. El cliente debería leerlos. |
+| Quiénes somos | **Foto de 2015** | Usa la fachada con el cartel viejo (`fachada-cartel`). Confirmar que es Av. Pellegrini 3971. |
+| Marcas | **Qué incluye la línea completa** | Inventado: motor y distribución, embragues, suspensión, frenos, encendido y filtros, accesorios. |
+| Marcas | **Productos más vendidos** | Inventados: kit de distribución Dexco para Renault 1.6 8v, amortiguadores originales Chevrolet para Onix y Prisma, bujías NGK. La imagen es una ilustración del rubro hasta tener la foto de cada producto. |
+| Marcas | **Marcas de repuestos** | Van como texto. Faltan los logos de Motrio, NGK, Hutchinson y Dexco (y los de Renault y Chevrolet Original); conviene pedírselos al cliente. |
+| Marcas | **Botones de Renault y Chevrolet** | Dicen «Consultar por Renault» y «Consultar por Chevrolet»: «Consultar repuestos Chevrolet» no entraba en un renglón a 360 px. |
+| Servicios | **Venta online** | Dice *Comprá en el mostrador o hacé tu pedido sin moverte de tu casa o del taller*. Falta que el cliente defina qué incluye. |
+| Servicios | **Preguntas frecuentes** | 9 preguntas redactadas por mí, con datos estructurados `FAQPage`. El cliente las tiene que validar. |
+| Servicios | **Foto de Talleres** | La misma del Inicio (parece generada con IA). |
 
 ## Decisiones de diseño a validar
 

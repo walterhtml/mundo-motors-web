@@ -47,18 +47,45 @@ body { background: var(--gris-claro); }
 .nota li { padding-left: 1.1rem; position: relative; }
 .nota li::before { content: "–"; position: absolute; left: 0; color: var(--naranja-titular); font-weight: 700; }
 @media (max-width: 1000px) { .versiones { grid-template-columns: 1fr; max-width: 34rem; margin-inline: auto; } .pies, .notas { grid-template-columns: 1fr; } }
+.versiones--4 { grid-template-columns: repeat(4, 1fr); }
+.versiones--4 .ver h2 { font-size: 1.1rem; }
+.versiones + h2 + .versiones, h2 + .versiones { margin-top: 1.5rem; }
+@media (max-width: 1100px) { .versiones--4 { grid-template-columns: 1fr 1fr; max-width: none; } }
+@media (max-width: 600px) { .versiones--4 { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
 <header class="cab">
   <div class="contenedor">
     <img src="img/logo-mundo-motors.png" width="600" height="140" alt="Mundo Motors">
-    <h1>Inicio · <span>elegida: Premium 2 con pie claro</span></h1>
-    <p>Walter eligió el 09/11 la Premium 2 · Automotriz con el pie 1 · Claro, y los ajustes se hacen sobre esa versión. La A base y la Premium 1 quedan como referencia. En la barra negra de arriba de cada página se puede cambiar el pie.</p>
+    <h1>Sitio · <span>línea Premium 2 con pie claro</span></h1>
+    <p>Walter eligió el 09/11 la Premium 2 · Automotriz con el pie 1 · Claro para el Inicio. Las otras tres páginas del mapa de sitio siguen esa misma línea y comparten los estilos de <code>css/sitio.css</code>. La A base y la Premium 1 quedan como referencia.</p>
   </div>
 </header>
 
 <main class="contenedor">
+  <section class="sec" style="padding-top:0" aria-labelledby="h-paginas">
+    <div class="versiones versiones--4" style="margin-top:-1.75rem">
+      <article class="ver">
+        <a href="a-premium-2.html"><img src="img/indice-a-premium-2.webp" width="960" height="600" alt="Portada del Inicio"></a>
+        <div class="ver__txt"><span class="ver__tag">Página 1</span><h2 id="h-paginas">Inicio</h2><p>Premium 2 con los ajustes de escritorio y celular.</p><a class="btn btn--azul" href="a-premium-2.html">Ver Inicio</a></div>
+      </article>
+      <article class="ver">
+        <a href="quienes-somos.html"><img src="img/indice-quienes-somos.webp" width="960" height="600" alt="Portada de Quiénes somos"></a>
+        <div class="ver__txt"><span class="ver__tag">Página 2</span><h2>Quiénes somos</h2><p>De Mundo Renault a Mundo Motors: línea de tiempo, el cambio de nombre, cómo trabajamos, el equipo y consulta rápida.</p><a class="btn btn--azul" href="quienes-somos.html">Ver Quiénes somos</a></div>
+      </article>
+      <article class="ver">
+        <a href="marcas.html"><img src="img/indice-marcas.webp" width="960" height="600" alt="Portada de Marcas"></a>
+        <div class="ver__txt"><span class="ver__tag">Página 3</span><h2>Marcas</h2><p>Renault y Chevrolet, mecánica multimarca, marcas de repuestos, los 3 más vendidos, originales y alternativos.</p><a class="btn btn--azul" href="marcas.html">Ver Marcas</a></div>
+      </article>
+      <article class="ver">
+        <a href="servicios.html"><img src="img/indice-servicios.webp" width="960" height="600" alt="Portada de Servicios"></a>
+        <div class="ver__txt"><span class="ver__tag">Página 4</span><h2>Servicios</h2><p>Qué hacemos, cómo consultar, envíos, talleres, medios de pago, devoluciones y preguntas frecuentes.</p><a class="btn btn--azul" href="servicios.html">Ver Servicios</a></div>
+      </article>
+    </div>
+  </section>
+
+  <h2 style="font-size:1.35rem;font-weight:800;text-transform:uppercase;margin-top:3.5rem">Versiones del Inicio</h2>
   <div class="versiones">
     <article class="ver">
       <a href="a-base.html"><img src="img/indice-a-base.webp" width="960" height="600" alt="Portada de la opción A base"></a>
@@ -95,6 +122,7 @@ body { background: var(--gris-claro); }
           <li>Botones de WhatsApp del encabezado y el flotante en verde, con texto blanco.</li>
           <li>Talleres: «Soy mecánico» y sin el botón «Ver condiciones».</li>
           <li>Mapa rehecho: sin plaza, el local a mitad de cuadra y Bv. Avellaneda a la vista.</li>
+          <li>Marcas con su logo vectorial, en un solo color.</li>
         </ul>
         <a class="btn btn--azul" href="a-premium-2.html">Ver Premium 2</a>
       </div>
