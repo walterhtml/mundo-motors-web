@@ -55,11 +55,11 @@ Los cambios de contenido de una página interna van en su plantilla, no en el HT
 
 | Página | Qué | Situación |
 |---|---|---|
-| Quiénes somos | **Foto del equipo** | La foto grupal está pendiente. Va una real del equipo en el mostrador (`20.31.05`). |
+| Quiénes somos | **Foto del equipo** | Va la foto grupal real (`20.38.34`), que Walter eligió el 10/11. Confirmar con el cliente que están todos de acuerdo en que aparezca en la web. |
 | Quiénes somos | **Textos de la línea de tiempo y del cambio de nombre** | Redactados a partir del mapa de sitio: *proyecto familiar*, *sumamos personas y capacitación*, *el cambio lo pidieron nuestros clientes*. El cliente debería leerlos. |
 | Quiénes somos | **Foto de 2015** | Usa la fachada con el cartel viejo (`fachada-cartel`). Confirmar que es Av. Pellegrini 3971. |
 | Marcas | **Qué incluye la línea completa** | Inventado: motor y distribución, embragues, suspensión, frenos, encendido y filtros, accesorios. |
-| Marcas | **Productos más vendidos** | Inventados: kit de distribución Dexco para Renault 1.6 8v, amortiguadores originales Chevrolet para Onix y Prisma, bujías NGK. La imagen es una ilustración del rubro hasta tener la foto de cada producto. |
+| Marcas | **Productos más vendidos** | Inventados: kit de distribución Dexco para Renault 1.6 8v, amortiguadores originales Chevrolet para Onix y Prisma, bujías NGK. Las imágenes (10/11) son fotos libres de Wikimedia Commons, **genéricas**: el kit de distribución es un panel de exhibición de Gates (se ve su marca), el amortiguador está montado en un Nissan y las bujías están usadas. El 10/11 Walter pidió **sacar la línea de créditos**; dos de las tres son CC BY-SA y exigen atribución, así que al publicar hay que reemplazarlas por fotos propias (o volver a poner el crédito). Hay que reemplazarlas por la foto real de cada producto que cargue el cliente. |
 | Marcas | **Marcas de repuestos** | Van como texto. Faltan los logos de Motrio, NGK, Hutchinson y Dexco (y los de Renault y Chevrolet Original); conviene pedírselos al cliente. |
 | Marcas | **Botones de Renault y Chevrolet** | Dicen «Consultar por Renault» y «Consultar por Chevrolet»: «Consultar repuestos Chevrolet» no entraba en un renglón a 360 px. |
 | Servicios | **Venta online** | Dice *Comprá en el mostrador o hacé tu pedido sin moverte de tu casa o del taller*. Falta que el cliente defina qué incluye. |

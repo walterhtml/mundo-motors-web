@@ -22,7 +22,6 @@ mundomotors.com.ar
     ├── #envios
     ├── #talleres
     ├── #pagos
-    ├── #devoluciones
     └── #preguntas-frecuentes
 
 mundorenault.com.ar  →  redirección 301 a mundomotors.com.ar
@@ -122,8 +121,7 @@ No va en el encabezado ni en la portada de Inicio (decisión de Walter, 09/11).
 | 4 | **Envíos** `#envios` | Rosario y alrededores con cadetería. Resto del país por encomienda. |
 | 5 | **Talleres y mecánicos** `#talleres` | Cuenta corriente · precios diferenciales por volumen · atención prioritaria · envíos al taller. Botón propio de WhatsApp con el mensaje *Soy taller/mecánico*. |
 | 6 | **Medios de pago** `#pagos` | Efectivo · transferencia · tarjetas de crédito · QR. 3 cuotas sin interés con tarjetas bancarizadas (vigencia mensual). Factura A. |
-| 7 | **Cambios y devoluciones** `#devoluciones` | Comprobante de compra · 5 días hábiles · packaging en buen estado · sin signos de montaje ni uso · no se aceptan devoluciones de piezas y componentes electrónicos. **No se detalla la garantía** (minuta 06/11: depende de la pieza y del fabricante, y el cliente no la quiere mostrar por ahora). |
-| 8 | **Preguntas frecuentes** `#preguntas-frecuentes` | Se redactan a partir de las respuestas del cliente y él las valida. Incluir: *¿Mundo Motors es el mismo Mundo Renault?* (sí: mismo equipo y mismo local) · *¿Son concesionario oficial de Renault?* (no) · *No hacemos colocación ni reparaciones*. |
+| 7 | **Preguntas frecuentes** `#preguntas-frecuentes` | Se redactan a partir de las respuestas del cliente y él las valida. Incluir: *¿Mundo Motors es el mismo Mundo Renault?* (sí: mismo equipo y mismo local) · *¿Son concesionario oficial de Renault?* (no) · *No hacemos colocación ni reparaciones*. |
 
 ---
 

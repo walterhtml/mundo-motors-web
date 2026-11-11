@@ -6,13 +6,18 @@
 <title>Marcas | Repuestos Renault, Chevrolet y multimarca en Rosario · Mundo Motors</title>
 <meta name="description" content="Repuestos para Renault y Chevrolet (línea completa) y mecánica para Volkswagen, Peugeot, Fiat, Citroën, Ford, Toyota y Nissan. Originales y primeras marcas en Rosario.">
 <meta name="robots" content="noindex">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#0B376F">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/pie.css">
 <link rel="stylesheet" href="css/sitio.css">
-<link rel="preload" as="image" href="img/mostrador-gm.webp">
+<link rel="preload" as="image" href="img/portada-marcas.webp">
 <style>
 /* =================== MARCAS · estilos propios =================== */
 .portada__foto img { object-position: 45% 60%; }
@@ -32,7 +37,13 @@
 .especialista li .icono { width: 1.15rem; height: 1.15rem; padding: .2rem; border-radius: 50%; background: var(--naranja); color: var(--azul-tinta); stroke-width: 2.6; }
 .especialista .btn { align-self: flex-start; margin-top: auto; }
 @media (max-width: 900px) { .especialistas { grid-template-columns: minmax(0, 1fr); } }
-@media (max-width: 600px) { .especialista::after { right: -20px; width: 44px; } }
+@media (max-width: 600px) {
+  .especialista::after { right: -20px; width: 44px; }
+  .especialista__cab { gap: .75rem; }
+  .especialista__cab b { font-size: 1.6rem; }
+  .especialista__cab .logo-marca { width: calc(var(--w) * .8); height: calc(var(--h) * .8); }
+}
+@media (max-width: 380px) { .especialista__cab b { font-size: 1.4rem; } }
 @media (max-width: 420px) { .especialista ul { grid-template-columns: 1fr; } }
 
 /* ---------- Mecánica multimarca: cada tarjeta consulta por WhatsApp ---------- */
@@ -54,8 +65,8 @@
 .producto:hover { transform: translateY(-4px); box-shadow: var(--sombra); }
 /* Imagen de producto: ilustración del rubro hasta tener la foto real */
 .producto__img { position: relative; display: grid; place-items: center; aspect-ratio: 4 / 3; background: radial-gradient(circle at 50% 45%, #fff 0 28%, transparent 29%), linear-gradient(135deg, #E7EDF3, #D6E0EA); overflow: hidden; }
-.producto__img::after { content: ""; position: absolute; right: 12%; top: 0; width: 40px; height: 100%; background: var(--naranja); clip-path: polygon(62% 0, 100% 0, 38% 100%, 0 100%); opacity: .85; }
-.producto__img .icono { width: 5rem; height: 5rem; color: var(--azul); stroke-width: 1.2; position: relative; z-index: 1; }
+.producto__img::after { display: none; content: ""; position: absolute; z-index: 1; right: 12%; top: 0; width: 40px; height: 100%; background: var(--naranja); clip-path: polygon(62% 0, 100% 0, 38% 100%, 0 100%); opacity: .85; }
+.producto__img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .producto__promo { position: absolute; left: 1rem; top: 1rem; z-index: 2; background: var(--naranja); color: var(--azul-tinta); font: 800 .68rem/1 var(--f-titular); letter-spacing: .12em; text-transform: uppercase; padding: .55rem .8rem; border-radius: 99px; }
 .producto__txt { display: flex; flex-direction: column; gap: .5rem; padding: 1.4rem 1.4rem 1.5rem; flex: 1; }
 .producto__marca { font: 700 .7rem/1 var(--f-titular); letter-spacing: .16em; text-transform: uppercase; color: var(--naranja-titular); }
@@ -63,7 +74,6 @@
 .producto__uso { font-size: .88rem; color: var(--acero); flex: 1; }
 .producto__uso b { color: var(--texto); font-weight: 600; }
 .producto .btn { margin-top: .75rem; }
-.productos__nota { margin-top: 1.25rem; font-size: .8rem; color: var(--acero); }
 @media (max-width: 960px) { .productos { grid-template-columns: minmax(0, 1fr); max-width: 30rem; margin-inline: auto; } }
 
 /* ---------- Originales y alternativos ---------- */
@@ -172,7 +182,7 @@
             <a class="btn btn--vidrio btn--grande" href="#mas-vendidos">Más vendidos</a>
           </div>
         </div>
-        <figure class="portada__foto"><img src="img/mostrador-gm.webp" width="1200" height="1600" alt="Clientes en el mostrador de Mundo Motors" fetchpriority="high"></figure>
+        <figure class="portada__foto"><img src="img/portada-marcas.webp" width="960" height="1280" alt="Mostrador de atención de Mundo Motors" fetchpriority="high"></figure>
       </div>
     </div>
   </section>
@@ -263,7 +273,7 @@
       </div>
       <ul class="productos">
         <li class="producto">
-          <div class="producto__img"><span class="producto__promo">3 cuotas sin interés</span><svg class="icono" aria-hidden="true"><use href="#i-dist"/></svg></div>
+          <div class="producto__img"><span class="producto__promo">3 cuotas sin interés</span><img src="img/prod-distribucion.webp" width="960" height="720" alt="Componentes de un sistema de distribución por correa: correa, poleas y tensores" loading="lazy"></div>
           <div class="producto__txt">
             <span class="producto__marca">Dexco</span>
             <h3>Kit de distribución con bomba de agua</h3>
@@ -272,7 +282,7 @@
           </div>
         </li>
         <li class="producto">
-          <div class="producto__img"><svg class="icono" aria-hidden="true"><use href="#i-amort"/></svg></div>
+          <div class="producto__img"><img src="img/prod-amortiguador.webp" width="960" height="720" alt="Amortiguador delantero con resorte montado en un auto" loading="lazy"></div>
           <div class="producto__txt">
             <span class="producto__marca">Original Chevrolet</span>
             <h3>Amortiguadores delanteros</h3>
@@ -281,7 +291,7 @@
           </div>
         </li>
         <li class="producto">
-          <div class="producto__img"><svg class="icono" aria-hidden="true"><use href="#i-bujia"/></svg></div>
+          <div class="producto__img"><img src="img/prod-bujias.webp" width="960" height="720" alt="Juego de bujías" loading="lazy"></div>
           <div class="producto__txt">
             <span class="producto__marca">NGK</span>
             <h3>Juego de bujías</h3>
@@ -332,7 +342,6 @@
           <div class="form-pie"><p class="form-error" role="alert"></p><p class="form-nota">Se abre WhatsApp con tu consulta armada. No guardamos tus datos.</p></div>
         </div>
       </div>
-      <p class="aclaracion" style="margin-top:2rem"><svg class="icono" aria-hidden="true"><use href="#i-info"/></svg><span>Comercializamos repuestos de estas marcas. No somos concesionarios ni distribuidores oficiales. Mundo Renault fue nuestro nombre comercial anterior. Las marcas pertenecen a sus respectivos dueños.</span></p>
     </div>
   </section>
 

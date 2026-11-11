@@ -85,3 +85,4 @@ html[data-pie="3"] .pie :focus-visible { outline-color: var(--naranja-200); }
 
 @media (max-width: 960px) { .pie__sup-in { grid-template-columns: 1fr 1fr; } .pie__marca { grid-column: 1 / -1; } }
 @media (max-width: 560px) { .pie__sup-in { grid-template-columns: 1fr; gap: 2rem; } .pie__inf-in { flex-direction: column; align-items: flex-start; } }
+@media (max-width: 600px) { .pie__nav { display: none; } }
