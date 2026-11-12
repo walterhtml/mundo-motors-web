@@ -1,0 +1,17 @@
+// Mundo Motors · Cloudflare Workers con archivos estáticos (sin código de Worker).
+// La cuenta («wdev»), el dominio y las rutas los completa la etapa 4 (sesión «Servidor»).
+// Nunca guardar tokens ni claves en este archivo.
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "mundo-motors",
+  "compatibility_date": "2026-11-01",
+  // Dominio propio: exige que mundomotors.com.ar sea una zona de la cuenta de Cloudflare.
+  // Si ya existe un registro DNS para ese nombre, Cloudflare lo avisa y no lo pisa sin confirmación.
+  "routes": [{ "pattern": "mundomotors.com.ar", "custom_domain": true }],
+  "assets": {
+    "directory": "./public",
+    // URLs sin extensión ni barra final: marcas.html responde en /marcas,
+    // y /marcas.html o /marcas/ redirigen a /marcas.
+    "html_handling": "drop-trailing-slash"
+  }
+}

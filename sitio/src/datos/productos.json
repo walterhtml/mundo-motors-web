@@ -1,0 +1,38 @@
+{
+  "ejemplo": true,
+  "productos": [
+    {
+      "visible": true,
+      "nombre": "Kit de distribución con bomba de agua",
+      "marca": "Dexco",
+      "aplicacion": "Renault Kangoo, Clio y Logan 1.6 8v.",
+      "promocion": "3 cuotas sin interés",
+      "imagen": "/img/prod-distribucion.webp",
+      "imagen_ancho": 960,
+      "imagen_alto": 720,
+      "imagen_alt": "Componentes de un sistema de distribución por correa: correa, poleas y tensores"
+    },
+    {
+      "visible": true,
+      "nombre": "Amortiguadores delanteros",
+      "marca": "Original Chevrolet",
+      "aplicacion": "Chevrolet Onix y Prisma, 2013 en adelante.",
+      "promocion": "",
+      "imagen": "/img/prod-amortiguador.webp",
+      "imagen_ancho": 960,
+      "imagen_alto": 720,
+      "imagen_alt": "Amortiguador delantero con resorte montado en un auto"
+    },
+    {
+      "visible": true,
+      "nombre": "Juego de bujías",
+      "marca": "NGK",
+      "aplicacion": "Renault y Chevrolet con motores nafteros 1.4 y 1.6.",
+      "promocion": "",
+      "imagen": "/img/prod-bujias.webp",
+      "imagen_ancho": 960,
+      "imagen_alto": 720,
+      "imagen_alt": "Juego de bujías"
+    }
+  ]
+}

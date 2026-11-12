@@ -1,0 +1,59 @@
+/* ==========================================================
+   Mundo Motors · Pie
+   Versión 1 · Claro (elegida por Walter el 09/11/2026).
+   Las versiones 2 y 3 quedan solo en diseno/inicio/css/pie.css.
+   ========================================================== */
+
+.pie {
+  --p-sup-bg: var(--gris-claro);
+  --p-sup-txt: var(--azul);
+  --p-sup-sec: var(--acero);
+  --p-sup-linea: var(--borde);
+  --p-inf-bg: var(--gris-claro);
+  --p-inf-txt: var(--azul);
+  --p-inf-sec: var(--acero);
+  --p-inf-linea: var(--borde);
+  --p-acento: var(--naranja-titular);
+  --p-chip: #fff;
+  --p-chip-borde: var(--borde);
+  --p-placa: transparent;
+  --p-placa-pad: 0;
+  font-size: var(--t-sm);
+  border-top: 4px solid var(--naranja);
+}
+
+/* Nivel superior: marca, contacto y horarios */
+.pie__sup { background: var(--p-sup-bg); color: var(--p-sup-sec); padding: clamp(3rem, 6vw, 4.5rem) 0 clamp(2.25rem, 4vw, 3rem); }
+.pie__sup-in { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 2.5rem; }
+.pie__placa { display: inline-block; background: var(--p-placa); padding: var(--p-placa-pad); border-radius: 12px; }
+.pie__placa img { height: 52px; width: auto; }
+.pie__antes {
+  display: flex; width: fit-content; align-items: center; gap: .5rem; margin-top: 1.25rem;
+  padding: .6rem .95rem; border: 1.5px solid var(--naranja); border-radius: 8px;
+  font: 700 .9rem/1 var(--f-titular); color: var(--p-sup-txt); letter-spacing: .02em;
+}
+.pie__antes span { color: var(--p-acento); font-size: .7rem; letter-spacing: .16em; text-transform: uppercase; }
+.pie__lema { margin-top: 1rem; color: var(--p-sup-txt); font-weight: 500; }
+.pie h2 { font-family: var(--f-titular); font-size: .75rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; margin-bottom: 1.1rem; }
+.pie__sup h2 { color: var(--p-sup-txt); }
+.pie__lista li { display: flex; gap: .65rem; margin-bottom: .7rem; color: var(--p-sup-sec); }
+.pie__lista .icono { width: 1.15rem; height: 1.15rem; margin-top: .2rem; color: var(--p-acento); }
+.pie__lista li.sin-icono { padding-left: 1.8rem; }
+.pie a { color: var(--p-sup-txt); text-decoration: none; }
+.pie a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+/* Nivel inferior: pagos, menú y aclaración legal */
+.pie__inf { background: var(--p-inf-bg); color: var(--p-inf-sec); border-top: 1px solid var(--p-sup-linea); padding: 1.75rem 0 6rem; }
+.pie__inf-in { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.25rem 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--p-inf-linea); }
+.pie__pagos { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1rem; }
+.pie__pagos h2 { color: var(--p-inf-sec); margin: 0; }
+.pagos { display: flex; flex-wrap: wrap; gap: .4rem; }
+.pagos span { background: var(--p-chip); border: 1px solid var(--p-chip-borde); color: var(--p-inf-txt); padding: .3rem .65rem; border-radius: 6px; font-size: .78rem; }
+.pie__nav { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; }
+.pie__nav a { color: var(--p-inf-txt); font-weight: 500; }
+.pie__legal { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; padding-top: 1.25rem; font-size: .78rem; color: var(--p-inf-sec); }
+.pie__legal p { max-width: 46rem; }
+
+@media (max-width: 960px) { .pie__sup-in { grid-template-columns: 1fr 1fr; } .pie__marca { grid-column: 1 / -1; } }
+@media (max-width: 560px) { .pie__sup-in { grid-template-columns: 1fr; gap: 2rem; } .pie__inf-in { flex-direction: column; align-items: flex-start; } }
+@media (max-width: 600px) { .pie__nav { display: none; } }

@@ -1,0 +1,13 @@
+{
+  "ejemplo": false,
+  "actualizado": "2026-11-11",
+  "nota": 4.8,
+  "cantidad": 2147,
+  "url": "https://maps.google.com/?cid=15493511764506442326",
+  "lista": [
+    {"autor": "David Pradi", "estrellas": 5, "fecha": "2026-11", "color": "#ab47bc", "texto": "Excelente atención ! Me consiguieron todo lo que necesitaba para mí R 19 , súper recomendados en calidad y precio ."},
+    {"autor": "Agustin Aielo", "estrellas": 5, "fecha": "2026-11", "color": "#8d6e63", "texto": "Excelente atención, muy buenos precios y la mayor variedad de repuestos. Marcos y sus compañeros siempre predispuestos a resolver cualquier duda"},
+    {"autor": "Rolando Böhnemann", "estrellas": 5, "fecha": "2026-10", "foto": "/img/resenas/rolando-bohnemann.webp", "texto": "Siempre que fui a comprar sus productos acá¡¡ Son de excelente calidad. Y tiene los mejores precios una atención y asesoramiento espectacular. Todos muy amables. Y te explican todo. Gracias"},
+    {"autor": "Marcelo Alvarez", "estrellas": 5, "fecha": "2026-10", "texto": "Muy buena atención y organización. Buenos precios y repuestos que no fallan. Buen asesoramiento."}
+  ]
+}

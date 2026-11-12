@@ -1,0 +1,14 @@
+{
+  "name": "mundo-motors-sitio",
+  "private": true,
+  "description": "Sitio de Mundo Motors (ex Mundo Renault). HTML estático generado desde src/ y publicado en Cloudflare Workers.",
+  "scripts": {
+    "armar": "node armar.js",
+    "dev": "node armar.js && wrangler dev",
+    "deploy": "node armar.js --produccion && wrangler deploy",
+    "deploy:produccion": "node armar.js --produccion --permitir-ejemplo && wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

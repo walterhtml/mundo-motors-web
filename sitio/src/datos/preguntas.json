@@ -1,0 +1,14 @@
+{
+  "nota": "Redactadas a partir de las respuestas del cliente. Falta que él las valide (mapa de sitio, Servicios #8).",
+  "preguntas": [
+    { "pregunta": "¿Mundo Motors es el mismo Mundo Renault?", "respuesta": "Sí. Somos el mismo equipo, en el mismo local de Av. Pellegrini 3971, Rosario. Cambiamos el nombre porque sumamos más marcas.", "enlace": { "texto": "Conocé nuestra historia", "href": "/quienes-somos" } },
+    { "pregunta": "¿Son concesionario oficial de Renault?", "respuesta": "No. Comercializamos repuestos originales y de primeras marcas, pero no somos concesionario ni distribuidor oficial de Renault ni de otra marca." },
+    { "pregunta": "¿Hacen colocación o reparaciones?", "respuesta": "No. Vendemos repuestos; no hacemos colocación ni reparaciones." },
+    { "pregunta": "¿Cómo sé qué repuesto lleva mi auto?", "respuesta": "Pasanos marca, modelo, año y motor. Si podés, sumá una foto de la pieza o el número que tiene grabado, y te decimos cuál corresponde." },
+    { "pregunta": "¿Tienen el repuesto que busco?", "respuesta": "Consultanos por WhatsApp y te confirmamos la disponibilidad. Si no lo tenemos, lo buscamos a pedido." },
+    { "pregunta": "¿Hacen envíos?", "respuesta": "Sí. En Rosario y alrededores con cadetería, y al resto del país por encomienda.", "enlace": { "texto": "Ver envíos", "href": "#envios" } },
+    { "pregunta": "¿Puedo pagar en cuotas?", "respuesta": "Sí, en 3 cuotas sin interés con tarjetas bancarizadas. La promoción es mensual, así que consultá la vigencia." },
+    { "pregunta": "¿Hacen Factura A?", "respuesta": "Sí, hacemos Factura A." },
+    { "pregunta": "¿Cuál es el horario de atención?", "respuesta": "De lunes a viernes de 9 a 18 h y los sábados de 9 a 12:30 h, en Av. Pellegrini 3971, Rosario." }
+  ]
+}

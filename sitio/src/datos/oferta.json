@@ -1,0 +1,13 @@
+{
+  "ejemplo": true,
+  "visible": true,
+  "etiqueta": "Oferta del mes",
+  "titulo": "Amortiguadores",
+  "titulo_destacado": "en 3 cuotas sin interés",
+  "texto": "Delanteros y traseros para las principales marcas. Llevando el juego completo, te regalamos el kit de fuelles y topes.",
+  "vence": "2026-11-30",
+  "imagen": "/img/asesoramiento-amortiguador.webp",
+  "imagen_ancho": 960,
+  "imagen_alto": 1280,
+  "imagen_alt": "Vendedor de Mundo Motors revisando un amortiguador"
+}

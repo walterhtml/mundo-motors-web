@@ -1,0 +1,48 @@
+/* =================== QUIÉNES SOMOS · estilos propios =================== */
+.portada__foto img { object-position: 30% 40%; }
+
+/* ---------- Línea de tiempo ---------- */
+.hitos { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; position: relative; }
+.hito { position: relative; display: flex; flex-direction: column; background: #fff; border: 1px solid var(--linea); border-radius: 20px; overflow: hidden; transition: transform .2s, box-shadow .2s; }
+.hito:hover { transform: translateY(-4px); box-shadow: var(--sombra-sm); }
+.hito__foto { position: relative; margin: 0; }
+.hito__foto img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.hito__anio { position: absolute; left: 1.1rem; bottom: -1rem; z-index: 1; font: 800 .9rem/1 var(--f-titular); letter-spacing: .04em; text-transform: uppercase; padding: .7rem 1rem; border-radius: 99px; background: var(--azul); color: #fff; box-shadow: 0 0 0 4px #fff; }
+.hito:last-child .hito__anio { background: var(--naranja); color: var(--azul-tinta); }
+.hito__txt { padding: 1.9rem 1.4rem 1.5rem; }
+.hito h3 { font-size: 1rem; font-weight: 800; text-transform: uppercase; }
+.hito p { font-size: .88rem; color: var(--acero); margin-top: .5rem; line-height: 1.55; }
+@media (max-width: 1000px) { .hitos { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .hitos { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- Por qué ahora somos Mundo Motors ---------- */
+.cambio { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(2rem, 5vw, 4.5rem); align-items: center; }
+.cambio__txt p + p { margin-top: 1rem; }
+.pilares { border-radius: var(--radio-lg); background: var(--azul) var(--lineas-vel); color: #fff; padding: clamp(1.5rem, 3vw, 2.25rem); display: grid; gap: .25rem; position: relative; overflow: hidden; }
+.pilares::after { content: ""; position: absolute; right: 1.5rem; top: 0; width: 48px; height: 100%; background: var(--naranja); clip-path: polygon(62% 0, 100% 0, 38% 100%, 0 100%); opacity: .9; }
+.pilar { position: relative; z-index: 1; display: grid; grid-template-columns: 3.2rem 1fr; gap: 1rem; align-items: start; padding: 1.1rem 4.5rem 1.1rem 0; border-bottom: 1px solid rgba(255, 255, 255, .12); }
+.pilar:last-child { border-bottom: 0; }
+.pilar span { font: 800 1.6rem/1 var(--f-titular); color: var(--naranja); }
+.pilar h3 { color: #fff; font-size: 1.05rem; font-weight: 800; text-transform: uppercase; }
+.pilar p { color: #C9D6E8; font-size: .9rem; margin-top: .3rem; }
+@media (max-width: 900px) { .cambio { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 560px) { .pilar { padding-right: 3.5rem; grid-template-columns: 2.6rem 1fr; } }
+
+/* ---------- Cómo trabajamos ---------- */
+.trabajo { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(2rem, 5vw, 4.5rem); align-items: center; }
+.trabajo__foto { position: relative; margin: 0; }
+.trabajo__foto img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 60% center; border-radius: var(--radio-lg); }
+.trabajo__foto figcaption { position: absolute; left: 1.25rem; bottom: 1.25rem; right: 1.25rem; display: flex; align-items: center; gap: .6rem; background: rgba(255, 255, 255, .94); backdrop-filter: blur(8px); padding: .9rem 1.1rem; border-radius: 14px; font: 700 .8rem/1.35 var(--f-titular); color: var(--azul); box-shadow: var(--sombra); }
+.trabajo__foto figcaption .icono { color: var(--naranja-titular); }
+.trabajo .atributos { grid-template-columns: minmax(0, 1fr); }
+@media (max-width: 900px) { .trabajo { grid-template-columns: minmax(0, 1fr); } .trabajo__foto img { aspect-ratio: 16 / 11; } }
+
+/* ---------- Nuestro equipo ---------- */
+/* La foto grupal va entera arriba (las caras no se tapan) y el texto en una franja azul debajo */
+.equipo { position: relative; overflow: hidden; margin: 0; border-radius: 26px; color: #fff; display: flex; flex-direction: column; background: var(--azul) var(--lineas-vel); }
+.equipo > img { width: 100%; height: clamp(18rem, 42vw, 34rem); object-fit: cover; object-position: center 35%; }
+.equipo figcaption { position: relative; padding: clamp(1.75rem, 4vw, 3rem); padding-right: clamp(5rem, 14vw, 12rem); display: flex; flex-direction: column; align-items: flex-start; }
+.equipo figcaption::after { content: ""; position: absolute; right: 8%; top: 0; width: 56px; height: 100%; background: var(--naranja); clip-path: polygon(62% 0, 100% 0, 38% 100%, 0 100%); opacity: .9; }
+.equipo .titulo { margin-top: .9rem; }
+.equipo .lead { color: #DCE6F3; position: relative; z-index: 1; max-width: 34rem; }
+@media (max-width: 800px) { .equipo { border-radius: 22px; } .equipo figcaption { padding-right: 4.5rem; } .equipo figcaption::after { right: 1rem; } }

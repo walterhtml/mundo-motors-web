@@ -1,0 +1,67 @@
+/* =================== SERVICIOS · estilos propios =================== */
+.portada__foto img { object-position: 55% center; }
+
+/* ---------- Qué hacemos ---------- */
+.servicios { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.servicio { display: flex; gap: 1.1rem; padding: 1.6rem; border-radius: 18px; background: #fff; border: 1px solid var(--linea); transition: transform .2s, box-shadow .2s, border-color .2s; }
+.servicio:hover { transform: translateY(-3px); box-shadow: var(--sombra-sm); border-color: var(--azul-200); }
+.servicio > .icono { width: 3rem; height: 3rem; padding: .7rem; border-radius: 14px; background: var(--naranja); color: var(--azul-tinta); stroke-width: 1.8; }
+.servicio h3 { font-size: 1rem; font-weight: 800; text-transform: uppercase; }
+.servicio p { font-size: .88rem; color: var(--acero); margin-top: .35rem; line-height: 1.55; }
+@media (max-width: 960px) { .servicios { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .servicios { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- Cómo consultar ---------- */
+.pasos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-bottom: 1.75rem; counter-reset: paso; }
+.paso { position: relative; padding: 1.75rem 1.6rem 1.6rem; border-radius: 18px; background: var(--azul) var(--lineas-vel); color: #fff; overflow: hidden; }
+.paso__n { font: 800 3rem/1 var(--f-titular); color: var(--naranja); letter-spacing: -.03em; }
+.paso h3 { color: #fff; font-size: 1.05rem; font-weight: 800; text-transform: uppercase; margin-top: .9rem; }
+.paso p { color: #C9D6E8; font-size: .9rem; margin-top: .4rem; }
+.paso:not(:last-child)::after { content: ""; position: absolute; right: -14px; top: 0; width: 44px; height: 100%; background: var(--naranja); clip-path: polygon(62% 0, 100% 0, 38% 100%, 0 100%); opacity: .9; }
+@media (max-width: 900px) { .pasos { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- Envíos ---------- */
+.envios { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(2rem, 5vw, 4.5rem); align-items: center; }
+.envios__foto { margin: 0; }
+.envios__foto img { width: 100%; aspect-ratio: 5 / 4; object-fit: cover; border-radius: var(--radio-lg); }
+.envios__op { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem; }
+.envio { padding: 1.5rem; border-radius: 18px; background: var(--gris-claro); }
+.envio .icono { width: 2.8rem; height: 2.8rem; padding: .65rem; border-radius: 50%; background: #fff; color: var(--naranja-titular); box-shadow: 0 0 0 1px var(--linea); }
+.envio h3 { margin-top: 1rem; font-size: 1rem; font-weight: 800; text-transform: uppercase; }
+.envio b { display: block; margin-top: .3rem; font: 700 .9rem/1.3 var(--f-titular); color: var(--naranja-titular); }
+.envio p { margin-top: .4rem; font-size: .88rem; color: var(--acero); }
+.envios__nota { margin-top: 1rem; font-size: .85rem; color: var(--acero); }
+@media (max-width: 900px) { .envios { grid-template-columns: minmax(0, 1fr); } .envios__foto img { aspect-ratio: 16 / 10; } }
+@media (max-width: 520px) { .envios__op { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- Medios de pago ---------- */
+.pagos-sec { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(2rem, 5vw, 4.5rem); align-items: start; }
+.medios { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .75rem; }
+.medio { display: flex; flex-direction: column; align-items: center; gap: .7rem; padding: 1.3rem .6rem; border-radius: 16px; background: #fff; border: 1px solid var(--linea); text-align: center; font: 700 .82rem/1.2 var(--f-titular); color: var(--azul); }
+.medio .icono { width: 2rem; height: 2rem; color: var(--naranja-titular); }
+.pagos-dest { display: grid; grid-template-columns: 1.3fr 1fr; gap: .75rem; margin-top: .75rem; }
+.pago-dest { border-radius: 18px; padding: 1.5rem; background: #fff; border: 1px solid var(--linea); }
+.pago-dest--cuotas { background: var(--azul) var(--lineas-vel); border-color: transparent; color: #fff; position: relative; overflow: hidden; }
+.pago-dest--cuotas::after { content: ""; position: absolute; right: 1rem; top: 0; width: 40px; height: 100%; background: var(--naranja); clip-path: polygon(62% 0, 100% 0, 38% 100%, 0 100%); opacity: .9; }
+.pago-dest b { display: block; font: 800 1.6rem/1 var(--f-titular); color: var(--azul); letter-spacing: -.02em; }
+.pago-dest--cuotas b { color: #fff; font-size: 2rem; }
+.pago-dest--cuotas b em { font-style: normal; color: var(--naranja); }
+.pago-dest p { margin-top: .5rem; font-size: .86rem; color: var(--acero); max-width: 85%; }
+.pago-dest--cuotas p { color: #C9D6E8; }
+@media (max-width: 900px) { .pagos-sec { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 600px) { .medios { grid-template-columns: repeat(2, minmax(0, 1fr)); } .pagos-dest { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- Preguntas frecuentes ---------- */
+.faq-sec { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(2rem, 5vw, 4.5rem); align-items: start; }
+.faq-sec__cab { position: sticky; top: 7rem; }
+.faq-sec__cab .btn { margin-top: 1.75rem; }
+.faq { display: grid; gap: .6rem; }
+.faq details { border-radius: 16px; background: #fff; border: 1px solid var(--linea); transition: border-color .2s, box-shadow .2s; }
+.faq details[open] { border-color: var(--azul-200); box-shadow: var(--sombra-sm); }
+.faq summary { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.15rem 1.25rem; cursor: pointer; list-style: none; font: 700 .98rem/1.35 var(--f-titular); color: var(--azul); }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary .icono { width: 1.9rem; height: 1.9rem; padding: .4rem; border-radius: 50%; background: var(--gris-claro); color: var(--azul); flex: none; transition: transform .2s, background-color .2s; }
+.faq details[open] summary .icono { transform: rotate(45deg); background: var(--naranja); color: var(--azul-tinta); }
+.faq details p { padding: 0 1.25rem 1.25rem; color: var(--acero); font-size: .93rem; }
+.faq details p a { color: var(--azul); font-weight: 600; }
+@media (max-width: 900px) { .faq-sec { grid-template-columns: minmax(0, 1fr); } .faq-sec__cab { position: static; } }

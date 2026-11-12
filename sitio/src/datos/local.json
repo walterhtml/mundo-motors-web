@@ -1,0 +1,42 @@
+{
+  "dominio": "https://mundomotors.com.ar",
+  "nombre": "Mundo Motors",
+  "nombre_anterior": "Mundo Renault",
+  "lema": "Tu aliado en repuestos automotor",
+  "fundacion": "2006",
+  "whatsapp": "5493417028284",
+  "whatsapp_texto": "341 702 8284",
+  "telefono": "+543414328098",
+  "telefono_texto": "(0341) 432-8098",
+  "instagram_url": "https://www.instagram.com/mundo.motors.arg/",
+  "instagram_texto": "Mundo Motors Arg",
+  "direccion": "Av. Pellegrini 3971",
+  "ciudad": "Rosario",
+  "provincia": "Santa Fe",
+  "pais": "AR",
+  "mapa_url": "https://maps.google.com/?cid=15493511764506442326",
+  "como_llegar_url": "https://www.google.com/maps/dir/?api=1&destination=Av.+Pellegrini+3971+Rosario",
+  "horario_semana": "Lunes a viernes de 9 a 18 h",
+  "horario_sabado": "Sábados de 9 a 12:30 h",
+  "horario_semana_corto": "Lun a vie de 9 a 18 h",
+  "horarios_schema": [
+    {
+      "dias": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "abre": "09:00",
+      "cierra": "18:00"
+    },
+    {
+      "dias": [
+        "Saturday"
+      ],
+      "abre": "09:00",
+      "cierra": "12:30"
+    }
+  ]
+}

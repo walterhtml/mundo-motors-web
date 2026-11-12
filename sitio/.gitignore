@@ -1,0 +1,6 @@
+# Se genera con «npm run armar»
+public/
+
+node_modules/
+.wrangler/
+.dev.vars

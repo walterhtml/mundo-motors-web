@@ -1,0 +1,44 @@
+<footer class="pie">
+  <div class="pie__sup">
+    <div class="contenedor pie__sup-in">
+      <div class="pie__marca">
+        <a class="pie__placa" href="/" aria-label="Mundo Motors, inicio"><img src="/img/logo-mundo-motors.png" width="600" height="140" alt="Mundo Motors" loading="lazy"></a>
+        <p class="pie__antes"><span>Antes</span> {{local.nombre_anterior}}</p>
+        <p class="pie__lema">{{local.lema}}.</p>
+      </div>
+      <div>
+        <h2>Contacto</h2>
+        <ul class="pie__lista">
+          <li><svg class="icono" aria-hidden="true"><use href="#i-pin"/></svg><a href="{{local.mapa_url}}" target="_blank" rel="noopener">{{local.direccion}}, {{local.ciudad}}</a></li>
+          <li><svg class="icono icono--relleno" aria-hidden="true"><use href="#i-wa"/></svg><a data-wa="Hola Mundo Motors, quiero hacer una consulta.">WhatsApp {{local.whatsapp_texto}}</a></li>
+          <li><svg class="icono" aria-hidden="true"><use href="#i-tel"/></svg><a href="tel:{{local.telefono}}">Teléfono {{local.telefono_texto}}</a></li>
+          {{{bloque.instagram}}}
+        </ul>
+      </div>
+      <div>
+        <h2>Horarios</h2>
+        <ul class="pie__lista">
+          <li><svg class="icono" aria-hidden="true"><use href="#i-reloj"/></svg>{{local.horario_semana}}</li>
+          <li class="sin-icono">{{local.horario_sabado}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="pie__inf">
+    <div class="contenedor">
+      <div class="pie__inf-in">
+        <div class="pie__pagos">
+          <h2>Medios de pago</h2>
+          <div class="pagos"><span>Efectivo</span><span>Transferencia</span><span>Tarjetas de crédito</span><span>QR</span><span>3 cuotas sin interés</span><span>Factura A</span></div>
+        </div>
+        <nav class="pie__nav" aria-label="Pie de página">
+          <a href="/">Inicio</a><a href="/quienes-somos">Quiénes somos</a><a href="/marcas">Marcas</a><a href="/servicios">Servicios</a>
+        </nav>
+      </div>
+      <div class="pie__legal">
+        <p>Mundo Renault fue nuestro nombre comercial anterior. No somos concesionario ni distribuidor oficial de Renault. Las marcas mencionadas pertenecen a sus respectivos dueños.</p>
+        <p>© {{anio}} Mundo Motors</p>
+      </div>
+    </div>
+  </div>
+</footer>

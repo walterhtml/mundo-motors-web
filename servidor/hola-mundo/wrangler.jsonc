@@ -1,0 +1,14 @@
+// Prueba de conexión: Worker con archivos estáticos en mundomotors.com.ar.
+// No es el sitio final. Se reemplaza cuando esté el desarrollo.
+{
+  "name": "mundo-motors-hola",
+  "account_id": "3bc1a3c32d7a4def63465d0f90fc679b",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./public"
+  },
+  "routes": [
+    { "pattern": "mundomotors.com.ar", "custom_domain": true }
+  ],
+  "workers_dev": false
+}

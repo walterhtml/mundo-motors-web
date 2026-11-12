@@ -1,0 +1,148 @@
+<!--{
+  "ruta": "/servicios",
+  "nombre": "Servicios",
+  "prefijo": "se",
+  "titulo": "Servicios | Envíos, talleres y medios de pago · Mundo Motors, ex Mundo Renault",
+  "descripcion": "Asesoramiento, presupuestos sin cargo y búsqueda de repuestos a pedido. Envíos en Rosario y a todo el país, condiciones para talleres y 3 cuotas sin interés.",
+  "imagen": "/img/mostrador-atencion.webp",
+  "imagen_alt": "Cliente consultando por un repuesto en el mostrador de Mundo Motors",
+  "css": "servicios",
+  "precarga": "/img/mostrador-atencion.webp",
+  "faq": true
+}-->
+
+  <!-- 1 · Portada -->
+  <section class="portada" aria-labelledby="h-portada">
+    <div class="contenedor">
+      <div class="portada__card fondo-oscuro">
+        <div class="portada__txt">
+          <span class="chip-vidrio"><i></i>Servicios</span>
+          <h1 class="h1" id="h-portada">Te ayudamos a encontrar <em>el repuesto correcto</em></h1>
+          <p class="lead">Vos decinos qué auto tenés; nosotros te decimos qué pieza lleva. Asesoramiento, búsqueda a pedido y envíos.</p>
+          <div class="portada__acciones">
+            <a class="btn btn--primario btn--grande" data-wa="Hola Mundo Motors, quiero consultar por un repuesto."><svg class="icono icono--relleno"><use href="#i-wa"/></svg>Consultar por WhatsApp</a>
+            <a class="btn btn--vidrio btn--grande" href="#como-consultar">Cómo consultar</a>
+          </div>
+        </div>
+        <figure class="portada__foto"><img src="/img/mostrador-atencion.webp" width="1200" height="900" alt="Cliente consultando por un repuesto en el mostrador de Mundo Motors" fetchpriority="high"></figure>
+      </div>
+      <nav class="atajos" aria-label="Secciones de Servicios">
+        <a href="#envios"><svg class="icono"><use href="#i-envio"/></svg>Envíos</a>
+        <a href="#talleres"><svg class="icono"><use href="#i-llave"/></svg>Talleres</a>
+        <a href="#pagos"><svg class="icono"><use href="#i-cuotas"/></svg>Medios de pago</a>
+        <a href="#preguntas-frecuentes"><svg class="icono"><use href="#i-chat"/></svg>Preguntas frecuentes</a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- 2 · Qué hacemos -->
+  <section class="sec" aria-labelledby="h-servicios">
+    <div class="contenedor" data-revelar>
+      <div class="cabecera">
+        <div><span class="ante">Qué hacemos</span><h2 class="titulo" id="h-servicios">Todo para resolver <em>tu repuesto</em></h2></div>
+        <p class="lead">En el mostrador o a distancia, te acompañamos desde la consulta hasta que tenés la pieza.</p>
+      </div>
+      <ul class="servicios">
+        <li class="servicio"><svg class="icono"><use href="#i-chat"/></svg><div><h3>Asesoramiento</h3><p>Te ayudamos a identificar la pieza correcta para tu auto.</p></div></li>
+        <li class="servicio"><svg class="icono"><use href="#i-doc"/></svg><div><h3>Presupuestos sin cargo</h3><p>Pedinos un presupuesto por WhatsApp o en el mostrador, sin costo.</p></div></li>
+        <li class="servicio"><svg class="icono"><use href="#i-lupa"/></svg><div><h3>Búsqueda a pedido</h3><p>Si no lo tenemos, lo buscamos con nuestros proveedores.</p></div></li>
+        <li class="servicio"><svg class="icono"><use href="#i-tienda"/></svg><div><h3>Venta en el local y online</h3><p>Comprá en el mostrador o hacé tu pedido sin moverte de tu casa o del taller.</p></div></li>
+        <li class="servicio"><svg class="icono"><use href="#i-pin"/></svg><div><h3>Retiro en el local</h3><p>Hacé tu consulta y tu compra por WhatsApp, y vení solo a retirar.</p></div></li>
+        <li class="servicio"><svg class="icono"><use href="#i-envio"/></svg><div><h3>Envíos</h3><p>Cadetería en Rosario y alrededores, y encomienda al resto del país.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 3 · Cómo consultar -->
+  <section class="sec sec--gris" id="como-consultar" aria-labelledby="h-pasos">
+    <div class="contenedor" data-revelar>
+      <div class="cabecera">
+        <div><span class="ante">Cómo consultar</span><h2 class="titulo" id="h-pasos">Tres pasos <em>y listo</em></h2></div>
+        <p class="lead">Cuantos más datos nos pases, más rápido te respondemos.</p>
+      </div>
+      <ol class="pasos">
+        <li class="paso fondo-oscuro"><span class="paso__n" aria-hidden="true">01</span><h3>Tu auto</h3><p>Marca, modelo, año y motor.</p></li>
+        <li class="paso fondo-oscuro"><span class="paso__n" aria-hidden="true">02</span><h3>Qué necesitás</h3><p>El repuesto que buscás. Si tenés una foto de la pieza, mejor.</p></li>
+        <li class="paso fondo-oscuro"><span class="paso__n" aria-hidden="true">03</span><h3>Te respondemos</h3><p>Con la disponibilidad y las opciones que hay para tu auto.</p></li>
+      </ol>
+      {{> consulta-rapida}}
+    </div>
+  </section>
+
+  <!-- 4 · Envíos -->
+  <section class="sec" id="envios" aria-labelledby="h-envios">
+    <div class="contenedor envios" data-revelar>
+      <figure class="envios__foto"><img src="/img/pedido-mostrador.webp" width="960" height="1280" alt="Cliente retirando un pedido de repuestos embalado en el mostrador" loading="lazy" decoding="async"></figure>
+      <div>
+        <span class="ante">Envíos</span>
+        <h2 class="titulo" id="h-envios">Te lo llevamos <em>a donde estés</em></h2>
+        <p class="lead">Preparamos y controlamos cada pedido antes de despacharlo.</p>
+        <div class="envios__op">
+          <div class="envio"><svg class="icono"><use href="#i-envio"/></svg><h3>Rosario y alrededores</h3><b>Con cadetería</b><p>Al domicilio o al taller.</p></div>
+          <div class="envio"><svg class="icono"><use href="#i-caja"/></svg><h3>Resto del país</h3><b>Por encomienda</b><p>Despachamos a todo el país.</p></div>
+        </div>
+        <p class="envios__nota">Consultá el costo y el plazo de entrega por WhatsApp.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · Talleres y mecánicos -->
+  <section class="sec" id="talleres" style="padding-top:0" aria-labelledby="h-talleres">
+    <div class="contenedor" data-revelar>
+      <div class="talleres fondo-oscuro">
+        <img src="/img/entrega-taller.webp" width="1672" height="941" alt="" loading="lazy" decoding="async">
+        <div class="talleres__txt">
+          <span class="ante">Para talleres y mecánicos</span>
+          <h2 class="titulo" id="h-talleres">Tu taller no puede <em>esperar</em></h2>
+          <p class="lead">Sabemos que un auto parado es plata. Por eso tenemos condiciones pensadas para el profesional.</p>
+          <ul class="condiciones">
+            <li><svg class="icono"><use href="#i-check"/></svg>Cuenta corriente</li>
+            <li><svg class="icono"><use href="#i-check"/></svg>Precios por volumen</li>
+            <li><svg class="icono"><use href="#i-check"/></svg>Atención prioritaria</li>
+            <li><svg class="icono"><use href="#i-check"/></svg>Envíos al taller</li>
+          </ul>
+          <div class="talleres__acciones">
+            <a class="btn btn--primario" data-wa="Hola Mundo Motors, soy mecánico y quiero consultar por las condiciones para talleres."><svg class="icono icono--relleno"><use href="#i-wa"/></svg>Soy mecánico</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · Medios de pago -->
+  <section class="sec sec--gris" id="pagos" aria-labelledby="h-pagos">
+    <div class="contenedor pagos-sec" data-revelar>
+      <div>
+        <span class="ante">Medios de pago</span>
+        <h2 class="titulo" id="h-pagos">Pagá como <em>te quede cómodo</em></h2>
+        <p class="lead">En el local o a distancia, con el medio que prefieras.</p>
+      </div>
+      <div>
+        <ul class="medios">
+          <li class="medio"><svg class="icono"><use href="#i-efectivo"/></svg>Efectivo</li>
+          <li class="medio"><svg class="icono"><use href="#i-transfer"/></svg>Transferencia</li>
+          <li class="medio"><svg class="icono"><use href="#i-cuotas"/></svg>Tarjetas de crédito</li>
+          <li class="medio"><svg class="icono"><use href="#i-qr"/></svg>QR</li>
+        </ul>
+        <div class="pagos-dest">
+          <div class="pago-dest pago-dest--cuotas fondo-oscuro"><b>3 cuotas <em>sin interés</em></b><p>Con tarjetas bancarizadas. La promoción es mensual: consultá la vigencia.</p></div>
+          <div class="pago-dest"><b>Factura A</b><p>Para talleres, empresas y profesionales.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · Preguntas frecuentes (salen de datos/preguntas.json, igual que sus datos estructurados) -->
+  <section class="sec" id="preguntas-frecuentes" aria-labelledby="h-faq">
+    <div class="contenedor faq-sec" data-revelar>
+      <div class="faq-sec__cab">
+        <span class="ante">Preguntas frecuentes</span>
+        <h2 class="titulo" id="h-faq">Lo que más <em>nos consultan</em></h2>
+        <p class="lead">¿No encontrás tu respuesta? Escribinos y te contestamos.</p>
+        <a class="btn btn--primario" data-wa="Hola Mundo Motors, tengo una consulta."><svg class="icono icono--relleno"><use href="#i-wa"/></svg>Hacer una pregunta</a>
+      </div>
+      <div class="faq">
+{{{bloque.preguntas}}}
+      </div>
+    </div>
+  </section>

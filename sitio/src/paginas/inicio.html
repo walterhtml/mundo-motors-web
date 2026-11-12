@@ -1,0 +1,199 @@
+<!--{
+  "ruta": "/",
+  "titulo": "Repuestos automotor multimarca en Rosario | Mundo Motors, ex Mundo Renault",
+  "descripcion": "Mundo Motors, ex Mundo Renault: más de 20 años en repuestos automotor en Rosario. Originales y primeras marcas para Renault, Chevrolet y las principales marcas. Consultá por WhatsApp.",
+  "imagen": "/img/mostrador-marcas.webp",
+  "imagen_alt": "Mostrador de atención de Mundo Motors",
+  "css": "inicio",
+  "precarga": "/img/fachada-portada.webp"
+}-->
+
+  <!-- 1 · Portada -->
+  <section class="hero" aria-labelledby="h-portada">
+    <div class="contenedor">
+      <div class="hero__card fondo-oscuro">
+        <img src="/img/fachada-portada.webp" width="960" height="1280" alt="Frente del local de Mundo Motors en Av. Pellegrini 3971, con la puerta abierta y las vidrieras de Renault, Chevrolet y Volkswagen" fetchpriority="high">
+        <span class="hero__corte" aria-hidden="true"></span>
+        <div class="hero__txt">
+          <span class="chip-vidrio"><i></i>Rosario · Desde 2006</span>
+          <h1 class="h1" id="h-portada">Repuestos automotor <em>multimarca</em> en Rosario</h1>
+          <p class="lead">Hace más de 20 años que ayudamos a encontrar el repuesto correcto. Originales y primeras marcas para Renault, Chevrolet y las principales marcas del mercado.</p>
+          <p class="hero__lema">{{local.lema}}.</p>
+          <div class="hero__acciones">
+            <a class="btn btn--primario btn--grande" data-wa="Hola Mundo Motors, quiero consultar por un repuesto."><svg class="icono icono--relleno"><use href="#i-wa"/></svg>Consultar por WhatsApp</a>
+            <a class="btn btn--vidrio btn--grande" href="#donde">Cómo llegar</a>
+          </div>
+          <ul class="hero__datos">
+            <li><b>+20</b><span>años en repuestos</span></li>
+            <li><b>9</b><span>marcas de vehículos</span></li>
+            <li><b>3</b><span>cuotas sin interés</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 · Consultá tu repuesto -->
+  <section class="consulta" aria-labelledby="h-consulta">
+    <div class="contenedor">
+      <div class="consulta__panel">
+        <div class="consulta__cab">
+          <svg class="icono icono--relleno"><use href="#i-wa"/></svg>
+          <div><h2 id="h-consulta">Consultá tu repuesto</h2><p>Decinos qué auto tenés y qué buscás; te ayudamos a encontrarlo.</p></div>
+        </div>
+        <form class="form" data-consulta novalidate>
+          <div class="campo"><label for="c-marca">Marca</label><input id="c-marca" name="marca" placeholder="Renault" autocomplete="off"></div>
+          <div class="campo"><label for="c-modelo">Modelo</label><input id="c-modelo" name="modelo" placeholder="Kangoo" autocomplete="off"></div>
+          <div class="campo"><label for="c-anio">Año</label><input id="c-anio" name="anio" inputmode="numeric" placeholder="2014" autocomplete="off"></div>
+          <div class="campo"><label for="c-motor">Motor</label><input id="c-motor" name="motor" placeholder="1.6 K4M" autocomplete="off"></div>
+          <div class="campo campo--repuesto"><label for="c-repuesto">¿Qué repuesto buscás?</label><input id="c-repuesto" name="repuesto" placeholder="Kit de distribución" autocomplete="off"></div>
+          <button class="btn btn--primario" type="submit"><svg class="icono icono--relleno"><use href="#i-wa"/></svg>Enviar</button>
+        </form>
+        <div class="form-pie"><p class="form-error" role="alert"></p><p class="form-nota">Se abre WhatsApp con tu consulta armada. No guardamos tus datos.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · Oferta (sale de datos/oferta.json; si no hay oferta vigente, no se muestra) -->
+{{{bloque.oferta}}}
+
+  <!-- 4 · Marcas -->
+  <section class="sec" aria-labelledby="h-marcas">
+    <div class="contenedor" data-revelar>
+      <div class="cabecera">
+        <div><span class="ante">Multimarca</span><h2 class="titulo" id="h-marcas">Marcas que <em>trabajamos</em></h2></div>
+        <p class="lead">Más marcas. Más opciones. La misma confianza. Línea completa en Renault y Chevrolet, y mecánica para todas las demás.</p>
+      </div>
+      <div class="marcas__dest">
+        <div class="marca-dest"><svg class="logo-marca" style="--w:3.05rem;--h:4rem" aria-hidden="true"><use href="#m-renault"/></svg><b>RENAULT</b><span>Línea completa</span><small>Desde 2006, cuando abrimos como Mundo Renault.</small></div>
+        <div class="marca-dest"><svg class="logo-marca" style="--w:6.13rem;--h:2rem" aria-hidden="true"><use href="#m-chevrolet"/></svg><b>CHEVROLET</b><span>Línea completa</span><small>Toda la línea desde 2015.</small></div>
+      </div>
+      <ul class="marcas__resto">
+        <li><svg class="logo-marca" style="--w:2.6rem;--h:2.6rem" aria-hidden="true"><use href="#m-volkswagen"/></svg><b>Volkswagen</b><small>Mecánica</small></li>
+        <li><svg class="logo-marca" style="--w:2.48rem;--h:2.73rem" aria-hidden="true"><use href="#m-peugeot"/></svg><b>Peugeot</b><small>Mecánica</small></li>
+        <li><svg class="logo-marca" style="--w:2.6rem;--h:2.6rem" aria-hidden="true"><use href="#m-fiat"/></svg><b>Fiat</b><small>Mecánica</small></li>
+        <li><svg class="logo-marca" style="--w:2.27rem;--h:2.8rem" aria-hidden="true"><use href="#m-citroen"/></svg><b>Citroën</b><small>Mecánica</small></li>
+        <li><svg class="logo-marca" style="--w:4.25rem;--h:1.59rem" aria-hidden="true"><use href="#m-ford"/></svg><b>Ford</b><small>Mecánica</small></li>
+        <li><svg class="logo-marca" style="--w:3.15rem;--h:2.14rem" aria-hidden="true"><use href="#m-toyota"/></svg><b>Toyota</b><small>Mecánica</small></li>
+        <li><svg class="logo-marca" style="--w:2.85rem;--h:2.37rem" aria-hidden="true"><use href="#m-nissan"/></svg><b>Nissan</b><small>Mecánica</small></li>
+      </ul>
+      <div class="marcas__pie">
+        <p>Comercializamos repuestos de estas marcas. No somos concesionarios ni distribuidores oficiales.</p>
+        <a class="enlace" href="/marcas">Ver marcas <svg class="icono"><use href="#i-flecha"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · Especialistas en -->
+  <section class="sec rubros-sec fondo-oscuro" aria-labelledby="h-rubros">
+    <div class="contenedor" data-revelar>
+      <div class="cabecera">
+        <div><span class="ante">Especialistas en</span><h2 class="titulo" id="h-rubros">Lo que mejor <em>conocemos</em></h2></div>
+        <p class="lead">Si no sabés cuál lleva tu auto, nosotros sí.</p>
+      </div>
+      <ul class="rubros">
+        <li class="rubro"><span class="rubro__n" aria-hidden="true">01</span><svg class="icono"><use href="#i-dist"/></svg><h3>Distribución</h3><p>Kits completos con correa, tensor y bomba de agua.</p><a class="enlace" data-wa="Hola Mundo Motors, quiero consultar por distribución.">Consultar<span class="sr-only"> por distribución</span> <svg class="icono"><use href="#i-flecha"/></svg></a></li>
+        <li class="rubro"><span class="rubro__n" aria-hidden="true">02</span><svg class="icono"><use href="#i-embrague"/></svg><h3>Embragues</h3><p>Kits de embrague, crapodinas y volantes.</p><a class="enlace" data-wa="Hola Mundo Motors, quiero consultar por embragues.">Consultar<span class="sr-only"> por embragues</span> <svg class="icono"><use href="#i-flecha"/></svg></a></li>
+        <li class="rubro"><span class="rubro__n" aria-hidden="true">03</span><svg class="icono"><use href="#i-tapa"/></svg><h3>Tapas de cilindro</h3><p>Tapas con válvulas, juntas y árboles de levas.</p><a class="enlace" data-wa="Hola Mundo Motors, quiero consultar por tapas de cilindro.">Consultar<span class="sr-only"> por tapas de cilindro</span> <svg class="icono"><use href="#i-flecha"/></svg></a></li>
+        <li class="rubro"><span class="rubro__n" aria-hidden="true">04</span><svg class="icono"><use href="#i-amort"/></svg><h3>Amortiguadores</h3><p>Delanteros y traseros, con cazoletas, fuelles y topes.</p><a class="enlace" data-wa="Hola Mundo Motors, quiero consultar por amortiguadores.">Consultar<span class="sr-only"> por amortiguadores</span> <svg class="icono"><use href="#i-flecha"/></svg></a></li>
+        <li class="rubro"><span class="rubro__n" aria-hidden="true">05</span><svg class="icono"><use href="#i-freno"/></svg><h3>Frenos</h3><p>Pastillas y discos de freno de primeras marcas.</p><a class="enlace" data-wa="Hola Mundo Motors, quiero consultar por pastillas y discos de freno.">Consultar<span class="sr-only"> por frenos</span> <svg class="icono"><use href="#i-flecha"/></svg></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 6 · Por qué elegirnos -->
+  <section class="sec" aria-labelledby="h-porque">
+    <div class="contenedor porque" data-revelar>
+      <figure class="porque__foto">
+        <img src="/img/equipo-mostrador.webp" width="1201" height="1600" alt="Integrantes del equipo cargando pedidos en el mostrador" loading="lazy" decoding="async">
+        <div class="porque__sello"><b>+20</b><span>años en<br>repuestos</span></div>
+      </figure>
+      <div>
+        <span class="ante">Por qué elegirnos</span>
+        <h2 class="titulo" id="h-porque">Detrás de cada repuesto <em>hay un equipo</em></h2>
+        <p class="lead">Buscamos, preparamos y controlamos cada pedido para que llegue donde tiene que llegar.</p>
+        <ul class="atributos">
+          <li class="atributo"><svg class="icono"><use href="#i-stock"/></svg><div><h3>Stock completo</h3><p>Un depósito pensado para resolver en el día.</p></div></li>
+          <li class="atributo"><svg class="icono"><use href="#i-chat"/></svg><div><h3>Asesoramiento</h3><p>Te ayudamos a dar con la pieza correcta.</p></div></li>
+          <li class="atributo"><svg class="icono"><use href="#i-original"/></svg><div><h3>Originales y primeras marcas</h3><p>Priorizamos lo original.</p></div></li>
+          <li class="atributo"><svg class="icono"><use href="#i-cuotas"/></svg><div><h3>3 cuotas sin interés</h3><p>Con tarjetas bancarizadas.</p></div></li>
+          <li class="atributo"><svg class="icono"><use href="#i-envio"/></svg><div><h3>Envíos</h3><p>Rosario, alrededores y todo el país.</p></div></li>
+          <li class="atributo"><svg class="icono"><use href="#i-reloj"/></svg><div><h3>Más de 20 años</h3><p>Experiencia real, desde 2006.</p></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · De Mundo Renault a Mundo Motors -->
+  <section class="sec sec--gris" aria-labelledby="h-historia">
+    <div class="contenedor" data-revelar>
+      <div class="historia">
+        <figure class="historia__foto">
+          <img src="/img/primer-local.webp" width="844" height="452" alt="Frente del primer local, con el cartel de Repuestos Renault" loading="lazy" decoding="async">
+          <figcaption><svg class="icono"><use href="#i-pin"/></svg>Nuestro primer local, en San Nicolás 1268</figcaption>
+        </figure>
+        <div class="historia__txt">
+          <span class="ante">Nuestra historia</span>
+          <h2 class="titulo" id="h-historia">De Mundo Renault <em>a Mundo Motors</em></h2>
+          <p class="historia__bajada">Mismo equipo, mismo local, más marcas.</p>
+          <ol class="anios">
+            <li><b>2006</b><span>Abrimos como Mundo Renault en San Nicolás 1268.</span></li>
+            <li><b>2015</b><span>Nos mudamos a Av. Pellegrini 3971 y sumamos Chevrolet.</span></li>
+            <li><b>HOY</b><span>Somos Mundo Motors: multimarca.</span></li>
+          </ol>
+          <a class="btn btn--azul" href="/quienes-somos">Conocé nuestra historia <svg class="icono"><use href="#i-flecha"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 · Para talleres y mecánicos -->
+  <section class="sec" aria-labelledby="h-talleres">
+    <div class="contenedor" data-revelar>
+      <div class="talleres fondo-oscuro">
+        <img src="/img/entrega-taller.webp" width="1672" height="941" alt="" loading="lazy" decoding="async">
+        <div class="talleres__txt">
+          <span class="ante">Para talleres y mecánicos</span>
+          <h2 class="titulo" id="h-talleres">Tu taller no puede <em>esperar</em></h2>
+          <p class="lead">Sabemos que un auto parado es plata. Por eso tenemos condiciones pensadas para el profesional.</p>
+          <ul class="condiciones">
+            <li><svg class="icono"><use href="#i-check"/></svg>Cuenta corriente</li>
+            <li><svg class="icono"><use href="#i-check"/></svg>Precios por volumen</li>
+            <li><svg class="icono"><use href="#i-check"/></svg>Atención prioritaria</li>
+            <li><svg class="icono"><use href="#i-check"/></svg>Envíos al taller</li>
+          </ul>
+          <div class="talleres__acciones">
+            <a class="btn btn--primario" data-wa="Hola Mundo Motors, soy mecánico y quiero consultar por las condiciones para talleres."><svg class="icono icono--relleno"><use href="#i-wa"/></svg>Soy mecánico</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 · Reseñas de Google (salen de datos/resenas.json) -->
+{{{bloque.resenas}}}
+
+  <!-- 10 · Dónde estamos -->
+  <section class="sec" id="donde" aria-labelledby="h-donde">
+    <div class="contenedor" data-revelar>
+      <div class="donde">
+        <a class="mapa" href="{{local.mapa_url}}" target="_blank" rel="noopener" aria-label="Abrir la ubicación de Mundo Motors en Google Maps">
+          <img src="/img/mapa-local.svg" width="800" height="520" alt="" loading="lazy" decoding="async">
+          <span class="mapa__chip"><svg class="icono"><use href="#i-pin"/></svg>Abrir en Google Maps</span>
+        </a>
+        <div class="donde__txt">
+          <span class="ante">Dónde estamos</span>
+          <h2 class="titulo" id="h-donde" style="font-size:clamp(1.8rem,1.2rem + 2vw,2.6rem)">Vení al local <em>o escribinos</em></h2>
+          <ul class="datos">
+            <li><svg class="icono"><use href="#i-pin"/></svg><div><b>{{local.direccion}}</b><span>{{local.ciudad}}, {{local.provincia}}</span></div></li>
+            <li><svg class="icono"><use href="#i-reloj"/></svg><div><b>{{local.horario_semana_corto}}</b><span>{{local.horario_sabado}}</span></div></li>
+            <li><svg class="icono icono--relleno"><use href="#i-wa"/></svg><div><b>{{local.whatsapp_texto}}</b><span>WhatsApp</span></div></li>
+          </ul>
+          <div class="donde__acciones">
+            <a class="btn btn--azul" href="{{local.como_llegar_url}}" target="_blank" rel="noopener"><svg class="icono"><use href="#i-pin"/></svg>Cómo llegar</a>
+            <a class="btn btn--primario" data-wa="Hola Mundo Motors, quiero hacer una consulta."><svg class="icono icono--relleno"><use href="#i-wa"/></svg>WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

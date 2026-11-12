@@ -1,0 +1,17 @@
+<div class="consulta consulta--cierre">
+        <div class="consulta__panel">
+          <div class="consulta__cab">
+            <svg class="icono icono--relleno"><use href="#i-wa"/></svg>
+            <div><h3 class="consulta__titulo">Consulta rápida</h3><p>Decinos qué auto tenés y qué buscás; te ayudamos a encontrarlo.</p></div>
+          </div>
+          <form class="form" data-consulta novalidate>
+            <div class="campo"><label for="{{pagina.prefijo}}-marca">Marca</label><input id="{{pagina.prefijo}}-marca" name="marca" placeholder="Renault" autocomplete="off"></div>
+            <div class="campo"><label for="{{pagina.prefijo}}-modelo">Modelo</label><input id="{{pagina.prefijo}}-modelo" name="modelo" placeholder="Kangoo" autocomplete="off"></div>
+            <div class="campo"><label for="{{pagina.prefijo}}-anio">Año</label><input id="{{pagina.prefijo}}-anio" name="anio" inputmode="numeric" placeholder="2014" autocomplete="off"></div>
+            <div class="campo"><label for="{{pagina.prefijo}}-motor">Motor</label><input id="{{pagina.prefijo}}-motor" name="motor" placeholder="1.6 K4M" autocomplete="off"></div>
+            <div class="campo campo--repuesto"><label for="{{pagina.prefijo}}-repuesto">¿Qué repuesto buscás?</label><input id="{{pagina.prefijo}}-repuesto" name="repuesto" placeholder="Kit de distribución" autocomplete="off"></div>
+            <button class="btn btn--primario" type="submit"><svg class="icono icono--relleno"><use href="#i-wa"/></svg>Enviar</button>
+          </form>
+          <div class="form-pie"><p class="form-error" role="alert"></p><p class="form-nota">Se abre WhatsApp con tu consulta armada. No guardamos tus datos.</p></div>
+        </div>
+      </div>

@@ -15,10 +15,10 @@ Fuentes: `contexto/servicio-vendido.md`, `contexto/datos-confirmados.md`, `conte
 mundomotors.com.ar
 ├── Inicio            /
 │   └── sección: Oferta (banner)
-├── Quiénes Somos     /quienes-somos/
-├── Marcas            /marcas/
+├── Quiénes Somos     /quienes-somos
+├── Marcas            /marcas
 │   └── sección: Productos más vendidos (3)
-└── Servicios         /servicios/
+└── Servicios         /servicios
     ├── #envios
     ├── #talleres
     ├── #pagos
@@ -26,6 +26,8 @@ mundomotors.com.ar
 
 mundorenault.com.ar  →  redirección 301 a mundomotors.com.ar
 ```
+
+**URLs (Walter, 10/11/2026):** sin barra final ni extensión: `https://mundomotors.com.ar/`, `/quienes-somos`, `/marcas` y `/servicios`. Las variantes con barra (`/marcas/`) o con `.html` redirigen a la URL limpia. Así van también los enlaces internos, el `canonical` y el `sitemap.xml`.
 
 ## Mundo Renault en todo el sitio
 
@@ -81,7 +83,7 @@ No va en el encabezado ni en la portada de Inicio (decisión de Walter, 09/11).
 | 9 | **Reseñas de Google** | Se **muestran en la web**: nota promedio, cantidad de reseñas y varias reseñas con nombre, estrellas y texto. Abajo, enlace secundario *Ver todas en Google*. | Ver todas en Google |
 | 10 | **Dónde estamos** | **Imagen del mapa clickeable** que abre la ficha del local en Google Maps. Al lado: dirección, horarios y *Vení al local o escribinos.* | Cómo llegar (Google Maps) · WhatsApp |
 
-## 2. Quiénes Somos — `/quienes-somos/`
+## 2. Quiénes Somos — `/quienes-somos`
 
 **Búsqueda objetivo:** Mundo Motors Rosario · Mundo Renault Rosario.
 
@@ -94,7 +96,7 @@ No va en el encabezado ni en la portada de Inicio (decisión de Walter, 09/11).
 | 5 | **Nuestro equipo** | Foto grupal con título y bajada. *Pendiente: el cliente manda la foto más adelante.* |
 | 6 | **Cierre** | Bloque de consulta rápida. |
 
-## 3. Marcas — `/marcas/`
+## 3. Marcas — `/marcas`
 
 **Búsqueda objetivo:** repuestos Renault Rosario · repuestos Chevrolet Rosario · repuestos [marca] Rosario.
 
@@ -109,7 +111,7 @@ No va en el encabezado ni en la portada de Inicio (decisión de Walter, 09/11).
 | 7 | **Aclaración** | Línea chica: *Comercializamos repuestos de estas marcas. No somos concesionarios ni distribuidores oficiales. Mundo Renault fue nuestro nombre comercial anterior. Las marcas pertenecen a sus respectivos dueños.* |
 | 8 | **Cierre** | *¿No ves tu marca o tu modelo? Consultanos.* Bloque de consulta rápida. |
 
-## 4. Servicios — `/servicios/`
+## 4. Servicios — `/servicios`
 
 **Búsqueda objetivo:** repuestos con envío Rosario · repuestos para talleres Rosario.
 
@@ -155,6 +157,7 @@ No va en el encabezado ni en la portada de Inicio (decisión de Walter, 09/11).
 **Cambios en la etapa de Diseño:**
 - **Testimonios:** Walter los sacó de todo el sitio el 09/11/2026. La prueba social queda a cargo de las reseñas de Google.
 - **Para talleres (Inicio #8):** el botón es *Soy mecánico* y va a WhatsApp. *Ver condiciones* se sacó (decisión de Walter, 09/11).
+- **Aclaración de Marcas (Marcas #7):** no va en la página; queda solo la aclaración legal del pie (decisión de Walter, 11/11).
 
 ## Decisiones cerradas (09/11)
 
