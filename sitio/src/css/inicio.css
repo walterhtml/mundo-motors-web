@@ -2,7 +2,7 @@
 /* ---------- Portada ---------- */
 .hero { padding-top: 1rem; }
 .hero__card { position: relative; isolation: isolate; display: flex; align-items: center; min-height: clamp(560px, 76vh, 700px); border-radius: 28px; overflow: hidden; color: #fff; background: var(--azul); }
-.hero__card > img { position: absolute; inset: 0; z-index: -3; width: 100%; height: 100%; object-fit: cover; object-position: 70% 80%; }
+.hero__card > img { position: absolute; inset: 0; left: auto; z-index: -3; width: 70%; height: 100%; object-fit: cover; object-position: 70% 80%; }
 .hero__card::before { content: ""; position: absolute; inset: 0; z-index: -2; background: linear-gradient(95deg, rgba(8, 42, 87, .97) 0%, rgba(11, 55, 111, .9) 36%, rgba(11, 55, 111, .45) 60%, rgba(11, 55, 111, .05) 82%); }
 .hero__card::after { content: ""; position: absolute; inset: 0 35% 0 0; z-index: -1; background: var(--lineas-vel); -webkit-mask-image: linear-gradient(90deg, #000 30%, transparent); mask-image: linear-gradient(90deg, #000 30%, transparent); }
 .hero__corte { position: absolute; right: -52px; bottom: 0; width: 110px; height: 52%; background: var(--naranja); clip-path: polygon(62% 0, 100% 0, 38% 100%, 0 100%); }
@@ -17,7 +17,7 @@
 @media (max-width: 900px) {
   .hero__card { flex-direction: column; align-items: stretch; min-height: 0; border-radius: 22px; }
   /* En celular se encuadra el mostrador con las marcas (el poste de turnos queda afuera) */
-  .hero__card > img { position: relative; z-index: 0; height: 16rem; order: 2; width: 160%; max-width: none; align-self: flex-end; object-position: center 62%; }
+  .hero__card > img { position: relative; z-index: 0; height: 16rem; order: 2; width: 100%; max-width: none; align-self: flex-end; object-position: center 62%; }
   .hero__card::before { background: var(--azul); bottom: 16rem; }
   .hero__card::after { inset: 0 0 16rem 0; }
   .hero__corte { display: none; }
